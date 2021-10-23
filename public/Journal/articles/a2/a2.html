@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Law of Excluded Middle</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS link -->
+
+    <link rel="stylesheet" href="CSS/a2.css">
+
+    <!-- Font Family Lato -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Animations -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="images/pifavicon.ico"/>
+    <!-- Font -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="header">
+
+        <!-- ---------NAVIGATION--------- -->
+
+        <nav class="navbar navbar-expand-lg navbar-light nav-edits">
+
+            <!-- ---------NAV LOGO---------  -->
+
+            <a class="navbar-brand mr-auto department-logo" href="/index.html"><img src="images/PIII.png"
+                    alt="department logo"></a>
+
+            <!-- ---------RESPONSIVE TOGGLER---------  -->
+
+            <button class="navbar-toggler responsive-nav" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler-edit">
+
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </button>
+
+            <!-- ---------COLLAPSE NAVBAR---------  -->
+
+            <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto main-nav-edits">
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/About/about.html#the-department">The Department</a>
+                            <a class="dropdown-item" href="/About/about.html#our-alumni">Our Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Seminars/seminars.html">Seminars</a>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Journal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Journal/journal-a.html">Aankalan</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#download-journal">Download</a>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#article-journal">Articles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Events
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Events/events.html">Our events</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Events/events.html#fresher-19">Freshers '19</a>
+                            <a class="dropdown-item" href="/Events/events.html#farewell-19">Farewell '20</a>
+                            <a class="dropdown-item" href="/Events/events.html#teacher-19">Teachers' Day '20</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Events/events.html#identity-20">Identity '20</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Faculty/faculty.html">Faculty</a>
+                    </li>
+                </ul>
+            </div>
+
+             <!-- ---------SEARCH--------- -->
+            <!-- ---------SEARCH--------- 
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Explore" name="search">
+                        <button type="submit">
+                            <ion-icon name="search"></ion-icon>
+                            </ion-icon></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <button class="openBtn" onclick="openSearch()">
+                <ion-icon name="search"></ion-icon>
+                </ion-icon>
+            </button>
+            -->
+
+        </nav>
+    </div>
+
+    <div class="heading">
+
+        <h2>Department of Mathematics</h2>
+
+    </div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-edit">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="/Journal/journal-a.html">Journal</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Article</li>
+        </ol>
+    </nav>
+</div>
+
+
+    <div class="container-fluid">
+        <div class="article-flex">
+            <div class="article">
+                <h1>The Law of Excluded Middle</h1>
+                <h6 class="author" style="line-height: 2.0;"><b>Author: &nbsp; </b> Shivam Baurai <br /> <b>B.Sc. (H) Mathematics</b></h6>
+                <hr>
+                <p>This is an assessment of the much debated law of excluded middle, which has an intimate relationship
+                    with mathematical reasoning. This article will attempt to describe this law, establish its role
+                    in mathematics and explore the arguments against the law. An argument against the criticism will
+                    be provided to maintain neutrality in this discussion; this article is not written to take any
+                    particular
+                    side, it is written to introduce the field of metamathematics, using fairly familiar concepts</p>
+                <p>This article refers to works of formal logic and philosophy. Both fields are treated to make them
+                    as irrelevant as possible for the purpose of this article, which is achieved by giving simplified,
+                    and not
+                    technical, explanations of concepts belonging to these fields.</p>
+                <p>The references given in the article provide a detailed discussion of the concepts this article
+                    introduces.
+                    The references, the reader will find, pertain mostly to the fields of logic and mathematical
+                    philosophy. Before beginning, it is important to introduce the ideas that are prerequisites for this
+                    article.</p>
+                <p>Following is a list of important symbols:</p>
+
+                <ul>
+                    <li>\(p\) : a proposition. In simple terms, this is a statement. For example, “This car is red”.</li>
+                    <li>\(\sim \) : This symbol denotes negation. For example, \(\sim p \) reads “This car is not red”.</li>
+                    <li>\(\circ \) : This symbol denotes the logical conjunction “and”. The usage is similar to the use of the
+                        symbol \(\cap \) in set theory. For example, given <b>p</b>: “x is an even number” and <b>q</b>: “x is a prime
+                        number”, then \(p \circ q\) : “x is an even number that is prime” or “\(x = 2\) ”.</li>
+                    <li>\(\vee \) : This symbol denotes the logical disjunction “or”. The usage is similar to the use of the
+                        symbol \(\cup \) in set theory. For example, given <b>p</b>: “x is a positive real number” and <b>q</b>: “x is a negative
+                        real number”, one deduces that \(p \vee q \): “\(x \neq 0\)”.</li>
+                    <li>\(\Rightarrow \): This symbol denotes implication. \(p \Rightarrow q \) means that whenever <b>p</b> is true, <b>q</b> is true and
+                        whenever <b>p</b> is false, so is <b>q</b>.</li>
+                </ul>
+                Now, we shall state a few important laws/principles/terms:
+                <br />
+                <ul>
+                    <li><b>Principle of reductio ad absurdum</b>: A form of argument, where a proposition is disproven
+                        following its implication of the absurd. Symbolically put, the argument follows: Assume <b>p</b> is
+                        true, \(p \Rightarrow q\) , and \( p \Rightarrow (q \circ \sim q) \). This means that \( p \Rightarrow (q \circ \sim q) \), which cannot hold true (the proof
+                        of this will follow later in the article). For convenience, we shall call this <b>RAA</b>.</li>
+                    <li><b>Tautology</b>: An assertion that is true for every possible interpretation. For example, <b>p</b>: “The
+                        ball is green, or it is not green” is true whatever the colour of the ball.</li>
+                    <li><b>De Morgan’s Law</b>: \(\sim (p \circ q) \Leftrightarrow \sim p \vee \sim q\).</li>
+                    <li><b>Principle of vicious-circle</b>: “Whatever involves all of a collection must not be one of the
+                        collection”. This principle is posited as an axiom.</li>
+                </ul>
+                <p>Now, we can define the law of excluded middle (<b>LEM</b>), which we introduce as an axiom.</p>
+                <p class="cen">Given a proposition, either it is true or its negation is.</p>
+                <p>Symbolically,\[p \vee \sim p\]</p>
+                <p>We now introduce the law of non-contradiction as a theorem:</p>
+                <br /><br />
+                <p><b>Theorem</b> (Law of non-contradiction - LNC). A proposition cannot be both true and false at the same
+                    time. <em>Symbolically</em>, \(\sim (p \circ \sim p)\)</p>
+                <p>Proof. Note that \(p \vee \sim p\) (LEM).</p>
+                <p>Then, by De Morgan’s law \(p \vee \sim p \Rightarrow \sim (p \circ \sim q)\).</p>
+                <p>It has been shown that <b>LNC</b> is deducible from <b>LEM</b>. Further, we can now present a basic definition
+                    of <b>LEM</b>: <em>Given a proposition, either it is true or false</em>.
+                    Note that <b>RAA</b> is due to <b>LNC</b>. In the definition of <b>RAA</b>, it was remarked that \(p \circ \sim p \) is absurd.
+                    As per <b>LNC</b>, it has been established that this assertion is false, and therefore absurd.
+                    Recall the technique of proof by contradiction. The technique is a direct application of <b>RAA</b> and
+                    <b>LEM</b>. Since it has been shown that <b>LEM</b> is responsible for <b>RAA</b>, we conclude that proof by
+                    contradiction is also due to <b>LEM</b>. Any question on the validity of <b>LEM</b>, therefore, has huge consequences for
+                    mathematics. Not only is the technique of proof by contradiction under the scanner, but a
+                    considerable
+                    part of mathematical reasoning needs to be revisited.</p>
+                <h3>Validity of the Law of Excluded Middle</h3>
+                <p>Consider the following proposition (<b>Liar’s Paradox</b>):</p>
+                <p class="cen"><i>I am lying</i></p>
+                <p>Let us consider the two possibilities permitted by <b>LEM</b>:</p>
+                <ol>
+                    <li>The proposition is true - This means I am lying, which implies that I am not lying. Therefore,
+                        the proposition is false, which cannot happen (<b>LNC</b>).</li>
+                    <li>The proposition is false - This means I am not lying, which implies that I am lying. Therefore,
+                        the proposition is true. Again, this cannot happen.</li>
+                </ol>
+                <p>Here, <b>LEM</b> fails to hold. However, this paradox is not without a solution. Before proceeding further,
+                    it should clearly be recorded that <b>LEM</b> is a tautology. (Notice that <b>LEM</b> clearly holds sometimes;
+                    for example, <b>p</b>: “<i>x</i> is a positive real number”).</p>
+                <p>First of all, it should be remarked that natural language is far too incoherent and ambiguous to be
+                    formalized. Therefore, the solution must begin with the translation of this statement into the
+                    symbolic
+                    language of logic. Such an interpretation goes like this:</p>
+                <p class="cen"><i>e is a proposition p, that if I affirm it, it is false</i></p>
+                <p>Now, we call our interpretation <b>q</b>. Note that <b>q</b> refers to all propositions <b>p</b>, since we claim that <b>LEM</b>
+                    is a tautology. The paradox arises because of self-reference; since <b>q</b> is defined for all 
+                    propositions <b>p</b>, it must also be defined for <b>q</b>. This, as already seen, leads to contradiction of <b>LEM</b>. Here, the
+                    principle of
+                    vicious-circle must be referred. This principle prohibits <b>q</b> to refer to itself, and therefore, the
+                    paradox
+                    is blocked.</p>
+                <p>The principle is due to Bertrand Russell. He argued that all logical paradoxes arise because of the
+                    violation of this principle. To return to familiarity, it is useful to consider Russell’s Paradox,
+                    which
+                    can be approached along similar lines. The paradox is as follows: Define \(R := {x|x \in x}\) Then,</p>
+                <p class="cen">\[R \in R \Leftrightarrow R \notin R \].</p>
+                <p>The principle of vicious circle solves the Russell’s paradox. However, it is important here to give a
+                    slightly more academic treatment of this principle - that is, Russell’s <b>Theory of types</b>.</p>
+                <p>Russell assigned types to sets. For example, sets of type I would be elements in a set of type II,
+                    and no element of type II or higher can be contained in a set of type II. Similarly, we can treat
+                    sets
+                    of type III, IV and so on, creating a hierarchy of sets. The hierarchy develops as follows:
+                    individuals
+                    are placed at the lowest level (for example, natural numbers), followed by a class of individuals
+                    (for
+                    example, a set of natural numbers), and then a class further up (For example, the set of sets of
+                    natural
+                    numbers), and so on.</p>
+                <p>It is now easy to see that the question whether <i>R</i> is contained in itself is trivially solved. A
+                    similar
+                    treatment of the Liar’s paradox is possible. If <b>p</b> is a proposition of type n, then <b>q</b> becomes a
+                    proposition
+                    of type n + 1, and therefore, the paradox is solved.</p>
+                <p>Set theory in particular deals with paradoxes of this kind by introducing strict axioms (ZFC Set
+                    Theory), which blocks the construction of sets that contain themselves. Since the approach of
+                    Russell’s
+                    solution is similar to this one (both introduce axioms to block self-reference), and since neither
+                    suggests
+                    against <b>LEM</b>, a detailed discussion on axiomatic set theory is omitted.</p>
+                <p>Returning to Liar’s paradox, Russell’s solution is not without criticism. The works of Tarski,
+                    Kripke,
+                    and Barwise and Etchemendy deal with these criticisms and provide arguably stronger solutions. They
+                    are, however, a break from the mathematics-centric perspective that this article attempts to take.
+                    It is
+                    important here to comment that the contradiction of <b>LEM</b> is far from being merely an abstract idea.
+                    Indeed, we have applications where there are more than two truth values (true and false). There is
+                    one example of the included middle in quantum mechanics - the famous thought experiment by Erwin
+                    Schrödinger (Schrödinger’s cat), which argues that if a cat is sealed in a box with a radioactive
+                    item,
+                    one would not know whether the cat is dead or alive until the box is opened. In simple terms, the
+                    cat,
+                    in a sense, is both dead and alive until the box is opened. Further, it is possible to develop
+                    systems
+                    of logic where, given a proposition, it can have more than two truth values: finite-valued logic,
+                    which
+                    allows n truth values (applications are found in the field of Electronics Design, and study of
+                    stable
+                    states of circuits and integrated circuits), and infinite-valued logic, which allows infinitely many
+                    truth
+                    values (for example, fuzzy logic associates truth values with real numbers in the interval [0, 1],
+                    and
+                    finds applications in facial recognition, as well as economics, particularly in risk assessment
+                    systems).</p>
+                <h3>Constructivism in Mathematics</h3>
+                <p><b>LEM</b> does not find unanimous support amongst mathematicians. While everyone agrees that <b>LEM</b>
+                    holds when limited to finite collections, criticism arises when discussing the extension of <b>LEM</b> to
+                    the infinite (although there do exist examples where <b>LEM</b> holds for infinite sets - There are either
+                    finite primes or infinite; it cannot be generalized). Mathematics based on a logical system that
+                    does
+                    not assume <b>LEM</b> is called <b>Constructive Mathematics</b>. Constructivism is not merely mathematics
+                    without proofs by contradiction; the differences are far more fundamental. For example, in
+                    constructive
+                    mathematics, the phrase “there exists” is replaced by “we can construct”. It does not suffice to
+                    prove
+                    the existence of a mathematical entity, we must also construct it. Constructive logic actually ties
+                    existence with construction with the help of the existence property: Whenever we prove
+                    constructively
+                    that there exists a \(x \in X : P(x)\) is true, we actually find at least one \(a \in X : P(a)\); we call a the
+                    witness.</p>
+                <p>Supporters of constructivism argue that these proofs are superior as they give an algorithm to
+                    construct such entities. A mathematical entity, constructivists say, is anything that can be
+                    constructed.</p>
+                <p>Classical logic (where <b>LEM</b> holds) also is not without supporters. Amongst them is David Hilbert,
+                    who remarked, “Taking the principle of excluded middle from the mathematician would be the same,
+                    say, as proscribing the telescope to the astronomer or to the boxer the use of his fists”. Existence
+                    is
+                    free from contradiction, argues Hilbert. Therefore, if we can prove that an object, having
+                    particular
+                    properties, does not cause contradictions, then it exists, and constructing that object is not
+                    required.
+                    It is fascinating to note that while constructive mathematics and ‘classical’ mathematics differ at
+                    the
+                    foundational level, their works are remarkably similar. Foundations of <em>Constructive Analysis</em> by E.
+                    Bishop develops much of 20<sup>th</sup> century analysis using the principles of constructive mathematics.</p>
+                <p>It is important now to see the working of constructive mathematics, and contrast it with
+                    nonconstructive
+                    mathematics. The obvious place to begin is with the proof of the irrationality of \(\sqrt{2} \).</p>
+                <p><b>Theorem</b>.\(\sqrt{2}\) is irrational.</p>
+                <p>Proof. Let \(r = \frac{a}{b}\) , where a, b are positive integers.<br />
+                    If a is even, b cannot be even.<br />
+                    Then, a<sup>2</sup> is doubly even (i.e. divisible by 4), while 2b<sup>2</sup> is singly even (i.e. divisible by 2, but
+                    not 4).<br />
+                    Therefore, 2b<sup>2</sup> and a<sup>2</sup> are distinct integers.<br />
+                    If a is odd, and b is even, 2b<sup>2</sup> and a<sup>2</sup> are clearly distinct. And if a and b are both odd, we again
+                    reach
+                    the same conclusion.<br />
+                    So, we have \(|2{b}^{2} − {a}^{2}| \geq 1 \). Dividing and multiplying by \(\sqrt{2}+ \frac{a}{b}\) , we get</p>
+                <p class="cen">\[|\sqrt{2} - \frac{a}{b}| = \frac{|2{b}^{2}-{a}^{2}|}{{b}^{2}(\sqrt{2}+\frac{a}{b})} \geq \frac{1}{{b}^{2}(\sqrt{2}+\frac{a}{b})} \geq \frac{1}{3{b}^{2}}\]</p>
+                <p>It has now been established that \(\sqrt{2} \) is distinct from any rational number r. Therefore, \(\sqrt{2} \) is
+                    irrational.</p>
+                <p>Consider the following theorem, which contrasts the mechanism of constructive and non-constructive
+                    proofs.</p>
+                <p><b>Theorem</b>. <em>There exist two irrational real numbers <i>a</i> and <em>b</em> such that <em>ab</em> is rational</em>.</p>
+                <p><em>Proof</em>. (Non-constructive) Let a and b be irrational real numbers. Consider <em>ab</em>. It must be either
+                    rational or irrational. If it is rational, we are done. Assume it is irrational. Suppose we have, \({\sqrt{2}}^{\sqrt{2}}\)
+                    which we assume is irrational. Then, \({\left({\sqrt{2}}^{\sqrt{2}}\right)}^{\sqrt{2}} = {\sqrt{2}}^{\sqrt{2}} = 2\), which is rational.<br />
+                    <em>Proof</em>. (Constructive) Consider the irrational numbers \(a = \sqrt{2} \), and \(b = \log_{2}9\). Then \({a}^{b} = 2(\log_{2}3) = 3\),
+                    which is rational.</p>
+                <p>Note that while the non-constructive proof also constructs irrational numbers a and b which satisfy
+                    the theorem (\({\sqrt{2}}^{\sqrt{2}}\) is indeed irrational), the proof is not constructive in nature because it explores the
+                    possibilities permitted by <b>LEM</b> and shows that one of them must satisfy the theorem, but does not
+                    commit to one possibility.</p>
+                <h3>Conclusion</h3>
+                <p>It is important to remark that the debate on the validity of <b>LEM</b> is by no means ‘solved’. However,
+                    the
+                    deductions that follow from it are still widely accepted in mathematics. Also, as mentioned already,
+                    logical systems with more than two truth values not only exist, but also find useful applications in
+                    many fields of science and technology. Further, it serves well to remind again of the introductory
+                    level
+                    of the knowledge provided here; there are sections, especially the one about the validity of <b>LEM</b>,
+                    that can be pursued productively, for there are avenues that can be explored (for example, Russell’s
+                    solution fails to hold when we strengthen the liar; “<em>The following statement is false</em>”, “<em>The
+                    previous statement is true</em>”).</p>
+                <p>It is a fascinating, almost amusing, fact that constructive proofs are not the new wave of
+                    mathematics,
+                    as it might seem from the presentation of this article. In fact, some of Hilbert’s earlier works,
+                    which were non-constructive, were infamously dismissed as theology. And the initial criticism of
+                    Cantor
+                    is well-documented. A fantastic presentation of the history of metamathematics and logic, and its
+                    protagonists can be found in <em>Logicomix: An Epic Search For Truth (2009)</em> by Apostolos Doxiadis and
+                    Christos Papadimitriou.</p>
+            </div>
+
+
+            <div class="references" id="elId">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left shadow-none" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    References
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ol class="ref">
+
+                                  
+                                    
+                                    <li>&nbsp; Principia Mathematica: A.N. Whitehead and B. Russell, ISBN 978-0-511-89347-6</li>
+                                    <li>&nbsp; Naive Set Theory: P.R. Halmos, ISBN 978-1-4757-1645-0</li>
+                                    <li>&nbsp; Constructivism in Mathematics: A.S. Troelstra and D. van Dalen, ISBN 978-0-444-70358-3</li>
+                                    <li>&nbsp; Foundations of Constructive Analysis: E. Bishop, ISBN 978-3-642-61667-9</a></li>
+                                    <li>&nbsp; <a href="https://en.wikipedia.org/wiki/Brouwer\%E2\%80\%93Hilbert\_controversy">Wiki, Brouwer-Hilbert Controversy</a></li>
+                                    <li>&nbsp; <a href="http://apcz.umk.pl/czasopisma/index.php/LLP/article/viewFile/LLP.2010.009/967">Article. The Principle of Antagonism and the Logic of Energy: St'ephane Lupasco</a></li>
+                                    <li>&nbsp; <a href="https://www.jstor.org/stable/pdf/2369948.pdf">Article. Mathematical Logic as Based on the Theory of Types: Bertrand Russell</a></li>
+                                    <li>&nbsp; <a href="https://en.wikipedia.org/wiki/De\_Morgan\%27s\_laws">Wiki. De Morgan's Laws</a></li>
+                                    <li>&nbsp; <a href="https://en.wikipedia.org/wiki/List\_of\_logic\_symbols">Wiki. List of Logical Systems</a></li>
+
+
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <!---------------------- FOOTER -------------------->
+
+<footer class="footer-bs">
+    <div class="row">
+        <div class="col-md-4 footer-brand animated fadeInLeft">
+
+            <div class="logo-footer">
+                <div class="footer-image">
+                    <img src="images/PIII.png">
+                </div>
+                <div class="footer-name">
+                    <h5>Department of Mathematics</h5>
+                    <h6>Hansraj College</h6>
+                </div>
+            </div>
+            <div class="address-footer">
+                <p>Address: <br><span style="display: inline-block; 
+                    margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj, Delhi,
+                        110007</em></span></p>
+                        <p>Contact: <br><span style="display: inline-block; 
+                            margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span style="display: inline-block; 
+                    margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span></p>
+                <p>© 2020 Department of Mathematics, Hansraj College</p>
+            </div>
+
+        </div>
+
+        <div class="col-md-4 footer-ns animated fadeInRight">
+            <h4>Unite</h4>
+            <p>Please put in your emails to stay connected.</p>
+            <p>
+            <div class="input-group">
+
+                <input type="email" class="form-control" placeholder="Email" required >
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
+                        data-placement="top" data-content="Your email has been recorded, thanks."
+                        data-trigger="focus">
+                        <i class="unite-icon">
+                            <ion-icon name="mail-open"></ion-icon>
+                        </i>
+                    </button>
+
+                </span>
+            </div><!-- /input-group -->
+            </p>
+        </div>
+        <div class="col-md-4 footer-social animated fadeInDown">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></i><a href="https://www.facebook.com/pi.hansrajcollege" class="social-name">Facebook</a></li>
+                <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></i><a href="https://www.instagram.com/mathsdept_hansraj/" class="social-name">Instagram</a></li>
+                <li><i class="social-icon"><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college" class="social-name">LinkedIn</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+<section style="text-align:center; margin:10px auto;">
+    <div class="ved-ujj">
+        <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
+                target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
+                href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
+                Agarwal</a></p>
+    </div>
+
+
+</section>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+    });
+</script>
+
+
+
+
+
+
+
+    <!-- ////////////////// BOOTSTRAP JS ///////////////////// -->
+
+    <!-- //  Optional JavaScript; choose one of the two! 
+//  Option 1: jQuery and Bootstrap Bundle (includes Popper)  -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
+        crossorigin="anonymous "></script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script> -->
+
+
+
+
+
+    <!-- ///////////////// ICONS FILE ////////////// -->
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
+
+    <!----------///////// INTERNAL JS -------------//////////-->
+
+    <script src="JS/a2.js"></script>
+
+
+
+    <!-- MathJax Start -->
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+
+
+    <!-- MathJax Over-->
+
+</body>
+
+</html>

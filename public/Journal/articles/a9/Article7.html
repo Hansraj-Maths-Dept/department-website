@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pigeonhole Principle</title>
+    <style>
+        .cen{align: center;}
+    </style>
+</head>
+<body>
+    <h1>Pigeonhole Principle</h1>
+    <h6>Ashutosh Maurya<br />B.Sc. (H) Mathematics, 2nd Year</h6>
+    <p>When an intrinsically trivial and intuitive statement has deep implications and consequences, it is
+        naturally intriguing for people, mathematicians and non-mathematicians alike. One such statement
+        is that of the Pigeonhole principle. This article shall discuss the various nuances of this principle,
+        highlighting the dependence of mathematics on basic thoughts and pure logic.</p>
+    <h3>Introduction</h3>
+    <p>We begin, as the introduction to a mathematical concept should, with the statement and proof of the
+        Pigeonhole principle.</p>
+    <p class="cen"><i>The pigeonhole principle states that if n items are put into m containers, with n > m, then at least
+        one container must contain more than one item.</i></p>
+    <p>The principle is believed to be formalized by Peter Gustav Lejeune Dirichlet. Since he published his
+        works in both French and German, he used the terms Schubfach in German and tiroir in French to
+        describe what in English may refer to as a drawer. These terms were morphed to the word pigeonhole,
+        which is one of the reasons of the intrigue associated with this principle.</p>
+    <p>Although the statement seems intuitive and obvious, we shall give a formal proof. We shall use
+        one of the most potent tools to establish proofs in mathematics: proving by contradiction.</p>
+    <p>Let us assume that no container contains more than one item. So, each of the m containers will
+        either have 0 or 1 item. If the number of containers with 0 items is k, then certainly, k  0. So, the
+        number of containers with 1 item will be m−k. So, the number of items in k containers will be m−k.
+        But k−m < k < n, and n items had been put in k containers. Therefore, we arrive at a contradiction,
+        which arose due to the wrong assumption. Hence, at least one container must contain more than one
+        item.</p>
+    <p>Apart from the statement mentioned above, there are several versions of the Pigeonhole principle,
+        some of which are worth mentioning here. A simple generalization of the principle exists, which deals
+        with multiple “pigeons”. It says:</p>
+    <p class="cen"><i>Let n, m and r be positive integers so that n > rm. If n items are put into m containers. then at
+        least one container must contain more than r items.</i></p>
+    <p>This generalization can be proved in a similar fashion to establish its verity. It is sometimes called
+        the Second Pigeonhole Principle, while the first statement is called the First Pigeonhole Principle.</p>
+    <p>Another version was given by Edsger W. Dijkstra, the pioneering computing scientist. According
+        to him, the usual statements of the principle “contain a lot of misleading noise, are overspecific, and
+        hide the principle’s arithmetic nature”. He composed a formulation free of metaphors and “misleading
+        visualizations”. It says:</p>
+    <p class="cen"><i>For a nonempty, finite bag of real numbers, the maximum is at least the average (and the minimum is
+        at most the average)</i></p>
+    <p>Though this “stronger” form may lead to easier interpretation and solving of certain problems,
+        sometimes, it may complicate them too. While the traditional statement forces us to explicitly identify
+        “pigeons” and “holes”, or items and compartments, this form may need the same process, in addition
+        to worrying about the numbers and the average.</p>
+    <h3>Popular Examples and Applications</h3>
+    <p>The simplicity of the Pigeonhole principle does not understate its importance. From numerical analysis
+        to computer sciences, the principle finds its applications in multiple, seemingly unrelated fields.</p>
+    <p>A particularly famous example is the Birthday Paradox. It is not a paradox per se, but it is called
+        so because it is unbelievably counterintuitive.</p>
+    <p class="cen"><i>The birthday problem or birthday paradox concerns the probability that, in a set of n randomly chosen
+        people, some pair of them will have the same birthday.</i></p>
+    <p>Since there are 365 days in one year (366 in a leap year), with a group of just 367 randomly chosen
+        people, the probability reaches 100%. This is a simple application of the Pigeonhole principle, since
+        the number of people is greater than the number of days, more than one person will be associated with
+        a particular date. Moreover, using probability, it can also be shown that even with just 70 people,
+        99.9% probability is reached, and with just 23 people, 50% is reached.</p>
+    <p>Another important application of the pigeonhole principle is found in the proof of Dirichlet’s Approximation
+        Theorem. In number theory, Dirichlet’s theorem on Diophantine approximation, also
+        called Dirichlet’s approximation theorem, states that for any real numbers  and N, with 1  N,
+        there exist integers p and q such that 1  q  N and</p>
+    <p>SOME EQUATIONS/p>
+    <p>The theorem provides a way to find “good” approximations of irrational numbers, using a fraction
+        with a relatively small denominator. It should be pointed out that by using fractions with large
+        denominators, the process of approximation becomes clumsy and unreliable. The theorem can be
+        proved using the pigeonhole principle.</p>
+    <p>Consider the set A = {j | 0  j  N}. So |A| = N + 1. Now, we take partitions of the set [0, 1)
+        such as
+        
+        0, 1
+        N
+        
+        ,
+         1
+        N , 2
+        N
+        
+        , and so on. There will be N such partitions.
+        Since there are N + 1 numbers and N partitions, by the Pigeonhole principle, there must be at least
+        two numbers that belong to the same partition. Let these numbers be r and s, and without loss of
+        generality, let r < s.</p>
+    <p>Now, there must be an integer p such that 0  r − s  1
+        N , since the partitions are defined so. Let
+        q = r − s. So, we have</p>
+    <p>Some EAUATIONS</p>
+    <p>Subtracting p and dividing by q, we get</p>
+    <p>SOME EQUATIONS</p>
+    <p>or</p>
+    <p>SOME EQUATIONS</p>
+    <p>which is the desired result.</p>
+    <p>Moreover, the Thue-Siegel-Roth theorem states that every irrational algebraic number  has approximation
+        exponent equal to 2. The approximation exponent is the measure of “closely” it can be
+        approximated by rationals. This guarantees that results like the following inequality are not possible:
+    </p>
+    <p>Some EQUATIONS</p>
+    <p>Klaus Friedrich Roth won the Fields Medal for proving this theorem.</p>
+    <h3>Conclusion</h3>
+    <p>The Pigeonhole Principle doesn’t seem to be any more than just a “truth” about counting, yet many
+        advanced theorems have been borne out of it. It continues to have real life applications in various
+        aspects, and its thorough understanding yields greater mastery as well as appreciation towards mathematics
+        in general.</p>
+
+</body>
+</html>

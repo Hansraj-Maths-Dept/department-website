@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cardinality of R2</title>
+    <style>
+        .cen{text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Cardinality of \({\mathbb{R}}^{2}\)</h1>
+    <h6 class="cen">Deepak Kumar<br />B.Sc. (H) Mathematics, 3rd Year</h6>
+    <p>It is an established result that the \(\left| \mathbb{R} \right| \ =\  \left| {\mathbb{R}}^{2} \right|\). The following proof establishes the same result from
+        the aspects of “Linear Algebra”.</p>
+    <p><b>Lemma.</b> <i>The basis of \(\mathbb{R}(\mathbb{Q})\), an infinite vector space, is uncountable</i>.</p>
+    <p>Proof. Let \(\mathbb{R}(\mathbb{Q})\) have a countable dimension. Let \(B\) be the basis of \(\mathbb{R}(\mathbb{Q})\). Then, \(|B|\ \leq \ |N|\)
+        Since \(B\) spans \(\mathbb{R}\), so by definition, every vector of \(R\) can be written as a finite linear combination of
+        vectors of \(B\).</p>
+    <p>Hence, we associate with every vector of \( \mathbb{R} \), i.e. every real number, a unique infinite sequence of
+        rationals (which are the coordinates with respect to \(B\), having all but a finite number of non-zero
+        values.</p>
+    <p>Let \(A\) = Set of natural sequences having all but finite number of non-zero values.</p>
+    <p>Since, \(|\mathbb{Q}| \ = \ |\mathbb{N}|\), we can associate an injective function from the reals to the set \(A\).</p>
+    <p>Let \( ({a}_{0}, {a}_{1}, {a}_{2}, \ldots \ldots, {a}_{k}, 0, 0, 0, 0,\ldots ) \) be any such sequence.</p>
+    <p>Define \(f\ :\ A \rightarrow \mathbb{N}\)
+       \[f \big(({a}_{0}, {a}_{1}, {a}_{2}, \ldots \ldots, {a}_{k}, 0, 0, 0, 0,\ldots )\big)= \displaystyle \prod_{i=1}^{k}{{p}_{i}}^{{a}_{i}}\]</p>
+    <p>where \({{p}_{i}}={{i}^{th}}\) prime number.</p>
+    <p>By Fundamental Theorem of Arithmetic, \(f\) is an injective function.</p>
+    <p>So, \(|A| \leq |\mathbb{N}|\), and hence, \(|\mathbb{R}| \leq |\mathbb{N}|\)</p>
+    <p>Thus, we get a contradiction.</p>
+    <br /><br />
+    <p><b>Claim 1:</b> Let \(B\) be a basis for \(\mathbb{R}(\mathbb{Q})\). Let \({S}_{1}\ =\ \{(x, 0) | x\ \in\ B\}\) and \({S}_{2}\ =\ \{(0, x) | x\ \in \ B\}\). Then,
+        \(S\ =\ {S}_{1} \cup {S}_{2}\) is a basis for \({\mathbb{R}}^{2}(\mathbb{Q})\)</p>
+    <br />
+    <p><i>Proof. </i>Note that \( Span({S}_{1})\ =\ \{(x, 0) | x\ \in \ \mathbb{R} \} \) and \( Span({S}_{2})\ =\ \{(0, x) | x \in \mathbb{R} \} \)<br />
+        And, \( Span({S}_{1}) \cap Span({S}_{2})\ =\ \{(0, 0)\} \) And, \( { \mathbb{R}}^{2} (\mathbb{Q})\ =\ Span({S}_{1}) \oplus Span({S}_{2}) \)<br />
+        Thus, \( { \mathbb{R}}^{2} ( \mathbb{Q})\ =\ Span({S}_{1} \cup {S}_{2})\ =\ Span(S) \)<br />
+        Hence, \(S\) is a basis for \({\mathbb{R}}^{2}(\mathbb{Q})\)</p>
+    <br /><br />
+    <p><b>Corollary.</b><i>\({ \mathbb{R}}^{2}\) over the field of \(\mathbb{Q}\) is an infinite dimensional vector space with uncountable basis.</i></p>
+    <p><b>Claim 2:</b> \(|S|\ =\ |B|\)</p>
+    <br />
+    <p>Proof. Since, \(|B|\ =\ |\mathbb{R}|\ =\ |[0, 1)|\ =\ |[1, 2)|\ =\ |(0, 2)|\),<br />
+        \(|{S}_{1}|\ =\ |B|\ =\ |[0, 1)|\) and \(|{S}_{2}|\ =\ |B|\ =\ |[1, 2)|\)<br />
+        And since, \({S}_{1} \cap {S}_{2}\ =\ (0, 0)\)<br />
+        Thus, \(|S|\ =\ |{S}_{1} \cup {S}_{2}|\ =\ |(0, 1) [ [1, 2)|\ =\ |(0, 2)|\ =\ |B|\)</p>
+    <br /><br />
+    <p><b>Claim 3:</b> \(|\mathbb{R}|\ =\ |{\mathbb{R}}^{2}|\)</p>
+    <br />
+    <p><i>Proof.</i> Let \(g\ :\ B \rightarrow S\) be the bijective function whose existence is shown in Claim 2.<br />
+        Let \(r \in \mathbb{R}\), then \[r = \displaystyle \sum_{i=1}^{k} c(i)b(i)\]</p>
+    <p>where \(c(i) \in \mathbb{Q}\) and \(b(i) \in B\) is a finite linear combination of vectors from \(B\).<br />
+        Define \(h\ :\ \mathbb{R} \rightarrow {\mathbb{R}}^{2}\)
+        \[ h(r) \ = \ h \left( \displaystyle \sum_{i=1}^{k} c(i) b(i) \right) \ =\ \displaystyle \sum_{i=1}^{k} c(i) g \left(b(i) \right) \]</p>
+    <p>Since \(g\) is bijective and each real number has unique coordinates with respect to \(B\), \(h\) is injective.
+        Since every \( (a, b) \in {\mathbb{R}}^{2} \) has unique coordinates with respect to \(S\) as well, so \(h\) is surjective.
+        So, \(h\) is bijective.<br />
+        Hence, \(|\mathbb{R}| = |{\mathbb{R}}^{2}|\)</p>
+    
+    <p><b>Corollary.</b> \(|\mathbb{R}|\ =\ |{\mathbb{R}}^{n}|\), where \(n \in \mathbb{N}\).</p>
+
+
+
+
+
+
+
+
+    <!-- MathJax Start -->
+
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+ <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+
+
+ <!-- MathJax Over-->
+
+
+</body>
+</html>

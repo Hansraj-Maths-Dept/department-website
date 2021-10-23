@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Bizarre 25-Card Trick</title>
+    <style>
+        .cen{text-align: center;}
+        .alignright{text-align: right;}
+    </style>
+</head>
+<body>
+    <h1>The Bizarre 25-Card Trick</h1>
+    <h6 class="cen">Aman Chaudhary<br />B.Sc. (H) Mathematics, 2nd Year</h6>
+    <p>Magic, especially with cards, has been a source of interest for people of all ages since a long time.
+        Mathematics, which seems monotonous from a superficial view, has given rise to countless fantastic
+        tools. One such amazing trick, dealing with 25 cards, shows how many lighthearted applications have
+        deeply rooted mathematical concepts.</p>
+    <p>Aim: You are going to ask your friend to pick a number from 1 to 25 and also any card from
+            the shown 25 cards. By performing the steps below, you will be able to “magically” make the chosen
+            card appear at the very chosen number.</p>
+    <p>The trick is performed by the steps given below. Consider your friend’s name to be Ram. Also
+            consider side A of a card to be the “face”, or the side denoting the suit and number of the card, and
+            side B to be the “back”, or the side which is blank.
+        <ol>
+            <li>Take out 25 cards randomly from a usual deck of 52 cards to play the trick with.</li>
+            <li>Showing the deck to Ram, ask him to pick any card from the 25-card deck. Also, ask him to
+                choose any number between 1 and 25 and let you know his choice.</li>
+            <li>Now consider, he chooses 12 as his number and Ace of Spades (present in those 25 cards) as his
+                card.</li>
+            <li>Hold the deck such that side A faces downward in your palm. Now distribute the 25 cards one
+                by one such that side A faces upward while the cards are laid out into 5 piles having 5 cards
+                each (Fig. 1 illustrates that the cards are distributed in such a way that the \({1}^{st}\) card lies in 1st
+                pile, \({2}^{nd}\) card in \({2}^{nd}\) pile and so on until the \({5}^{th}\) card, and then the \({6}^{th} card in the \({1}^{st}\) pile and
+                the \({7}^{th}\) card in the \({2}^{nd}\) pile again and so on).</li>
+            <li>Meanwhile, you unfold the cards, Ram will notice his card going in any of the 5 piles. Since
+                the required card is unknown to you, ask Ram to tell which pile contained his required card.
+                Consider he replies “the first pile”.</li>
+            <li>Then, collect all the cards pile wise (side A facing upwards) without disturbing their positions
+                and place the \({1}^{st}\) pile (containing the required card) at the second position i.e. at position B
+                (as shown in Fig. 1). While placing them back in the palm for the next distribution, rotate the
+                cards upside down such that side A faces downward, and distribute the cards again likewise as
+                done in Step 4. Note that while placing the piles back into the palm, no internal position of
+                cards of any pile is disturbed.</li>
+            <li>Again, ask for the pile of 5 cards containing the required card. Suppose he says the \({1}^{st}\) pile again.
+                Gather the cards again (as done in the last step), but this time placing the required pile as the
+                \({3}^{rd}\) position from the top of your palm (side A facing up).</li>
+            <li>Start unrolling the cards one by one and here it is, the selected card. The Ace of Spades comes
+                up on the \({12}^{th}\) position at chosen in the deck of 25 cards.</li>
+          
+        </ol>
+        Now let us discuss the underlying procedure and start unwrapping the mystery.
+    </p>
+    <p>Consider that the 25 cards are laid down such that side A faces up in five decks of five each as
+        shown in the Figure 1 with A, B, C, D, E denoting each pile of 5 cards. This shows how those 25 cards
+        have been distributed and since all this is random, any card of any suit and number may be present
+        at any place. The reader might wonder at once why the cards numbered 0 to 24 and not 1 to 25. It is
+        at this point that we demystify the trick.
+        <ol>
+            <li>Subtract 1 from the number Ram has chosen then express the resultant in the \(base\ 5\) notation.
+                So, if number is \(k\), write \(k − 1\) in the form \(k − 1\ =\ a + 5b\) with each of \(0 \leq a\), \(b \leq 4\). The values
+                of \((a, b)\) pairs are shown in subscript of each number in the table.</li>
+                <li>We then picked up the cards pile wise and positioned them such that side A faces up in your
+                    palm. But here lies the real trick in placing the piles in their appropriate position. Consider
+                    numbering up the decks as \(0,\ 1,\ 2,\ 3\) and \(4\), such that \(0\) lies on the top of your palm and then
+                    followed below by \(1,\ 2,\ 3\) and then the pile numbered \(4\) at the bottom. Since \(k−1\) was represented
+                    as \(k−1\ =\ a+5b\), so the very first time we pick the piles, the pile that contains Ram’s card should
+                    be placed at the \({a}^{th}\) position on your palm and all the other decks can be placed elsewhere. As
+                    we took for example that he chose \(12\), we express \(11\ =\ 1 + 5 * 2\) and that’s why the pile he
+                    pointed first time was put at the second position from the top (numbered \(1\) in \(base \ 5\) as per our
+                    notation).</li>
+                    <li>Flip the cards (side A faces down in your palm), and distribute them again in \(5\) piles as was
+                        done above and again ask Ram to tell the pile that contains his card. Again pick up the cards
+                        pile wise (side A faces up), and now place the pile with the required card at the \({b}^{th}\) position on
+                        your palm. That’s why the pile pointed by ram for the second time was put at the \({3}^{rd}\) position
+                        from the top (numbered \(2\) in \(base\ 5\) as per our notation). Put the gathered deck of those \(25\)
+                        cards (side A facing up) in your palm. Count out the cards from the top, and here it is \({k}^{th}\) card
+                        turned over is the very same card that Ram selected.</li>
+        </ol>
+        Here we are with the deep mathematical insight for \(base\ 5\):<br />
+        Think of the \(5\) piles of cards as the zeroth pile, the first pile, the second pile, the third pile, and
+        the fourth pile, and think of the \({a}^{th}\) card in each pile where \(0 \leq a \leq 4\). Thus we count our piles and
+        cards in each pile starting with \(0\) instead of \(1\) just as we did while numbering the cards in the deck
+        from \(0\) to \(24\) rather than from \(1\) to \(25\). For the trick to work, we first determine where the chosen card
+        appears as the \({a}^{th}\) card in the \({b}^{th}\) pile after the two dealing with \(0 \leq a\), \(b \leq 4\).
+    </p>
+    <p><b>Illustration:</b> Consider for \(a\ =\ 3\), the cards of the selected pile will appear as card numbered \(3\) in all the piles number \(0,\ 1,\ 2, \3\) or \(4\) and as soon as the pile of cards is pointed out the second time,
+        placing the pile at any position \(b\ =\ 0,\ 1,\ 2,\ 3\) or(\ 4\) gives the resultant \(3,\ 8,\ 13,\ 18\) or \(23\) respectively, since
+        we know that these values of \(b\) correspond to the upper resultants in the \(base\ 5\) decoded version. And
+        hence a total of \(5 * b + a\) cards appear on the top of the required card giving the required card at
+        \({((5 * b + a) + 1)}^{th}\) position from the top, when the cards are being rolled out (side A facing up in the
+        palm) for the required number with the value of \(k\) chosen as \(4,\ 9,\ 14,\ 19\ or\ 24\).</p>
+    <p>Trivially, looking for \(a\ =\ 0\), the cards of the pointed pile will appear on the \({0}^{th}\) position in all the
+        \(5\) piles (facing upwards) and on pointing the pile the second time and placing it as the \({b}^{th} pile leads
+        to positioning of the required card on required numbers as \(1\), \(6\), \(11\), \(16\) or \(21\) for different choices of \(b\).</p>
+        
+    <p>But you might be thinking what is bizarre about this trick. Let us understand why this card trick is
+        so beguiling. Not only this trick deals with number asked randomly from the person, but, if you have
+        a pack of \({x}^{y}\) cards in total, then you can show this trick by distributing the cards into \(x\) piles, and
+        doing the distributing task \(y\) times, you can place the required card at any given position in the deck
+        with the newly specified number of cards. Following the same steps: decrease one from the designated
+        position number, and convert the result to \(base\ x\) as a \(y\) digit number. The ones digit of the computed
+        number tells you where to place the pile containing the required card after the first deal with \(n−1\) as
+        the bottom pile and \(0\) as the topmost one, and the procedure continues for the remaining \(y − 1\) deals
+        as well.</p>
+
+
+
+
+<!-- MathJax Start -->
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+
+
+<!-- MathJax Over-->
+</body>
+</html>

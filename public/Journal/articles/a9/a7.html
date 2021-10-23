@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Cryptography</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS link -->
+
+    <link rel="stylesheet" href="CSS/a7.css">
+
+    <!-- Font Family Lato -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Animations -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <div class="header">
+
+        <!-- ---------NAVIGATION--------- -->
+
+        <nav class="navbar navbar-expand-lg navbar-light nav-edits">
+
+            <!-- ---------NAV LOGO---------  -->
+
+            <a class="navbar-brand mr-auto department-logo" href="#"><img src="images\PIII.png"
+                    alt="department logo"></a>
+
+            <!-- ---------RESPONSIVE TOGGLER---------  -->
+
+            <button class="navbar-toggler responsive-nav" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler-edit">
+
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </button>
+
+            <!-- ---------COLLAPSE NAVBAR---------  -->
+
+            <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto main-nav-edits">
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="#">Seminars</a>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="#">Journal</a>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Events
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Event 1</a>
+                            <a class="dropdown-item" href="#">Event 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Main Event</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="#">Faculty</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ---------SEARCH--------- -->
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Explore" name="search">
+                        <button type="submit">
+                            <ion-icon name="search"></ion-icon>
+                            </ion-icon></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <button class="openBtn" onclick="openSearch()">
+                <ion-icon name="search"></ion-icon>
+                </ion-icon>
+            </button>
+
+
+        </nav>
+    </div>
+
+    <div class="heading">
+
+        <h2>Department of Mathematics</h2>
+
+    </div>
+    <div class="breadcrumb-edit">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Journal</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Article</li>
+            </ol>
+        </nav>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="article-flex">
+            <div class="article">
+                <h1>Introduction to Cryptography</h1>
+                <h6 class="author" style="line-height: 2.0;"><b>Author: &nbsp; </b> Shubham Kumar Yadav <br /> <b>BSc
+                        Mathematics (Hons.)</b></h6>
+                <hr>
+
+
+                <p>Cryptography is the technique of securing information and communications through the use of
+                    codes so that only those people for whom the information is intended can understand it and process
+                    it. Sounds too dull and cumbersome, doesn’t it? Well, in layman terms, it simply means the art of
+                    restricting the access of our data to the attackers. The term data here refers to information, which
+                    can be as small as the click of a mouse button to as important as the data residing with the FBI.
+                    Technically speaking, the process of scrambling this data so that it is illegible to the attacker is
+                    called
+                    encryption, and the reverse process of recovering the original message from this scrambled text is
+                    termed as decryption. These two processes form the backbone of what is known as the encryption
+                    system.</p>
+                <p>The next question is: to achieve a better encryption system, which one of the two processes should
+                    be strengthened? Some might answer the former, while others might opt for the latter. Interestingly
+                    enough, it is indeed a vague question and generally, the level of complexity of the encryption
+                    scheme
+                    is roughly of the same order as the decryption scheme, and one cannot upgrade the first much without
+                    improving the second too. In simpler terms, it means that as the lock of a door gets upgraded (say,
+                    for example, from a simple padlock to a sophisticated fingerprint scanner) the corresponding key
+                    will
+                    also get upgraded (from a simple padlock’s key to a complex fingerprint sensor).</p>
+                <p>Historically, cryptography and encryption have been wrongly used interchangeably, and this can
+                    even be found today. Psychologically, the people are not to blame here, because the term
+                    cryptography
+                    did not gain its actual meaning until the recent onset of computers, digital currency, improved
+                    banking facilities, password management, etc. The next curious observation would be as to how the
+                    improvement in the aforementioned fields has led to an increased emphasis being given in the field
+                    of
+                    cryptography.</p>
+                <p>To answer this, we need to understand the four features which cryptography provides us withthe
+                    information cannot be comprehended by anyone for whom it was unintended (confidentiality),
+                    the information cannot be altered in storage or transit between sender and intended receiver without
+                    the alteration being detected (integrity), the creator/sender of information cannot deny his or her
+                    intention to send information at a later stage (non-repudiation) and the identities of the sender,
+                    the
+                    receiver and the destination/origin of the information is confirmed (authentication). These four are
+                    the basic necessities when dealing with a computer network and hence call for improved and secure
+                    cryptographic systems.</p>
+                <h3>Applications</h3>
+                <p>Today, cryptography finds its uses in an array of fields, and one can witness its applications round
+                    the clock: from receiving a Good Morning message on WhatsApp to sending a mail via Gmail, from
+                    making online purchases via debit/credit cards to watching Sacred Games on Netflix, everything is
+                    protected against the use by non-authorised parties.</p>
+                <p>The recent advancement in the arena of shopping has been the introduction of the online platforms,
+                    thereby bringing in ease and comfort. However, these platforms rely heavily on cryptographic
+                    standards
+                    for their functioning, as integrity, non-repudiation and authentication are a must while placing an
+                    order. So, the simple button of ‘Add to cart’, must have been a long and tiring challenge for the
+                    cryptographers to assure that the aforementioned objectives are achieved. Surfing movies and TV
+                    shows on Netflix and dish connections also involve cryptography.</p>
+                <p>The subscription which is bought on these platforms authorises the customers to use them. The
+                    scrambled data received from the satellites is unscrambled with the help of a unique number
+                    associated
+                    with the subscription which you buy. In the event of an unauthorised person trying to access the
+                    signals
+                    and lack of this unique number, the decryption will not occur in the manner it should have been and
+                    hence binge-watching would only be a dream for such souls.</p>
+                <p>Cryptography also comes into play while withdrawing money from an ATM, or sending emails that
+                    might contain sensitive information which the user might not want to make available to everyone.
+                    With the advancement of machine learning and artificial intelligence, the data of the consumers has
+                    started gaining importance and advertisement companies are willing to pay hefty amounts for the
+                    same. Cryptographers play a crucial role to play here to prevent crimes such as data theft and data
+                    selling. The most prominent examples in this aspect are the Facebook-Cambridge Analytica scandal,
+                    and the Aadhaar Data Breach wherein the entire data of an individual registered with the UIDAI’s
+                    Aadhaar Card was being sold for less than a buck.</p>
+                <p>Cryptography even helped during World War II, wherein the Germans inflicted terrible atrocities
+                    upon the world. An English mathematician and computer scientist, Alan Turing, devised a machine
+                    which, as per the Morten Tyldum directed movie ‘The Imitation Game’, starring Benedict Cumberbatch,
+                    was termed as Christopher. Christopher was successfully deployed to crack Enigma, the secured
+                    device used by the Nazis to communicate their plan of action in the war. Turing, along with his team
+                    and the use of statistics, was not only able to turn the table in favour of the Allies but was also
+                    successful in reducing the duration of the war by up to 2 years, thereby avoiding the loss of
+                    millions
+                    of dollars and billions of lives!</p>
+                <h3>Conclusion</h3>
+                <p>So, when you wake up tomorrow and open WhatsApp, pay a second or two, recognising the efforts and
+                    the cryptography involved in making the transmission of that message possible. In a nutshell, unless
+                    we pack together all the computers, mobile phones and all other digital devices and throw them in an
+                    abyss (which is an improbability), we all will be having data and its security will undoubtedly call
+                    for
+                    cryptography and its unending applications.</p>
+            </div>
+
+
+            <div class="references" id="elId">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left shadow-none" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    References
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ol class="ref">
+
+                                    <li>&nbsp; Data Security-Applications, Chapter 8, Contemporary Abstract Algebra :
+                                        Joseph
+                                        A.Gallian, 4th Edition, ISBN 978-81-7319-269-2</li>
+                                    <li>&nbsp; Article. Aadhaar: BBC</li>
+                                    <li>&nbsp; Preface, Cryptography and Network Security Principles and Practice:
+                                        William
+                                        Stallings, 5th Edition,
+                                        ISBN 978-81-3176-166-3</li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------- FOOTER -------------------->
+
+    <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-4 footer-brand animated fadeInLeft">
+
+                <div class="logo-footer">
+                    <div class="footer-image">
+                        <img src="images/PIII.png">
+                    </div>
+                    <div class="footer-name">
+                        <h5>Department of Mathematics</h5>
+                        <h6>Hansraj College</h6>
+                    </div>
+                </div>
+                <div class="address-footer">
+                    <p>Address: <em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj, Delhi,
+                            110007</em></p>
+                    <p>© 2020 BS3 UI Kit, All rights reserved</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 footer-ns animated fadeInRight">
+                <h4>Unite</h4>
+                <p>Please put in your emails to stay connected.</p>
+                <p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="unite-icon">
+                                <ion-icon name="mail-open"></ion-icon>
+                            </i>
+                        </button>
+                    </span>
+                </div><!-- /input-group -->
+                </p>
+            </div>
+            <div class="col-md-4 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><i class="social-icon"><a href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></i><a href="#" class="social-name">Facebook</a></li>
+                    <li><i class="social-icon"><a href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a></i><a href="#" class="social-name">Instagram</a></li>
+                    <li><i class="social-icon"><a href="#">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a></i><a href="#" class="social-name">LinkedIn</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;">
+        <p>Designed by</p>
+    </section>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- ////////////////// BOOTSTRAP JS ///////////////////// -->
+
+    <!-- //  Optional JavaScript; choose one of the two! 
+//  Option 1: jQuery and Bootstrap Bundle (includes Popper)  -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
+        crossorigin="anonymous "></script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script> -->
+
+
+
+
+
+    <!-- ///////////////// ICONS FILE ////////////// -->
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
+
+    <!----------///////// INTERNAL JS -------------//////////-->
+
+    <script src="JS/a7.js"></script>
+
+</body>
+
+</html>

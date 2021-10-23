@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frobenius Numbers</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS link -->
+
+    <link rel="stylesheet" href="CSS/a10.css">
+
+    <!-- Font Family Lato -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Animations -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/jpg" href="images/pifavicon.ico"/>
+        <!-- Font -->
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <!-- ---------NAVIGATION--------- -->
+
+        <nav class="navbar navbar-expand-lg navbar-light nav-edits">
+
+            <!-- ---------NAV LOGO---------  -->
+
+            <a class="navbar-brand mr-auto department-logo" href="/index.html"><img src="images/PIII.png"
+                    alt="department logo"></a>
+
+            <!-- ---------RESPONSIVE TOGGLER---------  -->
+
+            <button class="navbar-toggler responsive-nav" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler-edit">
+
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </button>
+
+            <!-- ---------COLLAPSE NAVBAR---------  -->
+
+            <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto main-nav-edits">
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/About/about.html#the-department">The Department</a>
+                            <a class="dropdown-item" href="/About/about.html#our-alumni">Our Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Seminars/seminars.html">Seminars</a>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Journal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Journal/journal-a.html">Aankalan</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#download-journal">Download</a>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#article-journal">Articles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Events
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Events/events.html">Our events</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Events/events.html#fresher-19">Freshers '19</a>
+                            <a class="dropdown-item" href="/Events/events.html#farewell-19">Farewell '20</a>
+                            <a class="dropdown-item" href="/Events/events.html#teacher-19">Teachers' Day '20</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Events/events.html#identity-20">Identity '20</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Faculty/faculty.html">Faculty</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ---------SEARCH--------- -->
+            <!-- ---------SEARCH--------- 
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Explore" name="search">
+                        <button type="submit">
+                            <ion-icon name="search"></ion-icon>
+                            </ion-icon></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <button class="openBtn" onclick="openSearch()">
+                <ion-icon name="search"></ion-icon>
+                </ion-icon>
+            </button>
+            -->
+
+        </nav>
+    </div>
+
+    <div class="heading">
+
+        <h2>Department of Mathematics</h2>
+
+    </div>
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-edit">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="/Journal/journal-a.html">Journal</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Article</li>
+            </ol>
+        </nav>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="article-flex">
+            <div class="article">
+                <h1>Frobenius Numbers</h1>
+                <h6 class="author" style="line-height: 2.0;"><b>Author: &nbsp; </b> Shubham Kumar Yadav <br /> <b>B.Sc. (H) Mathematics</b></h6>
+                <hr>
+
+    <p>This article draws its inspiration from an example laid out in one of the books prescribed for the
+        students undertaking a Major in Mathematics in the Delhi University circuit. The example \(10\) (Ch. \(0\),
+        Pg. \(15\)) in the book titled “Contemporary Abstract Algebra” (Fourth Edition) by Joseph A. Gallian
+        states a problem adapted from the ‘Brain Boggler’ section of the January \(1988\) issue of the science
+        magazine Discover. The excerpt from the same goes like this:</p>
+        <p align="center"><i>The Quakertown Poker Club plays with blue chips worth \($5.00\) and red chips worth \($8.00\). What is
+            the largest bet that cannot be made?</i></p>
+    <p>Though the text makes a very good attempt at finding the solution (by hit and trial) to be \($27.00\) and
+        verifying it by the principles of mathematical induction, yet it fails at delivering the intuition as to
+        why it is \($27\), and how this number is obtained. This article attempts to present an algorithm to figure
+        out a general formula for working out this ‘<em>largest unobtainable bet number</em>’ (technically referred to as
+        the <u>Frobenius number</u> of a given set of numbers) for any given numbers, say \(m\) and \(n\). For simplicity,
+        we shall use the term Frobenius number to denote the Frobenius number of a set containing only two
+        elements, namely \(m\) and \(n\), where \(m < n\).</p>
+    <h3>Finite Check Strategy</h3>
+    <p>Apart from the methods mentioned in the book, a simple method for verifying that a given number
+        \(N\), is indeed a Frobenius number has been described below:</p>
+        <ul>
+            <li>
+                Check if \(N\) is expressible as a linear combination of \(m\) and \(n\). If not, then proceed to the further
+                steps.
+            </li>
+            <li>
+                Express \((N +1)\) as a linear combination of \(m\) and \(n\), i.e. find natural numbers \(x\) and \(y\) satisfying
+                \((N + 1)\ =\ mx + ny\).
+            </li>
+            <li>
+                Continue expressing the numbers \((N + 2)\), \((N + 3)\),\( \ldots \) , \((N + m)\) as a linear combination of \(m\)
+                and \(n\) with non-negative integer weights. Note that we need not check the countably infinite
+                numbers succeeding \(N\). We only need to check these \(m\) number of elements whether or not they
+                are spanned by \(m\) and \(n\).
+            </li>
+        </ul>
+    <p>This method works quite well for small values of \(m\) and \(n\). If the second and the third step can be
+        accomplished, then any number greater than \(N\) can be expressed as a linear combination of \(m\) and \(n\).
+        This is due to the fact that all numbers greater than \((N + m)\) can be obtained by adding multiples of
+        \(m\) to these numbers only. For instance, \((\overline{N + m} +1)\ =\ (N +1)+m\), \((\overline{N + m}+2)\ =\ (N +2)+m\), etc.
+        Skipping the details, this result is a cakewalk with a little knowledge of modular arithmetic.</p>
+    <p><b>Claim:</b> The Frobenius number \(N\) of co-primes \(m\) and \(n\) is \(N\ =\ mn − m − n\ =\ (m − 1)(n − 1) − 1\).</p>
+    <p><i>Proof.</i> Assume, without loss of generality that \(0 < m < n\), and \(p\ =\ n − m > 0\). The claim boils
+        down to show that for the given numbers \(m\) and \(n\), the Frobenius number is the greatest value of any whole number \({k}_{1}\) such that \({k}_{1} \notin K\ =\ {ma + nb | a, b \in {\mathbb{Z}}^{+} \cup {0} }\). Now, let \(k \in K\) then
+        \(k\ =\ ma + nb = ma + (m + p)b\), since \(p\ =\ n − m\). This implies that \(k\ =\ m(a + b) + pb\).
+        Secondly, note that \(gcd(m, n)\ =\ 1\) is required for the Frobenius problem to be well defined. This is
+        because, for any given linear combination \(w\) of \(m\) and \(n\), we can always find a number co-prime to
+        \(d\ =\ gcd(m, n) \neq 1\) and strictly greater than \(w\). A simple hack for choosing such a number would be
+        to choose a prime number not occurring in the prime factorisation of \(d\) and call it \(P\). Then define
+        the sequence \({P}_{n}\ =\ {{P}^{n} | n \in \mathbb{N}}\) and choose the desired number from \({P}_{n}\). Thus, for non co-prime
+        numbers, the Frobenius number will cease to exist because \(d\ =\ gcd(m, n) \neq 1\), and, \(d|m\) and \(d|n\)
+        implies \(d|(am+bn)\). Thus, every linear combination of \(m\) and \(n\) is a multiple of \(d\), and the existence of
+        the sequence \({P}_{n}\) with increasing terms assures that no stage can be attained after which every number
+        will be expressible as a linear combination of \(m\) and \(n\).<br />
+        So, we have, \(k\ =\ m(a + b) + pb\), and now, the following cases arise.</p>
+    <p><u>Case 1:</u> If \(b\ =\ 0\), then \(k\ =\ m(a + 0) + p \cdot 0\ =\ ma\). Thus, \(k\) can assume any value of the form \(ma\),
+        and hence, \(K\) contains all multiples of \(m\).</p>
+    <p><u>Case 2:</u> If \(b\ =\ 1\), then \(k\ =\ m(a + 1) + p \cdot 1\ =\ m(a + 1) + p\). Thus, \(k\) can assume any value of the
+        form \((mq +p)\), where \(q\ =\ a+1\), and \(q \neq 0\) (as \(q\ =\ 0 \Rightarrow a+1\ =\ 0 \Rightarrow a\ =\ −1\), for \(a \in {\mathbb{Z}}^{+} \cap {0}\), leading
+        to a contradiction). So, the value of the form \((mq +p)\), which is not possible, occurs at \(q\ =\ 0\), and the
+        value is \((m \cdot 0 + p)\ =\ p\). Hence, \(K\) contains all numbers of the form \((mq + p)\) except \(p\).</p>
+    <p><u>Case 3:</u> If \(b\ =\ 2\), then \(k\ =\ m(a + 2) + p \cdot 2 \ =\ m(a + 2) + 2p\). Thus, \(k\) can assume any value of
+        the form \((mq + 2p)\), where \(q\ =\ a + 2\), and \(q \neq 0\) and \(q \neq 1\) (as \(q\ =\ 0\) or  \(q\ =\ 1 \Rightarrow a + 2\ =\ 0\) or
+        \(a + 2\ =\ 1 \Rightarrow a\ =\ −2\) or \(a\ =\ −1\), for \(a \in {\mathbb{Z}}^{+} \cup {0}\) leading to a contradiction). So, the values of the
+        form \((mq + 2p)\) which are not possible occur at \(q\ =\ 0\) and \(q\ =\ 1\), and the values are \((m \cdot 0 + 2p)\ =\ 2p\)
+        and \((m \cdot 1+2p)\ =\ m+2p\). Hence, \(K\) contains all numbers of the form \((mq+2p)\) except \(2p\) and \((m+2p)\).</p>
+    <p>Continuing in a similar manner and using the intuition of the modular arithmetic involved in the
+        finite check strategy mentioned above, we can see that there will be a total of \(m\) cases, as we are
+        counting under modulo \(m\). This is because if the value of \(b\) in \(k\ =\ m(a+b)+pb\), is at least \(m\) then, the
+        first term being a multiple of \(m\) will absorb the excess multiples of \(m\) from \(b\), giving rise to a modular
+        arithmetic structure.</p>
+    <p><u>Case m (Last case):</u> If \(b\ =\ m−1\), then \(k\ =\ m(a+ \overline{m − 1} )+p(m−1)\ =\ m(a+m−1)+p(m−1)\). Thus,
+        \(k\) can assume any value of the form \((mq + (m − 1)p)\), where \(q\ =\ a + m − 1\), and \(q \neq 0\), \(1\),\( \ldots \) ,\(m − 2\)
+        (as, if \(q\ =\ 0, 1, \ldots ,m− 2 \Rightarrow a +m− 1\ =\ 0, 1, \ldots ,m− 2 \Rightarrow a\ =\ 1 − m, 2 − m, \ldots ,−1\), each of which is
+        negative for \(a \in {\mathbb{Z}}^{+} \cup {0}\) leading to a contradiction). So, the values of the form \(mq +(m−1)p\) which
+        are not possible occur at \(q\ =\ 0, 1, \ldots ,m − 2\) and the unobtainable values are:<br />
+        \( \alpha \ =\ {(mq + (m − 1)p) | q \ = \ 0, 1, \ldots ,m − 2}\ =\ {(m − 1)p,m + (m − 1)p, \ldots ,m(m − 2) + (m − 1)p}\)</p>
+    <p>Hence, \(K\) contains all numbers of the form \((mq +(m−1)p)\) except those belonging to the set \( \alpha \). Note
+        that the largest value \(N\), among the elements of the set \( \alpha \) (being an indexed set of increasing values) is
+        \(m(m−2)+(m−1)p \ = \ m(m−2)+(m−1)(n−m) \ =\) \(\  {m}^{2} −2m+mn−{m}^{2} −n+m\ =\ mn−m−n\).</p>
+    <p>It has been left for the reader as an exercise to determine that out of all the numbers which could
+        not be formed using the linear combinations of \(m\) and \(n\), the element \(mn−m−n\) is the largest. Thus,
+        we have given a constructive proof of the Frobenius number of two numbers.</p>
+    <p>As an extension, for non-co-prime numbers, each of their combination is a multiple of their greatest
+        common divisor, but is it necessarily the case that each multiple of their \(gcd\) can be obtained by the
+        linear combinations. The answer is no, and the greatest multiple of the \(gcd\) of the two numbers which
+        can’t be obtained by their linear combination is called the Frobenius number of these non co-prime
+        numbers.</p>
+    <p>If \(gcd(m, n)\ =\ d \neq 1\), then \(m\ =\ d \cdot {m}_{1}\) and \(n\ =\ d \cdot {n}_{1}\), such that \(gcd({m}_{1}, {n}_{1})\ =\ 1\), then Frobenius number of \({m}_{1}\) and \({n}_{1}\) (co-prime numbers) is \({N}_{1} \ = \  {m}_{1}{n}_{1} − {m}_{1} − {n}_{1}\). It is left as an exercise to the reader to
+        show that the Frobenius number \(N\), of \(m\) and \(n\) (non co-prime numbers), is \(d\) times the Frobenius
+        number of \({m}_{1}\) and \({n}_{1}\). Thus,
+        \[N \ = \ d \cdot {N}_{1} \ = \ d({m}_{1}{n}_{1}-{m}_{1}-{n}_{1}) \ = \ d \left( \frac{mn}{{d}^{2}}-\frac{m}{d}-\frac{n}{d} \right) \ = \ \frac{mn}{d}-m-n \]</p>
+    <p>Hence, in the general case, the Frobenius number \(N\) of the numbers \(m\) and \(n\) is:
+        \[N \ = \ \frac{mn}{gcd(m,n)}-m-n \] </p>
+    <p>Thus, all multiples of \(gcd(m, n)\) can be obtained except for a finitely few, the greatest of which is
+        mentioned above. Try substituting \(m \ = \ 4\) and \(n \ = \ 8\), and try to justify the negative sign.</p>
+    <h3>An interesting example</h3>
+    <p>Until \(2012\), McDonald’s sold nuggets in packets of \(6\), \(9\) and \(20\) nuggets respectively. The Frobenius
+        number found an interesting application when Numberphile, in its video ‘<i>How to order 43 Chicken
+        McNuggets?</i>’ puzzled the staff by placing an order of McNuggets exactly equal to the Frobenius
+        number of \(6\), \(9\) and \(20\). So, how do we go about obtaining the Frobenius number of \(6\), \(9\) and \(20\), since
+        there is no clear cut formula for the same?</p>
+    <p>Let’s try to obtain what all combinations of McNuggets are possible to order. Let \({k}_{1} \ = \ 6a+9b\) for
+        \(a, b \in {\mathbb{Z}}^{+} \cup {0}\), then \({k}_{1} \ = \ 3(2a+3b)\). As Frobenius number of \(2\) and \(3\) is \(1\), hence \((2a+3b)\) can assume
+        values of all natural numbers and zero except for \(1\), and for \((2a+3b) \ = \ 1\), \({k}_{1} \ = \ 3(2a+3b) \ = \ 3(1) \ = \ 3\).
+        Hence \({k}_{1}\) consists of the residue class of \(0 \ modulo \ 3\), except for the number \(3\) itself, i.e. \(3 \mathbb{Z}\backslash{3} \).</p>
+    <p>Next, consider the number \({k}_{2} \ =\) \(6a+9b+20 \ =\)  \(3(2a+3b)+3(6)+2 \ =\) \(3(2a+3b+6)+2 \ =\) \(3(t+6)+2\),
+        with \(t \ = \ 2a + 3b\), where \(t\) can assume values of all natural numbers and zero except for \(1\). For \(t \ = \ 1\),
+        \({k}_{2} \ = \ 3(t + 6) + 2 \ = \) \(3(1 + 6) + 2 \ = \ 23\). Hence \({k}_{2}\) consists of the residue class of \(2\) \(modulo\) \(3\), except for
+        \(23\), i.e.\((3 \mathbb{Z} + 2) \backslash {23}\).</p>
+    <p>Finally, consider the number \({k}_{3} \ = \ 6a + 9b + 40 \ =\) \(3(2a + 3b) + 3(13) + 1 \ =\) \(3(2a + 3b + 13) + 1 \ =\)
+        \(3(t + 13) + 1\), with \(t \ = \ 2a + 3b\), where in \(t\) can assume values of all natural numbers and zero except
+        for \(1\). For \(t \ = \ 1\), \({k}_{3} \ = \ 3(t + 13) + 1 \ =\) \(3(1 + 13) + 1 \ = \ 43\). Hence \({k}_{3}\) consists of the residue class of \(1\)
+        \(modulo\) \(3\), except for \(43\) i.e.\((3 \mathbb{Z} + 1) \backslash {43}\).</p>
+    <p>Every natural number must belong to one of the three residue classes \(modulo \ 3\), each of which can
+        be generated by the linear combinations of \(6\), \(9\) and \(20\), except for a finitely few, which are the numbers
+        \(3\), \(23\) and \(43\), the largest of which is \(43\). Hence the Frobenius number of \(6\), \(9\) and \(20\) is \(43\).</p>
+    <p><b><u>Brainteaser:</u></b> For the inquisitive minds, here is a fun puzzle based on the Frobenius number. A
+        question paper has \(50\) questions to be attempted by each candidate. The candidate is awarded \(+5\)
+        marks for each correct answer, \(-2\) for each unattempted question and \(-3\) for a wrong answer. If a
+        student can attempt any number of questions, what are the minimum possible positive marks he/she
+        cannot obtain?</p>
+    <p><b><u>Answer:</u></b> The answer is \(250\); FrobeniusNumber \((7, 8) \ = \ 209\).</p>
+    <h3>Applications</h3>
+    <p>Pouring over the possibilities of ordering chicken nuggets might seem like a trivial affair, however,
+        the idea of the Frobenius Number shows up in significant parts of reality. It’s the beginning of
+        thinking about optimization in certain areas, like the coin-based currencies we use worldwide. What
+        denominations of coins are best mathematically? For paying at a shop, we pay the amount using a
+        ‘number’ of coins, the choice of which is decided by the Greedy algorithm - using the largest available
+        coins without getting over. Jeffrey Shallit, University of Waterloo, in \(2003\) found out that in the
+        American system (using coins of \(1\), \(5\), \(10\), and \(25\) cents), the average number of coins given as a change
+        was \(4.7\) coins per transaction. His research paper aimed at reducing this average, and he achieved
+        an average of \(3.89\) coins per transaction, a moderately better optimization, by replacing the \(10\) cent
+        coin with an \(18\) cent coins. He also found that optimization could also be achieved by adding new
+        denominations. Indeed, the addition of a \(32\) cent coin would reduce the average to \(3.46\), and the
+        addition of \(83\) cents would cut it down by almost a coin and a half. It can also be conferred that this
+        average can be reduced to a remarkable \(2\) coins per transaction, but the denominations, in that case,
+        would have to be \(1\) cent, \(3\) cents, \(4\) cents, \(9\) cents, \(11\) cents, \(16\) cents, \(20\) cents, \(25\) cents, \(30\) cents, \(34\)
+        cents, \(39\) cents, \(41\) cents, \(46\) cents, \(47\) cents, \(49\) cents, and \(50\) cents. But this is not as easy as it seems,
+        because replacing denominations to not so pleasant looking ones makes the greedy algorithm tough for
+        the newbies-obviously counting in multiples of \(10\) is easier than counting in multiples of \(18\). Also, the
+        addition of new denominations induces the cost in terms of carrying coins of different denominations
+        and searching coins of a given denomination when paying the change in a transaction. Considering
+        this trade-off, there has been no emphasis on achieving mathematical optimization in terms of the
+        number of coins. The initiatives, if any, include the introduction of denominations of smaller rounded
+        off denominations like those of \(2\) cents and \(3\) cents.</p>
+            
+            </div>
+
+
+            <div class="references" id="elId">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left shadow-none" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    References
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ol class="ref">
+
+                                    <li>&nbsp;Contemporary Abstract Algebra : Joseph A.Gallian, ISBN 978-81-7319-269-2</li>
+                                    <li>&nbsp; <a href="https://www.youtube.com/watch?v=FJtaaM7Txys">The Nuggets Algorithm: VSauce</a></li>
+                                    <li>&nbsp; <a href="http://www.cut-the-knot.org/blue/Sylvester.shtml#solution">Article. Sylvester's Problem</a></li>
+                                    <li>&nbsp; <a href="https://youtu.be/vNTSugyS038">How to order 43 Chicken McNuggets: Numberphile</a></li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------- FOOTER -------------------->
+
+    <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-4 footer-brand animated fadeInLeft">
+    
+                <div class="logo-footer">
+                    <div class="footer-image">
+                        <img src="images/PIII.png">
+                    </div>
+                    <div class="footer-name">
+                        <h5>Department of Mathematics</h5>
+                        <h6>Hansraj College</h6>
+                    </div>
+                </div>
+                <div class="address-footer">
+                    <p>Address: <br><span style="display: inline-block; 
+                        margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj, Delhi,
+                            110007</em></span></p>
+                            <p>Contact: <br><span style="display: inline-block; 
+                                margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span style="display: inline-block; margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span></p>
+                    <p>© 2020 Department of Mathematics, Hansraj College</p>
+                </div>
+    
+            </div>
+    
+            <div class="col-md-4 footer-ns animated fadeInRight">
+                <h4>Unite</h4>
+                <p>Please put in your emails to stay connected.</p>
+                <p>
+                <div class="input-group">
+    
+                    <input type="email" class="form-control" placeholder="Email" required >
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
+                            data-placement="top" data-content="Your email has been recorded, thanks."
+                            data-trigger="focus">
+                            <i class="unite-icon">
+                                <ion-icon name="mail-open"></ion-icon>
+                            </i>
+                        </button>
+    
+                    </span>
+                </div><!-- /input-group -->
+                </p>
+            </div>
+            <div class="col-md-4 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></i><a href="https://www.facebook.com/pi.hansrajcollege" class="social-name">Facebook</a></li>
+                    <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a></i><a href="https://www.instagram.com/mathsdept_hansraj/" class="social-name">Instagram</a></li>
+                    <li><i class="social-icon"><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college" class="social-name">LinkedIn</a></li>
+                </ul>
+            </div>
+    
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;">
+        <div class="ved-ujj">
+            <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
+                    target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
+                    href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
+                    Agarwal</a></p>
+        </div>
+    
+    
+    </section>
+    
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        });
+    </script>
+
+    
+
+
+
+
+
+
+
+    <!-- ////////////////// BOOTSTRAP JS ///////////////////// -->
+
+    <!-- //  Optional JavaScript; choose one of the two! 
+//  Option 1: jQuery and Bootstrap Bundle (includes Popper)  -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
+        crossorigin="anonymous "></script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script> -->
+
+
+
+
+
+    <!-- ///////////////// ICONS FILE ////////////// -->
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
+
+    <!----------///////// INTERNAL JS -------------//////////-->
+
+    <script src="JS/a10.js"></script>
+
+    <!-- MathJax Start -->
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+
+
+    <!-- MathJax Over-->
+
+</body>
+
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigeonhole Principle</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS link -->
+
+    <link rel="stylesheet" href="CSS/a9.css">
+
+    <!-- Font Family Lato -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Animations -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/jpg" href="images/pifavicon.ico"/>
+        <!-- Font -->
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <!-- ---------NAVIGATION--------- -->
+
+        <nav class="navbar navbar-expand-lg navbar-light nav-edits">
+
+            <!-- ---------NAV LOGO---------  -->
+
+            <a class="navbar-brand mr-auto department-logo" href="/index.html"><img src="images/PIII.png"
+                    alt="department logo"></a>
+
+            <!-- ---------RESPONSIVE TOGGLER---------  -->
+
+            <button class="navbar-toggler responsive-nav" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler-edit">
+
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </button>
+
+            <!-- ---------COLLAPSE NAVBAR---------  -->
+
+            <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto main-nav-edits">
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/About/about.html#the-department">The Department</a>
+                            <a class="dropdown-item" href="/About/about.html#our-alumni">Our Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Seminars/seminars.html">Seminars</a>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Journal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Journal/journal-a.html">Aankalan</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#download-journal">Download</a>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#article-journal">Articles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Events
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Events/events.html">Our events</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Events/events.html#fresher-19">Freshers '19</a>
+                            <a class="dropdown-item" href="/Events/events.html#farewell-19">Farewell '20</a>
+                            <a class="dropdown-item" href="/Events/events.html#teacher-19">Teachers' Day '20</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Events/events.html#identity-20">Identity '20</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Faculty/faculty.html">Faculty</a>
+                    </li>
+                </ul>
+            </div>
+
+             <!-- ---------SEARCH--------- -->
+            <!-- ---------SEARCH--------- 
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Explore" name="search">
+                        <button type="submit">
+                            <ion-icon name="search"></ion-icon>
+                            </ion-icon></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <button class="openBtn" onclick="openSearch()">
+                <ion-icon name="search"></ion-icon>
+                </ion-icon>
+            </button>
+            -->
+
+        </nav>
+    </div>
+
+    <div class="heading">
+
+        <h2>Department of Mathematics</h2>
+
+    </div>
+   <!-- BREADCRUMB -->
+   <div class="breadcrumb-edit">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="/Journal/journal-a.html">Journal</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Article</li>
+        </ol>
+    </nav>
+</div>
+
+
+    <div class="container-fluid">
+        <div class="article-flex">
+            <div class="article">
+                <h1>Pigeonhole Principle</h1>
+                <h6 class="author" style="line-height: 2.0;"><b>Author: &nbsp; </b> Ashutosh Maurya <br /> <b>B.Sc. (H) Mathematics</b></h6>
+                <hr>
+
+
+                <p>When an intrinsically trivial and intuitive statement has deep implications and consequences, it is
+                    naturally intriguing for people, mathematicians and non-mathematicians alike. One such statement
+                    is that of the Pigeonhole principle. This article shall discuss the various nuances of this
+                    principle,
+                    highlighting the dependence of mathematics on basic thoughts and pure logic.</p>
+                <h3>Introduction</h3>
+                <p>We begin, as the introduction to a mathematical concept should, with the statement and proof of the
+                    Pigeonhole principle.</p>
+                <p class="cen"><i>The pigeonhole principle states that if \(n\) items are put into m containers, with \(n > m\),
+                        then at least
+                        one container must contain more than one item.</i></p>
+                <p>The principle is believed to be formalized by Peter Gustav Lejeune Dirichlet. Since he published his
+                    works in both French and German, he used the terms <em>Schubfach</em> in German and <em>tiroir</em> in French to
+                    describe what in English may refer to as a drawer. These terms were morphed to the word <em>pigeonhole</em>,
+                    which is one of the reasons of the intrigue associated with this principle.</p>
+                <p>Although the statement seems intuitive and obvious, we shall give a formal proof. We shall use
+                    one of the most potent tools to establish proofs in mathematics: proving by contradiction.</p>
+                <p>Let us assume that no container contains more than one item. So, each of the m containers will
+                    either have 0 or 1 item. If the number of containers with 0 items is \(k\), then certainly,\(k \geq 0\). So,
+                    the
+                    number of containers with 1 item will be \(m−k\). So, the number of items in \(k\) containers will be \(m−k\).
+                    But \(k−m < k < n\), and \(n\) items had been put in \(k\) containers. Therefore, we arrive at a
+                    contradiction,
+                    which arose due to the wrong assumption. Hence, at least one container must contain more than
+                    one item.</p>
+                <p>Apart from the statement mentioned above, there are several versions of the Pigeonhole
+                    principle,
+                    some of which are worth mentioning here. A simple generalization of the principle exists,
+                    which deals
+                    with multiple “<em>pigeons</em>”. It says:</p>
+                <p class="cen"><i>Let \(n, m\) and \(r\) be positive integers so that \(n > rm\). If \(n\) items are put into m
+                        containers. then at
+                        least one container must contain more than \(r\) items.</i></p>
+                <p>This generalization can be proved in a similar fashion to establish its verity. It is
+                    sometimes called
+                    the Second Pigeonhole Principle, while the first statement is called the First Pigeonhole
+                    Principle.</p>
+                <p>Another version was given by Edsger W. Dijkstra, the pioneering computing scientist.
+                    According
+                    to him, the usual statements of the principle “contain a lot of misleading noise, are
+                    overspecific, and
+                    hide the principle’s arithmetic nature”. He composed a formulation free of metaphors and
+                    “misleading
+                    visualizations”. It says:</p>
+                <p class="cen"><i>For a nonempty, finite bag of real numbers, the maximum is at least the
+                        average (and the minimum is
+                        at most the average)</i></p>
+                <p>Though this “stronger” form may lead to easier interpretation and solving of certain
+                    problems,
+                    sometimes, it may complicate them too. While the traditional statement forces us to
+                    explicitly identify
+                    “pigeons” and “holes”, or items and compartments, this form may need the same process, in
+                    addition
+                    to worrying about the numbers and the average.</p>
+                <h3>Popular Examples and Applications</h3>
+                <p>The simplicity of the Pigeonhole principle does not understate its importance. From numerical
+                    analysis
+                    to computer sciences, the principle finds its applications in multiple, seemingly unrelated
+                    fields.</p>
+                <p>A particularly famous example is the Birthday Paradox. It is not a paradox per se, but it is
+                    called
+                    so because it is unbelievably counterintuitive.</p>
+                <p class="cen"><i>The birthday problem or birthday paradox concerns the probability that, in a
+                        set of \(n\) randomly chosen
+                        people, some pair of them will have the same birthday.</i></p>
+                <p>Since there are 365 days in one year (366 in a leap year), with a group of just 367 randomly
+                    chosen
+                    people, the probability reaches 100%. This is a simple application of the Pigeonhole
+                    principle, since
+                    the number of people is greater than the number of days, more than one person will be
+                    associated with
+                    a particular date. Moreover, using probability, it can also be shown that even with just 70
+                    people,
+                    99.9% probability is reached, and with just 23 people, 50% is reached.</p>
+                <p>Another important application of the pigeonhole principle is found in the proof of
+                    Dirichlet’s Approximation
+                    Theorem. In number theory, Dirichlet’s theorem on Diophantine approximation, also
+                    called Dirichlet’s approximation theorem, states that for any real numbers \(\alpha \) and \(N\), with \(1 \leq N\),
+                    there exist integers \( p \) and \( q \) such that \(1 \leq q \leq N \) and \[\left|q \alpha - p \right| \leq \frac{1}{N}\] </p>
+                <p>The theorem provides a way to find “good” approximations of irrational numbers, using a
+                    fraction
+                    with a relatively small denominator. It should be pointed out that by using fractions with
+                    large
+                    denominators, the process of approximation becomes clumsy and unreliable. The theorem can be
+                    proved using the pigeonhole principle.</p>
+                <p>Consider the set \(A = {j \alpha | 0\leq j \leq N} \). So \(|A| = N + 1\). Now, we take partitions of the set \([0,
+                    1)\)
+                    such as \( \left[ 0,\frac{1}{N} \right), \left[ \frac{1}{N},\frac{2}{N} \right)\)
+                    
+                    , and so on. There will be \(N\) such partitions.
+                    Since there are \(N + 1\) numbers and \(N\) partitions, by the Pigeonhole principle, there must be
+                    at least
+                    two numbers that belong to the same partition. Let these numbers be \(r\alpha\) and \(s\alpha\), and without
+                    loss of
+                    generality, let \(r \alpha < s \alpha\).</p>
+                <p>Now, there must be an integer p such that \(0 \leq r \alpha − s \alpha \leq \frac{1}{N}\)
+                   , since the partitions are defined so. Let
+                    \(q = r − s\). So, we have \[p \leq q \alpha \leq \frac{pN+1}{N} \]</p>
+                <p>Subtracting \(p\) and dividing by \(q\), we get \[0 \leq \alpha - \frac{p}{q} \leq \frac{1}{qN} \leq \frac{1}{{q}^{2}}\]</p>
+                <p>or \[\left| \alpha - \frac{p}{q} \right| \leq \frac{1}{q^2} \]</p>
+                <p>which is the desired result.</p>
+                <p>Moreover, the Thue-Siegel-Roth theorem states that every irrational algebraic number \(\alpha\)has approximation
+                    exponent equal to 2. The approximation exponent is the measure of “closely” it can
+                    be
+                    approximated by rationals. This guarantees that results like the following
+                    inequality are not possible:
+                \[\left| \alpha - \frac{p}{q} \right| \leq \frac{1}{q^3} \]</p>
+                <p>Klaus Friedrich Roth won the Fields Medal for proving this theorem.</p>
+                <h3>Conclusion</h3>
+                <p>The Pigeonhole Principle doesn’t seem to be any more than just a “truth” about
+                    counting, yet many
+                    advanced theorems have been borne out of it. It continues to have real life
+                    applications in various
+                    aspects, and its thorough understanding yields greater mastery as well as
+                    appreciation towards mathematics
+                    in general.</p>
+            
+            </div>
+
+
+            <div class="references" id="elId">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left shadow-none" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    References
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ol class="ref">
+
+                                    <li>&nbsp; Topics In Algebra: Herstein, I. N., Blaisdell Publishing Company, ISBN 978-111-4541-01-6</li>
+                                    <li>&nbsp; <a href="https://www.academia.edu/3249779/Pigeonhole_Principle_Real_Life_Applications_and_Mathematical_Investigation">Article. Pigeonhole Principle: Real Life Applications and Mathematical Investigation; Pengsheng Guo, Qing Yu, Yang Wang, Yiwei Gong</a></li>
+                                    <li>&nbsp; <a href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD10xx/EWD1094.html"></a>Transcript. Edsger W. Dijkstra.</li>
+                                    <li>&nbsp; <a href="https://en.wikipedia.org/wiki/Birthday_problem">Wiki. Birthday Problem</a></li>
+                                    <li>&nbsp; <a href="https://www.expii.com/t/dirichlets-approximation-theorem-2468">Article. Dirichlet's Approximation Theorem</a></li>
+                                    <li>&nbsp; <a href="https://en.wikipedia.org/wiki/Roth%27s_theorem">Wiki. Roth’s theorem</a></li>
+                                    <li>&nbsp; <a href="https://en.wikipedia.org/wiki/Liouville_number#Irrationality_measure">Wiki. Liouville Number</a></li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------- FOOTER -------------------->
+
+    <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-4 footer-brand animated fadeInLeft">
+    
+                <div class="logo-footer">
+                    <div class="footer-image">
+                        <img src="images/PIII.png">
+                    </div>
+                    <div class="footer-name">
+                        <h5>Department of Mathematics</h5>
+                        <h6>Hansraj College</h6>
+                    </div>
+                </div>
+                <div class="address-footer">
+                    <p>Address: <br><span style="display: inline-block; 
+                        margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj, Delhi,
+                            110007</em></span></p>
+                            <p>Contact: <br><span style="display: inline-block; 
+                                margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span style="display: inline-block; margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span></p>
+                    <p>© 2020 Department of Mathematics, Hansraj College</p>
+                </div>
+    
+            </div>
+    
+            <div class="col-md-4 footer-ns animated fadeInRight">
+                <h4>Unite</h4>
+                <p>Please put in your emails to stay connected.</p>
+                <p>
+                <div class="input-group">
+    
+                    <input type="email" class="form-control" placeholder="Email" required >
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
+                            data-placement="top" data-content="Your email has been recorded, thanks."
+                            data-trigger="focus">
+                            <i class="unite-icon">
+                                <ion-icon name="mail-open"></ion-icon>
+                            </i>
+                        </button>
+    
+                    </span>
+                </div><!-- /input-group -->
+                </p>
+            </div>
+            <div class="col-md-4 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></i><a href="https://www.facebook.com/pi.hansrajcollege" class="social-name">Facebook</a></li>
+                    <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a></i><a href="https://www.instagram.com/mathsdept_hansraj/" class="social-name">Instagram</a></li>
+                    <li><i class="social-icon"><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college" class="social-name">LinkedIn</a></li>
+                </ul>
+            </div>
+    
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;">
+        <div class="ved-ujj">
+            <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
+                    target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
+                    href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
+                    Agarwal</a></p>
+        </div>
+    
+    
+    </section>
+    
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        });
+    </script>
+
+    
+
+
+
+
+
+
+
+    <!-- ////////////////// BOOTSTRAP JS ///////////////////// -->
+
+    <!-- //  Optional JavaScript; choose one of the two! 
+//  Option 1: jQuery and Bootstrap Bundle (includes Popper)  -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
+        crossorigin="anonymous "></script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script> -->
+
+
+
+
+
+    <!-- ///////////////// ICONS FILE ////////////// -->
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
+
+    <!----------///////// INTERNAL JS -------------//////////-->
+
+    <script src="JS/a9.js"></script>
+
+    <!-- MathJax Start -->
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+
+
+    <!-- MathJax Over-->
+
+</body>
+
+</html>
