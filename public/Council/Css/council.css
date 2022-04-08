@@ -635,10 +635,10 @@ body {
 
 .team-members {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .team-member {
