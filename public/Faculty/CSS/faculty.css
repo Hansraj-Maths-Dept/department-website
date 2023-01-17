@@ -1,0 +1,545 @@
+/* ______________ COLORS _____________
+#f1f3f8 - lightest
+#d6e0f0 - light
+#8d93ab - dark
+#393b44 - darkest
+*/
+
+:root {
+    --lightest-grey: rgb(241, 243, 248);
+    --light-grey: rgb(214, 224, 240);
+    --dark-grey: rgb(141, 147, 171);
+    --darkest-grey: rgb(57, 59, 68);
+}
+
+/*_______________________ FULL BODY EDITS ____________________________*/
+
+.header {
+    margin: 0px;
+    padding: 0px;
+}
+
+button:focus, input:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Lato', 'sans-serif';
+}
+
+/* _____________________ NAVIGATION BAR _____________________________
+
+
+/*********** DEPARTMENT LOGO *********/
+
+.department-logo img {
+    height: 60px;
+    width: 65px;
+    /* filter: invert(98%); */
+}
+
+/********** MAIN NAVIGATION PANEL *********/
+
+.nav-edits {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    background-color: rgb(241, 243, 248, 0.9) !important;
+}
+
+.nav-link-edits {
+    padding-right: 4%;
+}
+
+.nav-link-edits a {
+    color: var(--darkest-grey) !important;
+    font-size: 18px !important;
+    font-weight: 400;
+}
+
+.nav-link-edits a:hover {
+    color: var(--dark-grey) !important;
+}
+
+.dropdown-menu {
+    background-color: rgb(241, 243, 248, 1) !important;
+    /* box-shadow: 5px 5px 15px rgb(241, 243, 248); */
+    border: none;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(241, 243, 248, 0.92) !important;
+}
+.dropdown-divider {
+    border-top: 1px solid #888a8c !important;
+  }
+.collapse-edits {
+    margin-right: 110px !important;
+}
+
+/********** RESPONSIVE TOGGLER ***********/
+
+.responsive-nav {
+    border: none !important;
+    position: absolute;
+    right: 5px;
+    top: 11px;
+    font-size: 35px;
+    color: var(--darkest-grey) !important;
+}
+
+/*************** SEARCH BUTTON **************/
+
+.openBtn {
+    border: none;
+    padding: 12px 15px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    color: var(--darkest-grey) !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-grey);
+    background-color: rgba(141, 147, 171, 0.877);
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: var(--light-grey);
+}
+
+.overlay .closebtn:hover {
+    color: var(--darkest-grey);
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: var(--darkest-grey);
+    border-radius: 20px;
+    margin-right: 15px;
+    color: var(--lightest-grey);
+}
+
+.overlay input[type=text]:hover {
+    background: var(--darkest-grey);
+    background: rgb(57, 59, 68, 0.88);
+}
+
+.overlay button {
+    float: left;
+    width: 13%;
+    padding: 11px;
+    background: var(--lightest-grey);
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.overlay button:hover {
+    background: var(--light-grey);
+}
+
+/* ________________ HEADING____________________ */
+
+.about-heading h1 {
+    font-size: 45px;
+    color: var(--lightest-grey);
+    padding-bottom: 20px;
+}
+
+.about-heading {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: var(--darkest-grey);
+    margin-bottom: 20px;
+}
+
+.about-heading h3 {
+    color: var(--lightest-grey);
+    font-weight: 300;
+}
+
+/* ______________ TEACHER CARD __________ */
+
+.teacher-cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.teacher {
+    background-color: rgb(158 158 158 / 2%);
+    border: 1px solid rgb(0, 0, 0, 0.125);
+    width: 25%;
+    box-shadow: 0px 3px 10px rgb(112 112 112 / 40%);
+}
+
+.teacher:hover {
+    box-shadow: 0px 3px 12px rgb(112 112 112 / 64%);
+}
+
+.teacher-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.teacher-image {
+    padding: 35px;
+    text-align: center;
+}
+
+.teacher-content {
+    text-align: center;
+}
+
+.teacher-content h2 {
+    font-size: 20px;
+}
+
+.teacher-content p {
+    font-size: 15px;
+}
+
+.faculty-section {
+    padding-bottom: 120px;
+    padding-top: 30px;
+}
+
+/* _______________ FOOTER ________________ */
+
+.footer-bs {
+    background-color: var(--darkest-grey);
+    padding: 60px 40px;
+    color: var(--lightest-grey);
+    margin-bottom: 20px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 6px;
+}
+
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+    padding: 10px 25px;
+}
+
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+    border-color: transparent;
+}
+
+.footer-bs .footer-brand h2 {
+    margin: 0px 0px 10px;
+}
+
+.footer-bs .footer-brand p {
+    font-size: 12px;
+    color: rgb(241, 243, 248, 0.7);
+}
+
+.footer-bs .footer-nav ul.pages {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-nav ul.pages li {
+    padding: 5px 0px;
+}
+
+.footer-bs .footer-nav ul.pages a {
+    color: rgb(241, 243, 248, 0.7);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-bs .footer-nav ul.pages a:hover {
+    color: rgb(241, 243, 248, 0.8);
+    text-decoration: none;
+}
+
+.footer-bs .footer-nav h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-bs .footer-nav ul.list {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-nav ul.list li {
+    padding: 5px 0px;
+}
+
+.footer-bs .footer-nav ul.list a {
+    color: rgb(241, 243, 248, 0.7);
+}
+
+.footer-bs .footer-nav ul.list a:hover {
+    color: rgb(241, 243, 248, 0.6);
+    text-decoration: none;
+}
+
+.footer-bs .footer-social ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-social h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footer-bs .footer-social li {
+    padding: 5px 4px;
+}
+
+.footer-bs .footer-social a {
+    color: rgb(241, 243, 248, 0.6);
+}
+
+.footer-bs .footer-social a:hover {
+    color: rgb(241, 243, 248, 0.6);
+    text-decoration: none;
+}
+
+.footer-bs .footer-ns h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-bs .footer-ns p {
+    font-size: 12px;
+    color: rgb(241, 243, 248, 0.7);
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-image img {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-footer {
+    margin-top: -15px;
+    padding-bottom: 15px;
+}
+
+.footer-name h5 {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.footer-name h6 {
+    font-size: 13px;
+}
+
+.unite-icon {
+    font-size: 30px;
+    color: var(--lightest-grey);
+}
+
+.input-group-btn {
+    margin-top: -8px;
+}
+
+.social-icon {
+    color: var(--lightest-grey);
+    padding-right: 10px;
+}
+
+.social-name {
+    font-size: 12px !important;
+    vertical-align: text-top;
+}
+
+.footer-social h4, .footer-ns h4 {
+    font-size: 15px !important;
+}
+
+.footer-image img {
+    filter: invert(98%);
+}
+
+.faculty-cards {
+    padding-bottom: 100px;
+}
+
+.ved-ujj p, .ved-ujj a{
+    font-size: 14px;
+}
+.ved-ujj a {
+    color: rgb(53, 53, 165);
+}
+
+/* ________________ MEDIA QUERIES _______________*/
+
+/************ NAV-COMPONENTS ***************/
+
+@media (max-width: 987.98px) {
+    .department-logo {
+        height: 47px;
+        width: 55px;
+        margin-bottom: 10px;
+        margin-top: -12px;
+    }
+    .responsive-nav {
+        font-size: 28px;
+        margin-top: -5px;
+    }
+    .openBtn {
+        font-size: 18px;
+        margin-top: -5px;
+    }
+}
+
+/******************* HEADING *******************/
+
+@media (max-width: 575.98px) {
+    .heading h2 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 770.98px) {
+    .teacher-cards {
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+    .teacher {
+        width: 75%;
+    }
+    .odd {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .teacher-cards {
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+    .teacher {
+        width: 80%;
+    }
+    .odd {
+        margin-bottom: 40px;
+    }
+}
+
+/* __________ FOOTER ___________ */
+
+@media (min-width: 768px) {
+    .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+        border-left: solid 1px rgb(241, 243, 248, 0.2);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .footer-image img {
+        width: 100px;
+        height: 100px;
+    }
+    .footer-name h5 {
+        font-size: 18px;
+        margin-top: 27px;
+    }
+    .footer-name h6 {
+        font-size: 14px;
+    }
+    .address-footer p {
+        font-size: 13px !important;
+    }
+    .footer-bs {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .footer-social h4, .footer-ns h4 {
+        padding-bottom: 10px !important;
+        font-size: 13px !important;
+    }
+    .logo-footer {
+        padding-bottom: 15px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-image img {
+        width: 60px;
+        height: 60px;
+    }
+    .footer-name h5 {
+        font-size: 14px;
+        margin-top: 13px;
+    }
+    .footer-name h6 {
+        font-size: 10px;
+    }
+    .address-footer p {
+        font-size: 10px !important;
+    }
+    .footer-bs {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .footer-social h4, .footer-ns h4 {
+        padding-bottom: 10px !important;
+        font-size: 13px !important;
+    }
+    .logo-footer {
+        padding-bottom: 15px !important;
+    }
+}
+/* _____________ DESIGN AND DEVELOPMENT ______________ */
+
+@media (max-width: 576px) {
+    .ved-ujj p, .ved-ujj a{
+        font-size: 10px;
+    }
+}
+
+.form-control{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 37px;
+  }
+  
+  ::placeholder {
+    font-size: 17px;
+  }

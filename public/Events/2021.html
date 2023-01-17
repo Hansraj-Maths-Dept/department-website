@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS link -->
+
+    <link rel="stylesheet" href="CSS/events.css">
+
+    <!-- Font Family Lato -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Animations -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Our Events</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/pifavicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <!-- ---------NAVIGATION--------- -->
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-edits">
+
+            <!-- ---------NAV LOGO---------  -->
+
+            <a class="navbar-brand mr-auto department-logo" href="/index.html"><img src="images\PIII.png"
+                    alt="department logo"></a>
+
+            <!-- ---------RESPONSIVE TOGGLER---------  -->
+
+            <button class="navbar-toggler responsive-nav" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler-edit">
+
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </button>
+
+            <!-- ---------COLLAPSE NAVBAR---------  -->
+
+            <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto main-nav-edits">
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/About/about.html#the-department">The Department</a>
+                            <a class="dropdown-item" href="/About/about.html#our-alumni">Our Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Seminars
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Seminars/seminars.html">2020</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Seminars/2021.html">2021</a>
+                            <!--<div class="dropdown-divider"></div>-->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Journal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Journal/journal-a.html">Aankalan</a>
+                            <!-- <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#download-journal">Download</a>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#article-journal">Articles</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Events
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Events/events.html">2020</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Events/2021.html">2021</a>
+                            <!--<div class="dropdown-divider"></div>-->
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Faculty/faculty.html">Faculty</a>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Newsletter/newsletter.html">Newsletter</a>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/conference">Conference</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ---------SEARCH--------- -->
+            <!-- ---------SEARCH--------- 
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Explore" name="search">
+                        <button type="submit">
+                            <ion-icon name="search"></ion-icon>
+                            </ion-icon></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <button class="openBtn" onclick="openSearch()">
+                <ion-icon name="search"></ion-icon>
+                </ion-icon>
+            </button>
+            -->
+
+
+        </nav>
+    </div>
+
+
+    <!------------------- CAROUSEL -------------------->
+    <div class="section-carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-edits" data-ride="carousel"
+            data-interval="5500">
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-item-edits">
+                    <img src="images/piposter.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <h2>Pi-logue Competition '21</h2>
+                        <h5>Department of Mathematics</h5>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item-edits">
+                    <img src="images/freshers-21.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <h2>Freshers '21</h2>
+                        <h5>Department of Mathematics</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-item-edits">
+                    <img src="images/farewll21a.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <h2>Farewell '21</h2>
+                        <h5>Department of Mathematics</h5>
+                    </div>
+                </div>
+                
+                <div class="carousel-item carousel-item-edits">
+                    <img src="images/teacher21a.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <h2>Teachers' Day '21</h2>
+                        <h5>Department of Mathematics</h5>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!------------------ EVENTS ------------->
+
+    <div class="section-edits about">
+        <div class="container-fluid">
+
+            <div class="heading-edits about">
+                <h1>
+                    <a href="events.html">Events</a>
+                </h1>
+
+
+                <div class="content-about">
+
+                    <p>
+                        The department always focuses on all-round development of the students, there’s
+                        a belief in the department that only studies can’t get you to the top, there are a
+                        lot of things which can be done along with studies for complete development of
+                        a student. In light of this, the department organizes a lot of events every year.
+
+                    </p>
+
+                </div>
+                <hr class="hr">
+
+                <!----------- CARDS -------------->
+                <div class="card-a">
+                    <a href="#identity-20">
+                        <div class="card card-1" style="width: 20rem;">
+                            <img src="images/pismall.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pi-logue Competition '21</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#fresher-19">
+                        <div class="card card-2" style="width: 20rem;">
+                            <img src="images/freshers-21.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Freshers '21</h5>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="card-b">
+                    <a href="#farewell-20">
+                        <div class="card card-3" style="width: 20rem;">
+                            <img src="images/farewell.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> Farewell '21</h5>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#teacher-20">
+                        <div class="card card-4" style="width: 20rem;">
+                            <img src="images/teachers-day-2021.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Teachers' Day '21</h5>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="about-content">
+        <div class="container-fluid">
+
+            <h2 id="identity-20">Pi-logue Competition '21</h2>
+            <img src="images/piresult.jpg" alt="main-photo" style="width: 350px; height: 575px;">
+            <p class="content-1">To celebrate the practical significance of Pi, the department celebrated Pi Day by
+                organizing a "Pi-Logue" competition in which there were two categories, first, to recite the maximum
+                number of digits of Pi after decimal, and, second, to recite the first 50 digits of Pi after the 
+                decimal in minimum time.
+                Some spectacular records were set, the winner of the first category recited 400 digits after the
+                 decimal and the winner of second category recited 50 digits after decimal in 6.71 seconds.
+                
+                
+            </p>
+            <!-- <p class="content-1">
+                The Annual Fest of the Department of Mathematics, Identity, keeps achieving impossible heights and
+                setting higher benchmarks every passing year. This edition of Identity was no exception. Organized on
+                February 29th, Identity 2020 turned out to be one of the largest annual fest ever organized by the Mathematics Department of Hansraj since its inception. It saw a whole new level of
+                enthusiasm and dedication from each and every member of the mathematics family of Hansraj College. The
+                fest attracted more than 4000 students from various colleges all over the capital territory, with no less than 2000 students participating in
+                different games and another activities organised by the department.
+            </p>
+            <img src="images/identity-2.jpg" alt="main-photo">
+            <p class="content-1">
+                The day saw a lot of craze and excitement for various games, with the
+                fest came a lot of new games and events the most popular ones amongst
+                which included the Lucky 7, Mathonald, Pyramid, Foots and Paws, Colour
+                Attack, Funtakshari, Carrom with a twist. A large scale Game of Thrones
+                treasure hunt cum quiz was also organised. A total of 400 participants
+                won different rounds and were awarded cash prizes, discount coupons and
+                prize vouchers. With total prizes worth of Rs 6 Lacs, the department's fest
+                witnessed very enthusiastic and competitive participants.
+            </p>
+            <img src="images/identity-1.jpg" alt="main-photo">
+            <p class="content-1">
+                We also take the privilege of thanking our sponsors. We extend heartfelt
+                gratitude towards our title sponsor-DIPS Academy and other sponsors
+                like Infostudy Delhi, our media partners-Campus Blogger, DU Express
+                and The Education Tree.
+            </p>
+            <p class="content-1">
+                The Fest has been an integral part of the department since its inception, it
+                has helped the department establish itself as one of the best departments
+                throughout the University. The department looks forward to expanding
+                its fest even more in the coming sessions. -->
+            </p>
+            <h2 id="fresher-19">Freshers '21</h2>
+            <img src="images/freshers-21.jpeg" alt="main-photo">
+            <p class="content-1">With the onset of the new academic session, the department organized a 'Meet and Greet' 
+                session to extend a hearty welcome to the freshers. The session was conducted on an online platform, 
+                keeping in mind the restrictions and precautionary measures posed by COVID-19. It was enthralling to 
+                see the cheerful faces and creative minds, all geared up for college. The event commenced with a short
+                 welcome message delivered by the department heads and a video showcasing life at Hansraj, followed by a 
+                 brief introduction of teachers and department heads. Both, students and teachers participated with great 
+                 zest and zeal in all the activities. The event wrapped up with an enjoyable interaction between the juniors 
+                 and seniors to provide a taste of college life to the freshers.
+
+
+            </p>
+            <h2 id="farewell-20">Farewell '21</h2>
+            <img src="images/farewell.JPG" alt="main-photo">
+            <p class="content-1">To bid goodbyes to the batch 2021, the department organized an online farewell, 
+                which consisted of poetry, music, games and what not. Everyone was overwhelmed, even the teachers,
+                 while addressing the outgoing batch. This is how the batch of 2021 officially graduated!
+
+            </p>
+            <h2 id="teacher-20">Teachers' Day '21</h2>
+            <img src="images/teachers-day-2021.jpeg" alt="main-photo">
+            <p class="content-1">“Better than a thousand days of diligent study is one day with a great teacher.” 
+                Our department is blessed to have many such teachers with us. So, to thank these gems, the students
+                organized an online Teachers’ Day program. The event began with a warm welcome of the teachers after
+                which they shared their experiences with the students. The event was planned and executed successfully
+                with amazing dance performances, beautiful songs, and poems by the students, and a video message for 
+                the teachers. Everyone participated with great enthusiasm and the teachers enjoyed the event to their
+                fullest and appreciated students for their efforts.
+
+                
+            </p>
+
+
+
+        </div>
+
+    </div>
+
+    <!---------------------- FOOTER -------------------->
+
+<footer class="footer-bs">
+    <div class="row">
+        <div class="col-md-4 footer-brand animated fadeInLeft">
+
+            <div class="logo-footer">
+                <div class="footer-image">
+                    <img src="images/PIII.png">
+                </div>
+                <div class="footer-name">
+                    <h5>Department of Mathematics</h5>
+                    <h6>Hansraj College</h6>
+                </div>
+            </div>
+            <div class="address-footer">
+                <p>Address: <br><span style="display: inline-block; 
+                    margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj, Delhi,
+                        110007</em></span></p>
+                        <p>Contact: <br><span style="display: inline-block; 
+                            margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span style="display: inline-block; 
+                    margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span></p>
+                <p>© 2020 Department of Mathematics, Hansraj College</p>
+            </div>
+
+        </div>
+
+        <div class="col-md-4 footer-ns animated fadeInRight">
+            <h4>Unite</h4>
+            <p>Please put in your emails to stay connected.</p>
+            <p>
+            <div class="input-group">
+
+                <input type="email" class="form-control" placeholder="Email" required >
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
+                        data-placement="top" data-content="Your email has been recorded, thanks."
+                        data-trigger="focus">
+                        <i class="unite-icon">
+                            <ion-icon name="mail-open"></ion-icon>
+                        </i>
+                    </button>
+
+                </span>
+            </div><!-- /input-group -->
+            </p>
+        </div>
+        <div class="col-md-4 footer-social animated fadeInDown">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></i><a href="https://www.facebook.com/pi.hansrajcollege" class="social-name">Facebook</a></li>
+                <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></i><a href="https://www.instagram.com/mathsdept_hansraj/" class="social-name">Instagram</a></li>
+                <li><i class="social-icon"><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college" class="social-name">LinkedIn</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+<section style="text-align:center; margin:10px auto;">
+    <div class="ved-ujj">
+        <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
+                target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
+                href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
+                Agarwal</a></p>
+    </div>
+
+
+</section>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+    });
+</script>
+
+    <!-- ////////////////// BOOTSTRAP JS ///////////////////// -->
+
+    <!-- //  Optional JavaScript; choose one of the two! 
+//  Option 1: jQuery and Bootstrap Bundle (includes Popper)  -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
+        crossorigin="anonymous "></script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script> -->
+
+
+
+
+
+    <!-- ///////////////// ICONS FILE ////////////// -->
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
+
+    <!----------///////// INTERNAL JS -------------//////////-->
+
+    <script src="JS/events.js"></script>
+
+</body>
+
+</html>

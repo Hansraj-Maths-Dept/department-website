@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS link -->
+
+    <link rel="stylesheet" href="CSS/seminars.css">
+
+    <!-- Font Family Lato -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Animations -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Seminars</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/jpg" href="images/pifavicon.ico"/>
+        <!-- Font -->
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <!-- ---------NAVIGATION--------- -->
+
+        <nav class="navbar navbar-expand-lg navbar-light nav-edits">
+
+            <!-- ---------NAV LOGO---------  -->
+
+            <a class="navbar-brand mr-auto department-logo" href="/index.html"><img src="images\PIII.png"
+                    alt="department logo"></a>
+
+            <!-- ---------RESPONSIVE TOGGLER---------  -->
+
+            <button class="navbar-toggler responsive-nav" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler-edit">
+
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </button>
+
+            <!-- ---------COLLAPSE NAVBAR---------  -->
+
+            <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
+
+
+                <ul class="navbar-nav mx-auto main-nav-edits">
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/About/about.html#the-department">The Department</a>
+                            <a class="dropdown-item" href="/About/about.html#our-alumni">Our Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Seminars
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Seminars/seminars.html">2020</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Seminars/2021.html">2021</a>
+                            <!--<div class="dropdown-divider"></div>-->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Journal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Journal/journal-a.html">Aankalan</a>
+                            <!-- <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#download-journal">Download</a>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#article-journal">Articles</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Events
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Events/events.html">2020</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Events/2021.html">2021</a>
+                            <!--<div class="dropdown-divider"></div>-->
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Faculty/faculty.html">Faculty</a>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Newsletter/newsletter.html">Newsletter</a>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/conference">Conference</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ---------SEARCH--------- -->
+            <!-- ---------SEARCH--------- 
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Explore" name="search">
+                        <button type="submit">
+                            <ion-icon name="search"></ion-icon>
+                            </ion-icon></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <button class="openBtn" onclick="openSearch()">
+                <ion-icon name="search"></ion-icon>
+                </ion-icon>
+            </button>
+            -->
+
+
+        </nav>
+    </div>
+
+    <div class="seminars-main">
+        <h1 class="seminar-heading">Seminars and Sessions</h1>
+        <p class="seminar-content">With the onset of every semester and as the time elapse the question which
+            increases the tension amongst students is, “What after maths?”, if you know
+            the answer to this then you may get struck by another question, “How to move
+            forward and accomplish our goal?”, but that’s not all what the students face
+            some people know everyting about their goals but couldn’t focus much, for the
+            betterment of the students and to give them a clear idea about their future goals,
+            plenty of seminars are being conducted by the department.</p>
+
+
+        <div class="seminar-1">
+            <a href="#coms">
+                <div class="card mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Workshop</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mathematical Workshop</h5>
+                        <p class="card-text">A mathematical workshop was organized by the department on 
+                            9th February,2021...<br/></p>
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#gmm">
+                <div class="card mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Seminar</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lakshya: The Career Talks 2020-21</h5>
+                        <p class="card-text">The department came up with a series of sessions under the name “Lakshya: 
+                            The Career Talks” to ... </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#gm">
+                <div class="card mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Workshop</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Annual Academic Meet </h5>
+                        <p class="card-text">Shri Shanti Narayan, born in 1911, was an extremely renowned educationist...<br/>&nbsp; </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- <div class="seminar-2">
+            <a href="#ala">
+                <div class="card mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Workshop</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Applications of Linear Algebra</h5>
+                        <p class="card-text">The workshop was overseen by Prof. Shobha Bagai from Cluster
+                            Innovation Center, DU...</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#fe">
+                <div class="card mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Seminar</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Foreign Education</h5>
+                        <p class="card-text">The session was hosted by Dr. Anusha Shrivastava, Department of Statistics,
+                            Columbia University...<br />&nbsp;</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#dacc">
+
+                <div class="card mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Seminar</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Data Analytics as a Career Choice</h5>
+                        <p class="card-text">The seminar was held on 7th Jan '20 by Prof. Sat Gupta, a fellow of
+                            American
+                            Statistical Association...</p>
+                    </div>
+                </div>
+            </a>
+        </div> -->
+
+    </div>
+
+    <div class="about-content">
+        <div class="container-fluid">
+
+            <h2 id="coms">Mathematical Workshop</h2>
+            <p class="content-1">A mathematical workshop was organized by the department on 9th February, 2021. 
+                The panel of experts consisted of Dr Jyoti Sharma, Associate Professor in Education at Cluster Innovation
+                Center and Joint Director at ILLL, University of Delhi, and Dr Sonam Tanwar, Assistant Professor in Mathematics
+                at Cluster Innovation Center, University of Delhi.
+                Dr Jyoti talked about, "How to Plan Projects? : An Investigatory Approach to Learning" by discussing the Basic Number System.
+                Dr Sonam gave us insight about various mathematical softwares like Mathematica, MATLAB, and MAPLE.
+                
+            </p>
+
+            <h2 id="gmm">Lakshya: The Career Talks 2020-21</h2>
+            <p class="content-1">The department came up with a series of sessions under the name “Lakshya: The Career Talks”
+                to assist the students with their choice of careers in Mathematics. Three successful sessions of the same were
+                conducted in the academic year 2020-21.</p>
+
+                <p class="content-1"><b>The first session:</b> “Acing GMAT with CJ”, focused on the preparation for GMAT with Mr. Chiranjeev Singh, 
+                an IIM Ahmedabad alumnus, who is a highly-skilled GMAT coach, as the chief speaker. He enlightened the 
+                students on essential questions like: ‘the parameters on which one is tested in GMAT’, ‘decent score’, 
+                ‘need for practice’, ‘the right approach towards problems’, etc. </p>
+                
+                <p class="content-1"><b>  The second session:</b> “Unveiling Higher Mathematics”, Master Arvish Dabra, an IIT Delhi student, 
+                NBHM Fellowship awardee, and a Hansraj College Graduate guided the students about prestigious competitive exams
+                like IIT JAM Mathematics, CSIR NET, etc. and talked about the opportunities one can avail  through 
+                JAM: IISCs, ISSERs, TIFR, etc. The session was successful in its objective to broaden students’ views 
+                about their career options.</p>
+                
+                <p class="content-1"><b> The third session:</b> "Let's crack UPSC CSE with Maths Optional", we were honored to have Er. Gaurav Kaushal Sir
+                as our guest speaker. He cracked UPSC CSE-2012 along with SSC CGL-2011 and IIT JEE 2006. 
+                His guidance and experience not only obviated the existing doubts but also broke many myths related to this 
+                prestigious exam in the minds of young students. He also motivated students to maintain a balance between 
+                physical and mental health during this long journey.
+                
+            </p>
+            <h2 id="gm">Annual Academic Meet: Shree Shanti Narayan Mathematics Conclave 2021</h2>
+            <p class="content-1">Shri Shanti Narayan, born in 1911, was an extremely renowned educationist. Known as one of the most knowledgeable people of his time in Mathematics, he has made great contributions to the field. His outstanding work led him to be appointed as the First Dean of Colleges, University of Delhi, then General Secretary of Indian Mathematics Society from 1963 to 1968 and also a visiting Professor at Summer Institute of Mathematics, Illinois, USA. He later became the second Principal of Hansraj College, DU.
+                A man of his excellency who left the trails of performance behind him inspired, the Mathematics Department of Hansraj to organise an event in his good name.
+                So, here we were, at the two-day event dedicated towards the honour of Late Professor Shri Shanti Narayan Sir.
+               <p class="content-1"><b>Day 1(March-7, 2021)</b> </p>
+               <p class="content-1"><u>Speaker session</u></p> 
+               <p class="content-1"><em>Probability Models for Performance Prediction of Hardware and Software Systems, presented by Dr Madhu Jain.</em></p> 
+               <p class="content-1"> Probability models play an important role in quantitatively predicting various performance metrics of day-to-day 
+                as well industrial problems encountered in computers, communication, production, etc.
+                These are straight from the files of Dr Madhu Jain's experience, who is a connoisseur practising Mathematics in 
+                IIT Roorkee. Establishing relations between Parametrization and Statistical techniques, understanding the concepts
+                of using LPP (Linear Programming Problems) and Calculus’ Maximizing and Minimizing techniques, participants were 
+                able to gain a deterministic approach towards probability in real-life situations. 
+                She gave a more elaborate example using Sixth Sense Technology having a plethora of gadgets clubbed into one. 
+                Deciphering of queries put on by participants by Madhu Ma'am wrapped up the speaker session of day 1.</p>
+               <p class="content-1"><em>Paper Presentation Competition</em> </p> 
+               <p class="content-1"> Who says Paper Presentations are boring and monotonous? The event offered an insight into various topics like 
+                Encryption, Symmetry, Definitive Dissonance, Mathematics behind Deep Fakes, Dance, Quantum Calculus, Mathematics
+                tools in Fraud Detection, and the Application of Mathematics in Digital Image Processing. 
+                The teams, as stated in the directory, were given a stipulated time to present their papers. The competition was 
+                indeed cut-throat which was followed up by some grilling by the judges.
+                This is how day 1 was called in jubilance and exhilaration.</p>
+                <p class="content-1"><b>Day 2(March-8, 2021)</b></p>
+                <p class="content-1"><em>Epilogue Round of 'The Annual Quiz Competition'</em></p>
+                <p class="content-1">Mathematics is the art of giving the same name to different things and the best way to learn maths is to fiddle 
+                with it. The Mathematics Department, in pursuit of finding the next maverick, conducted some mind-bending riddles. 
+                There was a stipulated time to respond to the questions asked and a penalty was awarded for every wrong response.
+                The questions were set up from a wide array of poles i.e., geometry, real analysis, calculus etc. The participants
+                had a very competitive rollercoaster while guessing both wrong and right attempts.</p>
+                <p class="content-1"><u>Speaker Session</u></p>
+                <p class="content-1"><em>Random Walk in the World of Dynamics, presented by Prof. Riddhi Shah.</em> </p>
+               <p class="content-1">Dynamism is a prerequisite for evolution. Combining the importance of it with the flagship faculty of
+                Physical Sciences at JNU, Professor Riddhi Shah took Dynamics to a whole new level. She supplemented the aura
+                of the event with her experience in the field. The session started with some briefing on dynamic systems,
+                the topological spaces and their nature change in discrete/continuous time. For enthusiastic nonmathematicians, 
+                the session was on changing physical spaces over a period of time, to be vivid. Then after some detailed information 
+                on the subject, the professor gave a geometrical approach to the topic.
+                The seminar ended with Riddhi Ma'am introducing Indian Women in Mathematics to the participants and the session's motive
+                to encourage women in coming forward and taking mathematics as a course to master and change the world and reflect
+                dynamism.</p>
+               <p class="content-1"><u> Panel Discussion on “Women in the world of Mathematics: The Road Ahead”</u></p>
+                <p class="content-1">(Panelists : Prof. Riddhi Shah, Prof. Shobha Bagai and Prof. Geetha Venkataraman)
+                <br>Brutus once said, "The territory having more liberal women to education and access to social structures is the
+                 territory with the maximum power."
+                This principle indeed abides in Hansraj College students and makes a more adherent bond towards our teachers
+                 especially our female teachers. On the occasion of International Women’s Day, the panelists shared their experiences
+                  in the world of mathematics. The event commenced with Professor Shobha Bagai from Cluster Innovation Centre,
+                   Delhi University sharing her experience in pursuing mathematics as a career. She discussed the lack of women
+                    in this field. She emphasized the need to increase the number of women since it’s the number of women which
+                     determines the field’s strength.
+                Prof. Riddhi Shah shared her experience in pursuing mathematics. She was determined to change the psyche of 
+                women's education in the social arena. Although, she was firm on her stand for women's rights in education,
+                 Prof. Geetha Venkataraman from Dr B.R. Ambedkar University Delhi did hit the nail for stereotyping women’s education.
+                  She gave her experiences as a warning that no one can restrict a girl to pursue her choices, except herself. 
+                This is how the Department of Mathematics of Hansraj College called another event at a successful play.</p>
+                
+            </p>
+            <!-- <h2 id="ala">Applications of Linear Algebra</h2>
+            <p class="content-1">The department went on to further to its
+                string of events by organizing an interactive workshop by Prof. Shobha Bagai from Cluster
+                Innovation Center, University of Delhi. The topic of emphasis for this workshop was ‘Linear
+                Algebra and its Applications'. The event was held on September 23rd. Aiming to develop a
+                better understanding of the unlimited concepts and the expanse Linear Algebra seeks to offer,
+                this seminar served as an excellent opportunity for the student participants and teachers to
+                exchange their ideas and opinions with the eminent speaker. The students were able to have a
+                hands-on experience of the topics covered by Prof. Bagai in her lecture by the use of the software
+                Mathematica. The success of the seminar was clearly evident by the fact that all the teachers of the
+                Mathematics Department of the college, along with 120 students from different years of study
+                attended it. Making her talk more connected to the practical aspects of her topic, Prof. Shobha
+                made an attempt to emphasize the importance of Linear Algebra in our everyday lives in a very
+                innovative and convincing manner.
+            </p>
+
+            <h2 id="fe">Foreign Education</h2>
+            <p class="content-1">The department successfully conducted another seminar
+                for the students. The session was hosted by Dr. Anusha Shrivastava, Director of Career Development and
+                Alumni Relations, Department of Statistics, University of Columbia. Dr. Shrivastava
+                discussed about the education opportunities in the reputed institutes outside India and the admission
+                formalities. Elaborating about the opportunities and scholarships available, the online courses and the
+                admission procedures in the University of Columbia, the speaker also told the
+                students about her own academic and professional life. Being mathematics students, we naturally
+                have an edge when it comes to subjects like Statistics, and this is what Dr. Anusha wanted to
+                draw our attention to. She made the audience aware of the various opportunities we, as future
+                professionals have, if we pursue a career in the field of Statistics, after obtaining a master’s degree.
+                Dr. Shrivastava was kind enough to conclude her session by having an interactive question-answer
+                time with the students and clearing even the smallest of doubts that they had.
+            </p>
+            <h2 id="dacc">Data Analytics as a Career Choice</h2>
+            <p class="content-1">This was the first seminar that the department organized in the new year. Delivered by Prof. Sat Gupta, the seminar held on
+                January 7th, 2020, focused on the career opportunities available in the field of Data Analytics.
+                Prof. Gupta is the Head of the Department of Mathematics and Statistics at the University of
+                North Carolina, Greensboro, in addition to being a fellow of the American Statistical Association.
+                He has been providing ‘Statistics Consultancy’ to on-campus and off-campus students for over
+                30 years. He enlightened students about the perks of pursuing a career in the field of data
+                and analytics and also about acquiring admission in the masters and Ph. D. programme at his
+                prestigious university. He also presented a few basic problems on managing and handling data
+                and working with it. At the end of his talk, he invited questions from teachers and
+                students.
+
+            </p> -->
+
+
+
+        </div>
+
+    </div>
+
+     <!---------------------- FOOTER -------------------->
+
+<footer class="footer-bs">
+    <div class="row">
+        <div class="col-md-4 footer-brand animated fadeInLeft">
+
+            <div class="logo-footer">
+                <div class="footer-image">
+                    <img src="images/PIII.png">
+                </div>
+                <div class="footer-name">
+                    <h5>Department of Mathematics</h5>
+                    <h6>Hansraj College</h6>
+                </div>
+            </div>
+            <div class="address-footer">
+                <p>Address: <br><span style="display: inline-block; 
+                    margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj, Delhi,
+                        110007</em></span></p>
+                        <p>Contact: <br><span style="display: inline-block; 
+                            margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span style="display: inline-block; margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span></p>
+                <p>© 2020 Department of Mathematics, Hansraj College</p>
+            </div>
+
+        </div>
+
+        <div class="col-md-4 footer-ns animated fadeInRight">
+            <h4>Unite</h4>
+            <p>Please put in your emails to stay connected.</p>
+            <p>
+            <div class="input-group">
+
+                <input type="email" class="form-control" placeholder="Email" required >
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
+                        data-placement="top" data-content="Your email has been recorded, thanks."
+                        data-trigger="focus">
+                        <i class="unite-icon">
+                            <ion-icon name="mail-open"></ion-icon>
+                        </i>
+                    </button>
+
+                </span>
+            </div><!-- /input-group -->
+            </p>
+        </div>
+        <div class="col-md-4 footer-social animated fadeInDown">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></i><a href="https://www.facebook.com/pi.hansrajcollege" class="social-name">Facebook</a></li>
+                <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></i><a href="https://www.instagram.com/mathsdept_hansraj/" class="social-name">Instagram</a></li>
+                <li><i class="social-icon"><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college" class="social-name">LinkedIn</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+<section style="text-align:center; margin:10px auto;">
+    <div class="ved-ujj">
+        <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
+                target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
+                href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
+                Agarwal</a></p>
+    </div>
+
+
+</section>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+    });
+</script>
+    
+    
+    
+
+    <!-- ////////////////// BOOTSTRAP JS ///////////////////// -->
+
+    <!-- //  Optional JavaScript; choose one of the two! 
+//  Option 1: jQuery and Bootstrap Bundle (includes Popper)  -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
+        crossorigin="anonymous "></script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script> -->
+
+
+
+
+
+    <!-- ///////////////// ICONS FILE ////////////// -->
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
+
+    <!----------///////// INTERNAL JS -------------//////////-->
+
+    <script src="JS/seminars.js"></script>
+
+</body>
+
+</html>

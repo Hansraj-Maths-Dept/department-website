@@ -1,0 +1,1020 @@
+/* ______________ COLORS _____________
+
+#f1f3f8 - lightest
+#d6e0f0 - light
+#8d93ab - dark
+#393b44 - darkest
+
+*/
+
+:root {
+    --lightest-grey: rgb(241, 243, 248);
+    --light-grey: rgb(214, 224, 240);
+    --dark-grey: rgb(141, 147, 171);
+    --darkest-grey: rgb(57, 59, 68);
+}
+
+/*_______________________ FULL BODY EDITS ____________________________*/
+
+.header {
+    margin: 0px;
+    padding: 0px;
+}
+
+button:focus, input:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Lato', 'sans-serif';
+}
+
+/*_____________________ NAVIGATION BAR _____________________________*/
+
+/*********** DEPARTMENT LOGO *********/
+
+.department-logo img {
+    height: 60px;
+    width: 65px;
+    filter: invert(98%);
+}
+
+/********** MAIN NAVIGATION PANEL *********/
+
+.nav-edits {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    background-color: rgb(57, 59, 68, 0.82) !important;
+}
+
+.nav-link-edits {
+    padding-right: 4%;
+}
+
+.nav-link-edits a {
+    color: var(--light-grey) !important;
+    font-size: 18px !important;
+    font-weight: 400;
+}
+
+.nav-link-edits a:hover {
+    color: var(--lightest-grey) !important;
+}
+
+.dropdown-menu {
+    background-color: rgb(57, 59, 68, 0.82) !important;
+    box-shadow: 5px 5px 15px rgb(57, 59, 68);
+    border: none;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(141, 147, 171, 0.82) !important;
+}
+
+.collapse-edits {
+    margin-right: 110px !important;
+}
+
+/********** RESPONSIVE TOGGLER ***********/
+
+.responsive-nav {
+    border: none !important;
+    position: absolute;
+    right: 5px;
+    top: 11px;
+    font-size: 35px;
+    color: var(--light-grey) !important;
+}
+
+/*************** SEARCH BUTTON **************/
+
+.openBtn {
+    border: none;
+    padding: 12px 15px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    color: var(--light-grey) !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-grey);
+    background-color: rgba(141, 147, 171, 0.877);
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: var(--light-grey);
+}
+
+.overlay .closebtn:hover {
+    color: var(--darkest-grey);
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: var(--darkest-grey);
+    border-radius: 20px;
+    margin-right: 15px;
+    color: var(--lightest-grey);
+}
+
+.overlay input[type=text]:hover {
+    background: var(--darkest-grey);
+    background: rgb(57, 59, 68, 0.88);
+    ;
+}
+
+.overlay button {
+    float: left;
+    width: 13%;
+    padding: 11px;
+    background: var(--lightest-grey);
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.overlay button:hover {
+    background: var(--light-grey);
+}
+
+/*___________________ CAROUSEL ______________________*/
+
+.carousel-edits {
+    z-index: 0;
+}
+
+.carousel-item-edits::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    opacity: .7;
+}
+
+.carousel-caption {
+    bottom: 180px !important;
+    font-weight: lighter !important;
+    font-family: 'Great Vibes', cursive !important;
+}
+
+/*__________________ ABOUT US _______________________*/
+
+.section-edits {
+    background-color: var(--lightest-grey);
+    padding-bottom: 80px;
+}
+
+/**************** HEADING *****************/
+
+.heading-edits {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.heading-edits h1 a {
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--darkest-grey);
+}
+
+.heading-edits h1 a:hover {
+    text-shadow: 5px 5px 10px var(--light-grey);
+    text-decoration: none !important;
+}
+
+/*************** DIVIDER *****************/
+
+.wrapper {
+    padding-bottom: 60px;
+}
+
+.divider {
+    position: relative;
+    margin-top: 35px;
+    height: 1px;
+}
+
+.div-transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+}
+
+/****************** CONTENT *******************/
+
+.content-about {
+    text-align: center;
+    background-color: var(--lightest-grey) !important;
+    padding-top: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 40px;
+    line-height: 2.5;
+}
+
+/* __________________ JOURNAL ___________________ */
+
+/* Same as about us section  */
+
+/************* HEADING ***************/
+
+.journal-heading h2 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+/* Same as about us heading */
+
+.journal {
+    background-color: var(--darkest-grey) !important;
+    color: var(--lightest-grey) !important;
+}
+
+.journal-heading a {
+    color: var(--lightest-grey) !important;
+    text-shadow: none !important;
+}
+
+/************** Divider ***************/
+
+.journal-divider::before {
+    filter: invert(98%);
+}
+
+/******************** IMAGE  *************/
+
+.journal-image {
+    padding: 60px 45px 65px 45px;
+}
+
+.journal-image-edits {
+    width: 100%;
+    height: auto;
+}
+
+/*************** CONTENT  *************/
+
+.journal-content p {
+    padding: 20px 90px 20px 90px;
+    font-weight: lighter;
+    word-spacing: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn-edit {
+    border: none;
+    display: block;
+    margin: auto;
+    padding: 6px 5px 6px 5px;
+    background-color: var(--lightest-grey);
+    font-size: 16px;
+    color: var(--darkest-grey);
+    text-decoration: none;
+    width: 125px;
+    text-align: center;
+}
+
+.btn-edit:hover {
+    color: var(--lightest-grey);
+    background-color: var(--darkest-grey);
+    border: 1px solid var(--lightest-grey);
+    text-decoration: none;
+    padding: 5px 4px 5px 4px;
+}
+
+/* _____________ EVENTS ________________*/
+
+.section-events {
+    background-color: var(--lightest-grey);
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    filter: brightness(85%);
+}
+
+.event-image {
+    position: relative;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.event-image:hover .image {
+    filter: brightness(30%);
+}
+
+.event-image:hover .middle {
+    opacity: 1;
+}
+
+.event-btn {
+    background-color: transparent;
+    padding: 10px 35px;
+    border: 2px solid white;
+    text-align: center;
+    top: 50%;
+    background-color: rgba(50, 51, 53, 0.3);
+    left: 50%;
+    z-index: 2;
+}
+
+.event-btn:hover {
+    background-color: rgba(50, 51, 53, 0.5);
+}
+
+.event-btn a {
+    color: white;
+    font-size: 23px;
+}
+
+.event-btn a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* _____________ SEMINARS AND SESSIONS ______________ */
+
+.section-seminars {
+    background-color: var(--darkest-grey);
+}
+
+.seminars-heading h1 a {
+    color: var(--lightest-grey) !important;
+    text-shadow: none !important;
+}
+
+.seminar-1, .seminar-2, .seminar-3 {
+    display: flex;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.section-seminars p {
+    color: var(--lightest-grey);
+    padding: 20px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.seminar-content {
+    margin: auto;
+    width: 60%;
+}
+
+.seminar-image {
+    width: 40%;
+}
+
+.seminar-image img {
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 160px;
+}
+
+/* Brightness-zoom Container */
+
+.img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(100%);
+}
+
+/* The Transformation */
+
+.img-hover-zoom--brightness:hover img {
+    filter: brightness(65%);
+    transform: scale(1.1);
+}
+
+.seminars-divider {
+    filter: invert(90%);
+}
+
+.break {
+    border-top: 1px solid rgba(241, 243, 248, 0.25);
+    width: 95%;
+    display: block;
+    margin: auto;
+}
+
+/* _______________ FOOTER ________________ */
+
+.footer-bs {
+    background-color: var(--lightest-grey);
+    padding: 60px 40px;
+    color: var(--darkest-grey);
+    margin-bottom: 20px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 6px;
+}
+
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+    padding: 10px 25px;
+}
+
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+    border-color: transparent;
+}
+
+.footer-bs .footer-brand h2 {
+    margin: 0px 0px 10px;
+}
+
+.footer-bs .footer-brand p {
+    font-size: 12px;
+    color: rgb(57, 59, 68, 0.7);
+}
+
+.footer-bs .footer-nav ul.pages {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-nav ul.pages li {
+    padding: 5px 0px;
+}
+
+.footer-bs .footer-nav ul.pages a {
+    color: rgb(57, 59, 68);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-bs .footer-nav ul.pages a:hover {
+    color: rgb(57, 59, 68, 0.7);
+    text-decoration: none;
+}
+
+.footer-bs .footer-nav h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-bs .footer-nav ul.list {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-nav ul.list li {
+    padding: 5px 0px;
+}
+
+.footer-bs .footer-nav ul.list a {
+    color: rgb(57, 59, 68, 0.8);
+}
+
+.footer-bs .footer-nav ul.list a:hover {
+    color: rgb(57, 59, 68, 0.6);
+    text-decoration: none;
+}
+
+.footer-bs .footer-social ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-social h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footer-bs .footer-social li {
+    padding: 5px 4px;
+}
+
+.footer-bs .footer-social a {
+    color: rgb(57, 59, 68, 0.6);
+}
+
+.footer-bs .footer-social a:hover {
+    color: rgb(57, 59, 68, 0.8);
+    text-decoration: none;
+}
+
+.footer-bs .footer-ns h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-bs .footer-ns p {
+    font-size: 12px;
+    color: rgb(57, 59, 68, 0.7);
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-image img {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-footer {
+    margin-top: -15px;
+    padding-bottom: 15px;
+}
+
+.footer-name h5 {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.footer-name h6 {
+    font-size: 13px;
+}
+
+.unite-icon {
+    font-size: 30px;
+    color: var(--darkest-grey);
+}
+
+.input-group-btn {
+    margin-top: -8px;
+}
+
+.social-icon {
+    color: var(--darkest-grey);
+    padding-right: 10px;
+}
+
+.social-name {
+    font-size: 12px !important;
+    vertical-align: text-top;
+}
+
+.footer-social h4, .footer-ns h4 {
+    font-size: 15px !important;
+}
+
+.ved-ujj p, .ved-ujj a{
+    font-size: 14px;
+}
+.ved-ujj a {
+    color: rgb(53, 53, 165);
+}
+/* _____________ MEDIA QUERIES ____________ */
+
+/******** CAROUSEL *******/
+
+@media (max-width: 575.98px) {
+    .carousel .carousel-item {
+         height: 350px;
+         
+    }
+    .carousel-item img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        min-height: 350px;
+       
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .carousel .carousel-item {
+        height: 650px;
+    }
+    .carousel-item img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        min-height: 650px;
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 987.98px) {
+    .carousel-caption {
+        bottom: 115px !important;
+    }
+}
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .carousel-caption {
+        bottom: 50px !important;
+    }
+    .carousel-caption h2 {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .carousel-caption {
+        bottom: 80px !important;
+    }
+    .carousel-caption h2 {
+        font-size: 1.0rem !important;
+    }
+    .carousel-caption h5 {
+        font-size: 1.1rem !important;
+    }
+}
+
+/************ NAV-COMPONENTS ***************/
+
+@media (max-width: 987.98px) {
+    .department-logo {
+        height: 47px;
+        width: 55px;
+        margin-bottom: 10px;
+        margin-top: -12px;
+    }
+    .responsive-nav {
+        font-size: 28px;
+        margin-top: -5px;
+    }
+    .openBtn {
+        font-size: 18px;
+        margin-top: -5px;
+    }
+}
+
+/*__________________ ABOUT US __________________*/
+
+@media (max-width: 575.98px) {
+    .heading-edits {
+        padding-top: 50px;
+    }
+    .heading-edits h1 a {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .content-about {
+        padding-top: 30px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+        padding-bottom: 30px;
+        line-height: 1.6;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .heading-edits {
+        padding-top: 70px;
+    }
+    .heading-edits h1 a {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .content-about {
+        padding-top: 35px;
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-bottom: 35px;
+        line-height: 2.0;
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
+
+/************* DIVIDER ****************/
+
+@media (max-width: 575.98px) {
+    .wrapper {
+        padding-bottom: 40px;
+    }
+    .divider {
+        position: relative;
+        margin-top: 25px;
+        height: 1px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .wrapper {
+        padding-bottom: 50px;
+    }
+    .divider {
+        position: relative;
+        margin-top: 30px;
+        height: 1px;
+    }
+}
+
+/* ________________ JOURNAL  ________________ */
+
+/***************** HEADING *****************/
+
+@media (max-width: 575.98px) {
+    .journal-heading h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .journal-heading h2 {
+        font-size: 25px;
+    }
+}
+
+/************* CONTENT ****************/
+
+@media (min-width: 767.98px) and (max-width: 987.98px) {
+    .journal-content p {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .journal-content p {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+
+/************* BUTTON ***************/
+
+@media (min-width: 767.98px) and (max-width: 987.98px) {
+    .btn-edit {
+        padding: 4px 4px 4px 4px;
+        font-size: 14px;
+        width: 107px;
+    }
+    .btn-edit:hover {
+        padding: 3px 3px 3px 3px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-edit {
+        padding: 4px 4px 4px 4px;
+        font-size: 14px;
+        width: 107px;
+    }
+    .btn-edit:hover {
+        padding: 3px 3px 3px 3px;
+    }
+}
+
+/***************** IMAGE ********************/
+
+@media (max-width: 767.98px) {
+    .journal-image-edits {
+        width: 82%;
+    }
+    .journal-image {
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+/* _____________ SESSIONS AND SEMINARS _______________*/
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .section-seminars p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .seminar-image {
+        width: 100%;
+    }
+    .seminar-image img{
+        width: 200px;
+    }
+    .seminar-content {
+        width: 100%;
+    }
+    .seminar-1, .seminar-3 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .seminar-1, .seminar-2, .seminar-3{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .seminar-2 {
+        flex-direction: column;
+    }
+    .seminar-content p {
+        padding: 25px 0px 0px 0px;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .seminar-content {
+        margin: 0px;
+    }
+}
+
+/* __________ FOOTER ___________ */
+
+@media (min-width: 768px) {
+    .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+        border-left: solid 1px rgb(57, 59, 68, 0.1);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .footer-image img {
+        width: 100px;
+        height: 100px;
+    }
+    .footer-name h5 {
+        font-size: 18px;
+        margin-top: 27px;
+    }
+    .footer-name h6 {
+        font-size: 14px;
+    }
+    .address-footer p {
+        font-size: 13px !important;
+    }
+    .footer-bs {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .footer-social h4, .footer-ns h4 {
+        padding-bottom: 10px !important;
+        font-size: 13px !important;
+    }
+    .logo-footer {
+        padding-bottom: 15px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-image img {
+        width: 60px;
+        height: 60px;
+    }
+    .footer-name h5 {
+        font-size: 14px;
+        margin-top: 13px;
+    }
+    .footer-name h6 {
+        font-size: 10px;
+    }
+    .address-footer p {
+        font-size: 10px !important;
+    }
+    .footer-bs {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .footer-social h4, .footer-ns h4 {
+        padding-bottom: 10px !important;
+        font-size: 13px !important;
+    }
+    .logo-footer {
+        padding-bottom: 15px !important;
+    }
+}
+
+/* ************ EVENTS *********** */
+
+@media (min-width: 767.98px) and (max-width: 997.98px) {
+    .event-image .image {
+        filter: brightness(50%);
+    }
+    .event-image .middle {
+        opacity: 1;
+    }
+    .event-btn {
+        background-color: rgba(50, 51, 53, 0.5);
+        padding: 8px 28px;
+    }
+    .event-btn a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .event-image .image {
+        filter: brightness(50%);
+    }
+    .event-image .middle {
+        opacity: 1;
+    }
+    .event-btn {
+        background-color: rgba(50, 51, 53, 0.5);
+        padding: 6px 24px;
+    }
+    .event-btn a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .event-image .image {
+        filter: brightness(60%);
+    }
+    .event-image .middle {
+        opacity: 1;
+    }
+    .event-btn {
+        background-color: rgba(50, 51, 53, 0.3);
+        padding: 5px 20px;
+        border: 1px solid white;
+    }
+    .event-btn a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+}
+
+/* _____________ DESIGN AND DEVELOPMENT ______________ */
+
+@media (max-width: 576px) {
+    .ved-ujj p, .ved-ujj a{
+        font-size: 10px;
+    }
+}
+
+.form-control{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 37px;
+  }
+  
+  ::placeholder {
+    font-size: 17px;
+  }

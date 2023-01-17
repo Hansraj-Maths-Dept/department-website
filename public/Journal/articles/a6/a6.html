@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardinality of R2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS link -->
+
+    <link rel="stylesheet" href="CSS/a6.css">
+
+    <!-- Font Family Lato -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Animations -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/jpg" href="images/pifavicon.ico"/>
+        <!-- Font -->
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <!-- ---------NAVIGATION--------- -->
+
+        <nav class="navbar navbar-expand-lg navbar-light nav-edits">
+
+            <!-- ---------NAV LOGO---------  -->
+
+            <a class="navbar-brand mr-auto department-logo" href="/index.html"><img src="images/PIII.png"
+                    alt="department logo"></a>
+
+            <!-- ---------RESPONSIVE TOGGLER---------  -->
+
+            <button class="navbar-toggler responsive-nav" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler-edit">
+
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </button>
+
+            <!-- ---------COLLAPSE NAVBAR---------  -->
+
+            <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto main-nav-edits">
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/About/about.html#the-department">The Department</a>
+                            <a class="dropdown-item" href="/About/about.html#our-alumni">Our Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Seminars/seminars.html">Seminars</a>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Journal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Journal/journal-a.html">Aankalan</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#download-journal">Download</a>
+                            <a class="dropdown-item" href="/Journal/journal-a.html#article-journal">Articles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Events
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Events/events.html">Our events</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Events/events.html#fresher-19">Freshers '19</a>
+                            <a class="dropdown-item" href="/Events/events.html#farewell-19">Farewell '20</a>
+                            <a class="dropdown-item" href="/Events/events.html#teacher-19">Teachers' Day '20</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Events/events.html#identity-20">Identity '20</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/Faculty/faculty.html">Faculty</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ---------SEARCH--------- -->
+            <!-- ---------SEARCH--------- 
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Explore" name="search">
+                        <button type="submit">
+                            <ion-icon name="search"></ion-icon>
+                            </ion-icon></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <button class="openBtn" onclick="openSearch()">
+                <ion-icon name="search"></ion-icon>
+                </ion-icon>
+            </button>
+            -->
+
+        </nav>
+    </div>
+
+    <div class="heading">
+
+        <h2>Department of Mathematics</h2>
+
+    </div>
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-edit">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="/Journal/journal-a.html">Journal</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Article</li>
+            </ol>
+        </nav>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="article-flex">
+            <div class="article">
+                <h1>Cardinality of \({\mathbb{R}}^{2}\)</h1>
+                <h6 class="author" style="line-height: 2.0;"><b>Author: &nbsp; </b> Deepak Kumar <br /> <b>B.Sc. (H) Mathematics</b></h6>
+                <hr>
+
+    <p>It is an established result that the \(\left| \mathbb{R} \right| \ =\  \left| {\mathbb{R}}^{2} \right|\). The following proof establishes the same result from
+        the aspects of “Linear Algebra”.</p>
+    <p><b>Lemma.</b> <i>The basis of \(\mathbb{R}(\mathbb{Q})\), an infinite vector space, is uncountable</i>.</p>
+    <p>Proof. Let \(\mathbb{R}(\mathbb{Q})\) have a countable dimension. Let \(B\) be the basis of \(\mathbb{R}(\mathbb{Q})\). Then, \(|B|\ \leq \ |N|\)
+        Since \(B\) spans \(\mathbb{R}\), so by definition, every vector of \(R\) can be written as a finite linear combination of
+        vectors of \(B\).</p>
+    <p>Hence, we associate with every vector of \( \mathbb{R} \), i.e. every real number, a unique infinite sequence of
+        rationals (which are the coordinates with respect to \(B\), having all but a finite number of non-zero
+        values.</p>
+    <p>Let \(A\) = Set of natural sequences having all but finite number of non-zero values.</p>
+    <p>Since, \(|\mathbb{Q}| \ = \ |\mathbb{N}|\), we can associate an injective function from the reals to the set \(A\).</p>
+    <p>Let \( ({a}_{0}, {a}_{1}, {a}_{2}, \ldots \ldots, {a}_{k}, 0, 0, 0, 0,\ldots ) \) be any such sequence.</p>
+    <p>Define \(f\ :\ A \rightarrow \mathbb{N}\)
+       \[f \big(({a}_{0}, {a}_{1}, {a}_{2}, \ldots \ldots, {a}_{k}, 0, 0, 0, 0,\ldots )\big)= \displaystyle \prod_{i=1}^{k}{{p}_{i}}^{{a}_{i}}\]</p>
+    <p>where \({{p}_{i}}={{i}^{th}}\) prime number.</p>
+    <p>By Fundamental Theorem of Arithmetic, \(f\) is an injective function.</p>
+    <p>So, \(|A| \leq |\mathbb{N}|\), and hence, \(|\mathbb{R}| \leq |\mathbb{N}|\)</p>
+    <p>Thus, we get a contradiction.</p>
+    <br /><br />
+    <p><b>Claim 1:</b> Let \(B\) be a basis for \(\mathbb{R}(\mathbb{Q})\). Let \({S}_{1}\ =\ \{(x, 0) | x\ \in\ B\}\) and \({S}_{2}\ =\ \{(0, x) | x\ \in \ B\}\). Then,
+        \(S\ =\ {S}_{1} \cup {S}_{2}\) is a basis for \({\mathbb{R}}^{2}(\mathbb{Q})\)</p>
+    <br />
+    <p><i>Proof. </i>Note that \( Span({S}_{1})\ =\ \{(x, 0) | x\ \in \ \mathbb{R} \} \) and \( Span({S}_{2})\ =\ \{(0, x) | x \in \mathbb{R} \} \)<br />
+        And, \( Span({S}_{1}) \cap Span({S}_{2})\ =\ \{(0, 0)\} \) And, \( { \mathbb{R}}^{2} (\mathbb{Q})\ =\ Span({S}_{1}) \oplus Span({S}_{2}) \)<br />
+        Thus, \( { \mathbb{R}}^{2} ( \mathbb{Q})\ =\ Span({S}_{1} \cup {S}_{2})\ =\ Span(S) \)<br />
+        Hence, \(S\) is a basis for \({\mathbb{R}}^{2}(\mathbb{Q})\)</p>
+    <br /><br />
+    <p><b>Corollary.</b><i>\({ \mathbb{R}}^{2}\) over the field of \(\mathbb{Q}\) is an infinite dimensional vector space with uncountable basis.</i></p>
+    <p><b>Claim 2:</b> \(|S|\ =\ |B|\)</p>
+    <br />
+    <p>Proof. Since, \(|B|\ =\ |\mathbb{R}|\ =\ |[0, 1)|\ =\ |[1, 2)|\ =\ |(0, 2)|\),<br />
+        \(|{S}_{1}|\ =\ |B|\ =\ |[0, 1)|\) and \(|{S}_{2}|\ =\ |B|\ =\ |[1, 2)|\)<br />
+        And since, \({S}_{1} \cap {S}_{2}\ =\ (0, 0)\)<br />
+        Thus, \(|S|\ =\ |{S}_{1} \cup {S}_{2}|\ =\ |(0, 1) [ [1, 2)|\ =\ |(0, 2)|\ =\ |B|\)</p>
+    <br /><br />
+    <p><b>Claim 3:</b> \(|\mathbb{R}|\ =\ |{\mathbb{R}}^{2}|\)</p>
+    <br />
+    <p><i>Proof.</i> Let \(g\ :\ B \rightarrow S\) be the bijective function whose existence is shown in Claim 2.<br />
+        Let \(r \in \mathbb{R}\), then \[r = \displaystyle \sum_{i=1}^{k} c(i)b(i)\]</p>
+    <p>where \(c(i) \in \mathbb{Q}\) and \(b(i) \in B\) is a finite linear combination of vectors from \(B\).<br />
+        Define \(h\ :\ \mathbb{R} \rightarrow {\mathbb{R}}^{2}\)
+        \[ h(r) \ = \ h \left( \displaystyle \sum_{i=1}^{k} c(i) b(i) \right) \ =\ \displaystyle \sum_{i=1}^{k} c(i) g \left(b(i) \right) \]</p>
+    <p>Since \(g\) is bijective and each real number has unique coordinates with respect to \(B\), \(h\) is injective.
+        Since every \( (a, b) \in {\mathbb{R}}^{2} \) has unique coordinates with respect to \(S\) as well, so \(h\) is surjective.
+        So, \(h\) is bijective.<br />
+        Hence, \(|\mathbb{R}| = |{\mathbb{R}}^{2}|\)</p>
+    
+    <p><b>Corollary.</b> \(|\mathbb{R}|\ =\ |{\mathbb{R}}^{n}|\), where \(n \in \mathbb{N}\).</p>
+            
+            </div>
+
+
+            <div class="references" id="elId">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left shadow-none" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    References
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ol class="ref">
+
+                                    <li>&nbsp; Linear Algebra: K. Hoffman and R. Kunze, 2<sup>nd</sup> Edition, ISBN 978-81-2030-270-9</li>
+                                    <li>&nbsp; Abstract Algebra: David S. Dummit and Richard M. Foote, 3<sup>rd</sup> Edition, 978-04-7143-334-7</li>
+                                    <li>&nbsp; Topics in Algebra: I. N. Herstein, 2<sup>nd</sup> Edition, ISBN 978-04-7101-090-6</li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------- FOOTER -------------------->
+
+    <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-4 footer-brand animated fadeInLeft">
+    
+                <div class="logo-footer">
+                    <div class="footer-image">
+                        <img src="images/PIII.png">
+                    </div>
+                    <div class="footer-name">
+                        <h5>Department of Mathematics</h5>
+                        <h6>Hansraj College</h6>
+                    </div>
+                </div>
+                <div class="address-footer">
+                    <p>Address: <br><span style="display: inline-block; 
+                        margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj, Delhi,
+                            110007</em></span></p>
+                            <p>Contact: <br><span style="display: inline-block; 
+                                margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span style="display: inline-block; margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span></p>
+                    <p>© 2020 Department of Mathematics, Hansraj College</p>
+                </div>
+    
+            </div>
+    
+            <div class="col-md-4 footer-ns animated fadeInRight">
+                <h4>Unite</h4>
+                <p>Please put in your emails to stay connected.</p>
+                <p>
+                <div class="input-group">
+    
+                    <input type="email" class="form-control" placeholder="Email" required >
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
+                            data-placement="top" data-content="Your email has been recorded, thanks."
+                            data-trigger="focus">
+                            <i class="unite-icon">
+                                <ion-icon name="mail-open"></ion-icon>
+                            </i>
+                        </button>
+    
+                    </span>
+                </div><!-- /input-group -->
+                </p>
+            </div>
+            <div class="col-md-4 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></i><a href="https://www.facebook.com/pi.hansrajcollege" class="social-name">Facebook</a></li>
+                    <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a></i><a href="https://www.instagram.com/mathsdept_hansraj/" class="social-name">Instagram</a></li>
+                    <li><i class="social-icon"><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college" class="social-name">LinkedIn</a></li>
+                </ul>
+            </div>
+    
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;">
+        <div class="ved-ujj">
+            <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
+                    target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
+                    href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
+                    Agarwal</a></p>
+        </div>
+    
+    
+    </section>
+    
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        });
+    </script>
+
+    
+
+
+
+
+
+
+
+    <!-- ////////////////// BOOTSTRAP JS ///////////////////// -->
+
+    <!-- //  Optional JavaScript; choose one of the two! 
+//  Option 1: jQuery and Bootstrap Bundle (includes Popper)  -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
+        crossorigin="anonymous "></script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script> -->
+
+
+
+
+
+    <!-- ///////////////// ICONS FILE ////////////// -->
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
+
+    <!----------///////// INTERNAL JS -------------//////////-->
+
+    <script src="JS/a6.js"></script>
+
+    <!-- MathJax Start -->
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+
+
+    <!-- MathJax Over-->
+
+</body>
+
+</html>

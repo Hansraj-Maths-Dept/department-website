@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSA-129</title>
+    <style>
+        .cen{text-align: center;}
+        .alignright{text-align: right;}
+    </style>
+</head>
+<body>
+    <h1>RSA-129</h1>
+    <h6 class="cen">Gaurav Kumar<br />B.Sc. (H) Mathematics, 2nd Year</h6>
+    <p>RSA-129 is one of the first <i>Public-key Cryptosystems</i> and is widely used for securing data transmission
+        over devices. Public-key Cryptosystems means a cryptosystem which uses two keys 1.) Encryption
+        Key 2.) Decryption Key and the encryption key is made public which means the method of encrypting
+        data is available to everyone, the decryption key is kept private. It was developed by Ron Rivest, Adi
+        Shamir and Leonard Adelman and the abbreviation RSA is made of initial letters of their surnames.</p>
+    <!--<h3>Description</h3>
+    <p>RSA-129 is one of the first <i>Public-key Cryptosystems</i> and is widely used for securing data transmission
+        over devices. Public-key Cryptosystems means a cryptosystem which uses two keys 1.) Encryption Key
+        2.) Decryption Key. The encryption key is made public, which means the method of encrypting data
+        is available to everyone, but the decryption key is kept private. It was developed by Ron Rivest, Adi
+        Shamir and Leonard Adelman and the abbreviation RSA is made of initial letters of their surnames.</p>--->
+    <h3>Description</h3>
+    <p>The RSA algorithm consists of four steps: key generation, key distribution, encryption and decryption.
+        The basic principle of RSA depends on the fact that factoring a number into its prime factors is hard
+        based on the size of the number. For example, factorizing \(75\) is quite easy as \(75\ =\ 52\ \times \ 3\). But the
+        difficulty increases with every increase in the number of factor. So, it is practical to find 3 very large
+        positive integers \(e\), \(d\), \(n\) such that with modular exponentiation for all integers \(m\) (with \(0 \leq m < n\)),
+        \({({m}^{e})}^{d} \equiv m(mod\ n)\).</p>
+    <h3>Algorithm of Creating Keys</h3>
+    <ul>
+        <li>It basically starts with taking two large, distinct prime numbers say, \(p\) and \(q\).</li>
+        <li>Set \(n\ =\ p \times q\).</li>
+        <li>Set \(\lambda (n)\ =\ (p − 1) \times (q − 1)\).</li>
+        <li>Choose any integer \(e\ :\ 1 < e < \lambda (n) \) and \(gcd(e, \lambda (n))=1\) i.e., \(e\) and \(\lambda (n)\) are co-prime.</li>
+        <li>Choose an integer \(d\) such that \(d \times e \equiv 1(mod\ \lambda (n))\), which means it is the multiplicative inverse
+            of \(e\ modulo\ \lambda (n)\).</li>
+        <li>Now the encryption key is \((e,\ \lambda (n))\) which is made public and the decryption key is \((d,\ \lambda (n))\)
+            which is kept private.</li>
+    </ul>
+    <h3>Algorithm for using the Keys</h3>
+    <p>We will look at an example to get a better understanding of the topic and how RSA works. We have
+        to make the Keys for which we’ll follow the algorithm.</p>
+    <ul>
+        <li>Choose \(2\) random primes \(p\ =\ 7\) and \(q\ =\ 11\).</li>
+        <li>Then \(n\ =\ 7 \times 11\ =\ 77\).</li>
+        <li>Now, \(\lambda (n)\ =\ (7 − 1) \times (11 − 1)\ =\ 60\)</li>
+        <li>Consider any number \(e\ :\ 1 < e < \lambda (n)\). Let \(e\ =\ 17\).</li>
+        <li>We have to find an integer : \(d \times e \ \equiv \ 1(mod\ \lambda (n)\)).<br />
+            A simple method to find this is by calculating \({e}^{p−2} \equiv d(mod\ p)\), then \(d\) is the number such that
+            \(e \cdot d \ \equiv \ 1(mod\ p)\). This is based on Fermat’s Little Theorem, which will be discussed later.</li>
+        <li>So, Encryption Key is \((17, 77)\) and Decryption Key is \((53, 77)\).</li>
+    </ul>
+    <p>Now to illustrate their use:</p>
+    <ul>
+        <li>The first thing we need to look at is that the message should be converted into a mathematical
+        message. For Example, consider the message “PASSWORD”. We convert it into a message
+            (16, 1, 19, 19, 23, 15, 18, 4) which is an n-Tuple.</li>
+        <li>Then we have to encrypt it using the encryption key. Here’s how we will do it.<br />
+            Every element of the tuple will be raised to the power of \(e\) then will be divided by \(n\) and the
+            remainder \(r\) is the answer.<br />
+            Here we’ll illustrate using a number: \({16}^{17} \equiv r(mod\ n)\). This calculation, which looks complex,
+            can be made easy by using the properties of Modular Arithmetic:<br />
+            \({16}^{3} \ =\ 4096 \equiv 15(mod\ 77)\)<br />
+            \( \Rightarrow {({16}^{3})}^{5} \equiv {15}^{5}\ =\ 759, 375 \equiv 1(mod\ 77)\)<br />
+            \( \Rightarrow ({16}^{15}) \times {16}^{2} \equiv 1 \times {16}^{2}\ =\ 256 \equiv 25(mod\ 77)\)<br />
+            \( \Rightarrow {16}^{17} \equiv 25(mod\ 77)\)<br />
+            Now \(r\ =\ 25\). Similarly every element of the tuple can be reduced to \(mod\ 77\) after exponentiation
+            by \(17\).<br />
+            Now the tuple has become (25, 1, 24, 24, 67, 71, 72, 16). This tuple/message is the encrypted data
+            which can’t be decrypted without using the unique decryption key.</li>
+        <li>Decryption takes place similarly, where the encrypted message will be taken and then exponentiated
+            with the help of Decryption key which is \((53, 77)\). The calculation may seem very lengthy,
+            but it can be easily done using few tricks. Decryption of one of the element is shown :
+            \({25}^{53} \equiv r(mod\ 77)\)<br />
+            \(25 \times 25\ =\ 625 \equiv 9(mod 77)\)<br />
+            \( \Rightarrow {25}^{4} \equiv {9}^{2}\ =\ 81 \equiv 4(mod\ 77)\)<br />
+            \( \Rightarrow {({25}^{4})}^{3} \equiv {4}^{3}\ =\ 64 \equiv −13(mod\ 77) \)<br />
+            \( \Rightarrow {({25}^{12})}^{4} \equiv {(−13)}^{4}\ =\ 28561 \equiv 71(mod\ 77)\)<br />
+            \( \Rightarrow {25}^{48} \times ({{25}^{2})}^{2} \times 25 \equiv 71 \times 81 \times 25 \equiv 16(mod\ 77)\)<br />
+            \( \Rightarrow {25}^{53} \equiv 16(mod\ 77)\)<br />
+            Here we can see that original element \(16\) (the first element of tuple) is obtained back, which
+            verifies that Decryption is accurate.
+            After doing the same process with all those elements the new tuple will be exactly the same as
+            the original tuple/message, that is, (16, 1, 19, 19, 23, 15, 18, 4).</li>
+    </ul>
+    <h3>Mathematics behind RSA</h3>
+    <p>Obviously, this astonishing cryptosystem is based on rigorous maths. It basically depends on two
+        major facts: Existence of unique Inverses in a Group, and Fermat’s Little Theorem.
+        Before getting into further details of the system, a brief about these:</p>
+    <ul>
+        <li>Groups are algebraic structures in maths. It is basically a Set equipped with a binary operation
+            on it and with some postulates that it holds:
+            <ul>
+                <li>Associativity</li>
+                <li>Existence of unique Identity element.</li>
+                <li>Existence of unique Inverse of each element.</li>
+            </ul>
+            Example: Set of Integers under addition.
+        </li>
+        <li>Fermat’s Little Theorem states that for any prime \(p\) </li>
+    </ul>
+    <p>\[{a}^{p-1} \equiv 1(mod\ p) \forall a \in \mathbb{Z}, \ gcd(a,p)\ =\ 1\]
+       Now, choosing \(p\) and \(q\) arbitrarily, set \(n\ =\ p \times q\) and \(\lambda (n)\ =\ (p − 1)(q − 1)\).<br />
+        Choose \(e\) such that \(1 < e < \lambda (n)\) and \(gcd(e, \lambda (n))\ =\ 1\).<br />
+        The first question arises with existence of \(d\ :\ e \times d \equiv 1(mod\ \lambda (n))\).</p>
+    <p>Using B´ezout’s identity that for every \(2\) integers \(e\), \(\lambda (n) \exists\) integers \(x\) and \(y\ :\ ex+\lambda(n)y\ =\ gcd(e, \lambda (n))\).<br />
+        Now since \(gcd(e, \lambda (n))\ =\ 1\), there exists an integer \(x\ :\ e \times x \equiv 1(mod\ \lambda (n))\).<br />
+        Now by Euclid’s division algorithm \(x\ =\ n \cdot q + d , 0 \leq d < n\) and \(e \times d \equiv 1(mod\ n\).<br />
+        Let’s pick any number \(g\) which is a message, \(g < n\). \(g\) will be encrypted using\((e, n)\).<br />
+        Let \({g}^{e} \equiv {r}_{1}(mod\ n)\),encrypted message will be \({r}_{1}\), \(0 \leq {r}_{1} < n\).</p>
+    <p>Now Decryption will take place the same way \({r}_{d}^{1} \equiv {({g}^{e})}^{d} \equiv {r}_{2}(mod\ n)\), \(0 \leq {r}_{2} < n\)<div class="alignright">\(\ldots (1)\)</div><br />
+        Since \(ed \equiv 1(mod\ \lambda (n)) \Rightarrow ed = 1 + k \times \lambda (n))\)<br />
+        and since \(\lambda (n)\ =\ (p − 1)(q − 1) \Rightarrow {g}^{ed}\ =\ {g}^{1} \times {({g}^{(p−1)(q−1)})}^{k}<br />
+        Now, \({g}^{(p−1)} \equiv 1(mod\ p) \Rightarrow {({g}^{(p−1)})}^{(q−1)} \equiv {1}^{(q−1)} \equiv 1(mod\ p)<div class="alignright">\(\ldots (2)\)</div><br />
+        Similarly, \({({g}^{(q−1)})}^{(p−1)} \equiv 1(mod\ q)\)<div class="alignright">\(\ldots (3) \)</div><br />
+        From \((2)\) & \((3)\), and since \(p\) and \(q\) are co-prime \( \Rightarrow {g}^{(p−1)(q−1)} \equiv 1(mod\ p \times q)\) <div class="alignright">\(\ldots (4)\)</div><br />
+        From \((1)\) & \((4)\) and since \(n\ =\ pq \Rightarrow {g}^{ed} \equiv {r}_{2} \equiv g \times 1(mod\ n)\)<br />
+        It shows that message will be obtained back after Decryption accurately because \({r}_{2} − g\) is a multiple
+        of \(n\) and \(0 \leq {r}_{2}\), \(g < n\), hence \({r}_{2} − g\ =\ 0\) and hence they are equal.</p>
+
+    <p>Also, \({e}^{p−2} \equiv d(mod\ p)\) gives the inverse of \(e\) because of Fermat’s Little theorem<br />
+        \({e}^{p−1} \equiv 1(mod\ p) \Rightarrow e \cdot {e}^{p−2} \equiv 1(mod\ p) \Rightarrow e\cdot d \equiv 1(mod\ p)\), hence inverse.</p>
+    <h3>Advantages of RSA</h3>
+    <p>After looking at how it works, we shall now discuss its features and advantages:</p>
+    <ul>
+        <li>The foremost benefit is that factoring becomes very hard after the integers get really big and, in
+            fact, RSA-129 uses two \(64\) and \(65\) digit primes, leading to a \(129\) digit long number. It takes a lot
+            of computation to factor a number. Moreover, to increase the level of difficulty, the difference
+            between the two primes is chosen to be small compared to their size because otherwise, it can
+            be easily determined.</li>
+            <li>Here, the factors are important because without determining the factors \(p\) and \(q\) the Decryption
+                key \(d\) can’t be determined because it depends on \(\lambda (n)\) which we can’t determine without knowing
+                \(p\) and \(q\).</li>
+        <li>Now, to get an idea as to why finding \(d\) is so hard, note that \(d\) is the multiplicative inverse of \(e\)
+            with respect to \(mod\ \lambda (n)\), and since it forms a group with respect to the operation multiplication
+            \(mod\ \lambda (n)\), it will have a unique inverse, and to find the inverse of any element we need to know
+            the operation since inverse changes with the operation, like the additive inverse of \(2\) is \(-2\) but the
+            multiplicative inverse is \(\frac{1}{2}\) . So. to find the operation, we must know \(\lambda (n)\).</li>
+        <li>Also, if you can’t find \(d\) then you have to approach from a different direction. For example, let
+            \(r\) be the ciphered element. Then we have to look solutions for \({x}^{e} \equiv r(mod\ n)\), which is basically
+            the same as looking for an \({e}_{th}\) root of \(r(mod\ n)\), which is also not easy because the length of
+            numbers chosen are arbitrarily long.</li>
+    </ul>
+    <h3>Disadvantages of RSA</h3>
+    <p>Every code is not perfect and it can have loopholes which the hackers can exploit.</p>
+    <ul>
+        <li>Using lower encryption exponents can lead to easy calculation of the \({e}_{th}\) root of the encrypted
+            text.</li>
+        <li>If the same \(e\) is used for encrypting the same texts with different \(p\) and \(q\), which means different
+            \(n\), then by using the <i>Chinese Remainder Theorem</i> we can calculate the original message using
+            encrypted message.</li>
+        <li>The RSA is not semantically secure since it follows a fixed process and no random techniques.
+            The hacker can use this flaw to exploit it by encrypting similar messages and checking whether
+            the encrypted texts are also similar and hence it becomes easy for him to crack the code by
+            working backwards.</li>
+    </ul>
+    <h3>Conclusion</h3>
+    <p>In the end, what matters is the security of a cryptosystem, which is based on how hard it is to
+        break it. The Original RSA-129 took more than 20 years to break. The original number was \(n\ =\ \)
+        114381625757888867669235779976146612010218296721242362562562....<br />
+        ...5618429357069352457338978305971235639587050898075147599290026879543541.</p>
+    <p>The length of the number shows that complexity increases with length and in contemporary times,
+        computers like NATWEST BANK uses \(n\) with 2048 bits, which is so long that it might take years to
+        be factorized. Everything can be calculated or estimated in this age of technology, even the growth of
+        computers, but the complexity and power of algorithms in the future is something that grows beyond
+        our comprehension, and this fact allows the possibility of one which makes factoring easy. But until
+        such technology arises, RSA-129 continues to be one of the most effective cryptosystems one can
+        employ.</p>
+
+
+
+
+
+<!-- MathJax Start -->
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+
+
+<!-- MathJax Over-->
+</body>
+</html>
