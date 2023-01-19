@@ -6,25 +6,26 @@
 */
 
 :root {
-    --lightest-grey: rgb(241, 243, 248);
-    --light-grey: rgb(214, 224, 240);
-    --dark-grey: rgb(141, 147, 171);
-    --darkest-grey: rgb(57, 59, 68);
+  --lightest-grey: rgb(241, 243, 248);
+  --light-grey: rgb(214, 224, 240);
+  --dark-grey: rgb(141, 147, 171);
+  --darkest-grey: rgb(57, 59, 68);
 }
 
 /*_______________________ FULL BODY EDITS ____________________________*/
 
 .header {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-button:focus, input:focus {
-    outline: none;
+button:focus,
+input:focus {
+  outline: none;
 }
 
 body {
-    font-family: "Lato", "sans-serrif";
+  font-family: "Lato", "sans-serrif";
 }
 
 /* _____________________ NAVIGATION BAR _____________________________
@@ -33,51 +34,53 @@ body {
     /*********** DEPARTMENT LOGO *********/
 
 .department-logo img {
-    height: 60px;
-    width: 65px;
-    /* filter: invert(98%); */
+  height: 60px;
+  width: 65px;
+  /* filter: invert(98%); */
 }
 
 /********** MAIN NAVIGATION PANEL *********/
 
 .nav-edits {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    background-color: rgba(241, 243, 248, 0.7) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  background-color: rgba(241, 243, 248, 0.7) !important;
 }
 
 .nav-link-edits {
-    padding-right: 4%;
+  padding-right: 4%;
 }
 
 .nav-link-edits a {
-    color: var(--darkest-grey) !important;
-    font-size: 18px !important;
-    font-weight: 400;
+  color: var(--darkest-grey) !important;
+  font-size: 18px !important;
+  font-weight: 400;
 }
 
 .nav-link-edits a:hover {
-    color: rgb(72, 74, 82) !important;
+  color: rgb(72, 74, 82) !important;
 }
 
 .dropdown-menu {
-    background-color: rgba(241, 243, 248, 0.9) !important;
-    /* box-shadow: 5px 5px 15px rgb(241, 243, 248); */
-    border: none;
+  background-color: rgba(241, 243, 248, 0.9) !important;
+  /* box-shadow: 5px 5px 15px rgb(241, 243, 248); */
+  border: none;
 }
 
 .dropdown-item:hover {
-    background-color: rgb(241, 243, 248, 0.92) !important;
+  background-color: rgb(241, 243, 248, 0.92) !important;
 }
 
 .collapse-edits {
-    margin-right: 110px !important;
+  margin-right: 110px !important;
 }
 .dropdown-divider {
   border-top: 1px solid #888a8c !important;
 }
-.ved-ujj p, .ved-ujj a{
+.ved-ujj p,
+.ved-ujj a {
   font-size: 14px;
+  display: none;
 }
 .ved-ujj a {
   color: rgb(53, 53, 165);
@@ -86,116 +89,116 @@ body {
 /********** RESPONSIVE TOGGLER ***********/
 
 .responsive-nav {
-    border: none !important;
-    position: absolute;
-    right: 5px;
-    top: 11px;
-    font-size: 35px;
-    color: var(--darkest-grey) !important;
+  border: none !important;
+  position: absolute;
+  right: 5px;
+  top: 11px;
+  font-size: 35px;
+  color: var(--darkest-grey) !important;
 }
 
 /*************** SEARCH BUTTON **************/
 
 .openBtn {
-    border: none;
-    padding: 12px 15px;
-    font-size: 22px;
-    cursor: pointer;
-    background-color: transparent;
-    position: absolute;
-    right: 0px;
-    top: 6px;
-    color: var(--darkest-grey) !important;
+  border: none;
+  padding: 12px 15px;
+  font-size: 22px;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  color: var(--darkest-grey) !important;
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: var(--dark-grey);
-    background-color: rgba(141, 147, 171, 0.877);
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-grey);
+  background-color: rgba(141, 147, 171, 0.877);
 }
 
 .overlay-content {
-    position: relative;
-    top: 46%;
-    width: 80%;
-    text-align: center;
-    margin-top: 30px;
-    margin: auto;
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
 }
 
 .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    cursor: pointer;
-    color: var(--light-grey);
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: var(--light-grey);
 }
 
 .overlay .closebtn:hover {
-    color: var(--darkest-grey);
+  color: var(--darkest-grey);
 }
 
 .overlay input[type="text"] {
-    padding: 15px;
-    font-size: 17px;
-    border: none;
-    float: left;
-    width: 80%;
-    background: var(--darkest-grey);
-    border-radius: 20px;
-    margin-right: 15px;
-    color: var(--lightest-grey);
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: var(--darkest-grey);
+  border-radius: 20px;
+  margin-right: 15px;
+  color: var(--lightest-grey);
 }
 
 .overlay input[type="text"]:hover {
-    background: var(--darkest-grey);
-    background: rgb(57, 59, 68, 0.88);
+  background: var(--darkest-grey);
+  background: rgb(57, 59, 68, 0.88);
 }
 
 .overlay button {
-    float: left;
-    width: 13%;
-    padding: 11px;
-    background: var(--lightest-grey);
-    font-size: 22px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
+  float: left;
+  width: 13%;
+  padding: 11px;
+  background: var(--lightest-grey);
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 .overlay button:hover {
-    background: var(--light-grey);
+  background: var(--light-grey);
 }
 
 /* ______________ SEMINARS MAIN _______________*/
 
 .seminars-main {
-    background-image: url(../images/seminar-main.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-bottom: 70px;
+  background-image: url(../images/seminar-main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 70px;
 }
 
 /* ____________ SEMINARS CARDS _____________ */
 
 .seminar-1 {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-bottom: 40px;
-  }
-  .seminar-2 {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+.seminar-2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .card {
   background-color: transparent !important;
@@ -206,23 +209,24 @@ body {
   color: var(--lightest-grey) !important;
 }
 
-.card-body{
+.card-body {
   background-color: rgb(255, 255, 255, 0.1) !important;
   color: rgb(211, 211, 212) !important;
 }
 
-.seminar-1 a:hover, .seminar-2 a:hover {
+.seminar-1 a:hover,
+.seminar-2 a:hover {
   text-decoration: none;
 }
 
-.seminar-heading{
+.seminar-heading {
   text-align: center;
   color: var(--lightest-grey);
   padding-top: 70px;
   padding-bottom: 60px;
 }
 
-.seminar-content{
+.seminar-content {
   color: var(--lightest-grey);
   width: 70%;
   margin: auto;
@@ -231,42 +235,40 @@ body {
 }
 /* _______________ SEMINAR DESCRIPTION ______________ */
 
-
-
 .about-content {
-    padding-bottom: 200px;
-    background-color: var(--lightest-grey);
-    color: var(--darkest-grey);
-  }
-  
-  .about-content img {
-    display: block;
-    margin: auto;
-    width: 700px;
-    height: 600px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
-  .content-1 {
-    width: 750px;
-    margin: auto;
-    padding: 25px 0px;
-    text-align: justify;
-    font-size: 18px;
-    line-height: 1.5;
-    /* font-weight: lighter; */
-  }
-  
-  .about-content h2 {
-    width: 750px;
-    margin: auto;
-    padding-bottom: 30px;
-    font-size: 35px;
-    padding-top: 80px;
-  }
+  padding-bottom: 200px;
+  background-color: var(--lightest-grey);
+  color: var(--darkest-grey);
+}
 
-  /* _____ FOOTER ______ */
+.about-content img {
+  display: block;
+  margin: auto;
+  width: 700px;
+  height: 600px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.content-1 {
+  width: 750px;
+  margin: auto;
+  padding: 25px 0px;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+  /* font-weight: lighter; */
+}
+
+.about-content h2 {
+  width: 750px;
+  margin: auto;
+  padding-bottom: 30px;
+  font-size: 35px;
+  padding-top: 80px;
+}
+
+/* _____ FOOTER ______ */
 
 .footer-bs {
   background-color: var(--darkest-grey);
@@ -278,11 +280,16 @@ body {
   border-bottom-left-radius: 6px;
 }
 
-.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+.footer-bs .footer-brand,
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
   padding: 10px 25px;
 }
 
-.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
   border-color: transparent;
 }
 
@@ -305,7 +312,7 @@ body {
 }
 
 .footer-bs .footer-nav ul.pages a {
-  color:rgb(241, 243, 248, 0.7);
+  color: rgb(241, 243, 248, 0.7);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -419,17 +426,18 @@ body {
   vertical-align: text-top;
 }
 
-.footer-social h4, .footer-ns h4 {
+.footer-social h4,
+.footer-ns h4 {
   font-size: 15px !important;
 }
 
 .footer-image img {
   filter: invert(98%);
 }
-.input-group-btn .btn{
+.input-group-btn .btn {
   box-shadow: none;
 }
-.input-group .form-control{
+.input-group .form-control {
   box-shadow: none;
 }
 
@@ -438,111 +446,113 @@ body {
 /*______________ NAV-COMPONENTS ______________*/
 
 @media (max-width: 987.98px) {
-    .department-logo {
-        height: 47px;
-        width: 55px;
-        margin-bottom: 10px;
-        margin-top: -12px;
-    }
-    .responsive-nav {
-        font-size: 28px;
-        margin-top: -5px;
-    }
-    .openBtn {
-        font-size: 18px;
-        margin-top: -5px;
-    }
+  .department-logo {
+    height: 47px;
+    width: 55px;
+    margin-bottom: 10px;
+    margin-top: -12px;
+  }
+  .responsive-nav {
+    font-size: 28px;
+    margin-top: -5px;
+  }
+  .openBtn {
+    font-size: 18px;
+    margin-top: -5px;
+  }
 }
 
 /* ___________ EVENT DESCRIPTION ________________*/
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .about-content {
-      padding-bottom: 200px;
-    }
-    .about-content img {
-      width: 550px;
-      height: 500px;
-    }
-    .content-1 {
-      width: 600px;
-      line-height: 1.45;
-      padding: 23px 0px;
-    }
-    .about-content h2 {
-      width: 600px;
-      margin: auto;
-      padding-bottom: 30px;
-      font-size: 35px;
-      padding-top: 60px;
-    }
+  .about-content {
+    padding-bottom: 200px;
   }
-  
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    .about-content {
-      padding-bottom: 200px;
-    }
-    .about-content img {
-      width: 440px;
-      height: 430px;
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-    .content-1 {
-      width: 490px;
-      line-height: 1.4;
-      padding: 20px 0px;
-    }
-    .about-content h2 {
-      width: 490px;
-      margin: auto;
-      padding-bottom: 30px;
-      font-size: 35px;
-      padding-top: 50px;
-    }
+  .about-content img {
+    width: 550px;
+    height: 500px;
   }
-  
-  @media (max-width: 575.98px) {
-    .about-content {
-      padding-bottom: 200px;
-    }
-    .seminar-1{
-      padding-bottom: 0px;
-    }
-    .content-1 {
-      width: 95%;
-      line-height: 1.2;
-      padding: 15px 0px;
-      text-align: justify;
-      font-weight: lighter;
-    }
-    .about-content h2 {
-      width: 95%;
-      margin: auto;
-      padding-bottom: 20px;
-      font-size: 30px;
-      padding-top: 40px;
-      text-align: left;
-    }
+  .content-1 {
+    width: 600px;
+    line-height: 1.45;
+    padding: 23px 0px;
+  }
+  .about-content h2 {
+    width: 600px;
+    margin: auto;
+    padding-bottom: 30px;
+    font-size: 35px;
+    padding-top: 60px;
+  }
+}
 
-    .seminar-content{
-      font-size: 0px;
-      padding-bottom: 0px;
-    }
-    .seminar-heading{
-      font-size: 45px;
-      padding-top: 40px;
-    }
-    .card{
-      width: 95%;
-      margin: auto;
-    }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-content {
+    padding-bottom: 200px;
+  }
+  .about-content img {
+    width: 440px;
+    height: 430px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .content-1 {
+    width: 490px;
+    line-height: 1.4;
+    padding: 20px 0px;
+  }
+  .about-content h2 {
+    width: 490px;
+    margin: auto;
+    padding-bottom: 30px;
+    font-size: 35px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-content {
+    padding-bottom: 200px;
+  }
+  .seminar-1 {
+    padding-bottom: 0px;
+  }
+  .content-1 {
+    width: 95%;
+    line-height: 1.2;
+    padding: 15px 0px;
+    text-align: justify;
+    font-weight: lighter;
+  }
+  .about-content h2 {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 20px;
+    font-size: 30px;
+    padding-top: 40px;
+    text-align: left;
   }
 
-  /* ____ FOOTER _____ */
+  .seminar-content {
+    font-size: 0px;
+    padding-bottom: 0px;
+  }
+  .seminar-heading {
+    font-size: 45px;
+    padding-top: 40px;
+  }
+  .card {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+/* ____ FOOTER _____ */
 
 @media (min-width: 768px) {
-  .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+  .footer-bs .footer-nav,
+  .footer-bs .footer-social,
+  .footer-bs .footer-ns {
     border-left: solid 1px rgb(241, 243, 248, 0.2);
   }
 }
@@ -566,7 +576,8 @@ body {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
   }
-  .footer-social h4, .footer-ns h4 {
+  .footer-social h4,
+  .footer-ns h4 {
     padding-bottom: 10px !important;
     font-size: 13px !important;
   }
@@ -594,7 +605,8 @@ body {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
   }
-  .footer-social h4, .footer-ns h4 {
+  .footer-social h4,
+  .footer-ns h4 {
     padding-bottom: 10px !important;
     font-size: 13px !important;
   }
@@ -606,12 +618,13 @@ body {
 /* _____________ DESIGN AND DEVELOPMENT ______________ */
 
 @media (max-width: 576px) {
-  .ved-ujj p, .ved-ujj a{
-      font-size: 10px;
+  .ved-ujj p,
+  .ved-ujj a {
+    font-size: 10px;
   }
 }
 
-.form-control{
+.form-control {
   padding-top: 0px;
   padding-bottom: 0px;
   height: 37px;

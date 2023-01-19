@@ -19,7 +19,8 @@
   padding: 0px;
 }
 
-button:focus, input:focus {
+button:focus,
+input:focus {
   outline: none;
 }
 
@@ -76,8 +77,10 @@ body {
   margin-right: 110px !important;
 }
 
-.ved-ujj p, .ved-ujj a{
+.ved-ujj p,
+.ved-ujj a {
   font-size: 14px;
+  display: none;
 }
 .ved-ujj a {
   color: rgb(53, 53, 165);
@@ -265,7 +268,10 @@ body {
   margin-bottom: 100px;
 }
 
-.card-1, .card-2, .card-3, .card-4 {
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
   border: none;
   outline: none;
   box-shadow: 3px 6px 10px rgb(112 112 112 / 54%);
@@ -276,7 +282,8 @@ body {
   color: var(--darkest-grey);
 }
 
-.card-a a:hover, .card-b a:hover {
+.card-a a:hover,
+.card-b a:hover {
   text-decoration: none !important;
 }
 
@@ -284,7 +291,8 @@ body {
   filter: brightness(85%);
 }
 
-.card img:hover, .card img.clicked {
+.card img:hover,
+.card img.clicked {
   filter: brightness(60%);
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -345,11 +353,16 @@ body {
   border-bottom-left-radius: 6px;
 }
 
-.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+.footer-bs .footer-brand,
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
   padding: 10px 25px;
 }
 
-.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
   border-color: transparent;
 }
 
@@ -451,7 +464,6 @@ body {
 .footer-image img {
   width: 80px;
   height: 80px;
- 
 }
 
 .logo-footer {
@@ -459,15 +471,12 @@ body {
   padding-bottom: 15px;
 }
 
-
-
 .footer-name h5 {
   font-size: 15px;
   margin-top: 15px;
 }
 .footer-name h6 {
   font-size: 13px;
-  
 }
 
 .unite-icon {
@@ -477,21 +486,19 @@ body {
 
 .input-group-btn {
   margin-top: -8px;
-
 }
 .social-icon {
   color: var(--darkest-grey);
   padding-right: 10px;
-
 }
 .social-name {
   font-size: 12px !important;
   vertical-align: text-top;
 }
-.footer-social h4, .footer-ns h4 {
+.footer-social h4,
+.footer-ns h4 {
   font-size: 15px !important;
 }
-
 
 /* _____________ MEDIA QUERIES ____________ */
 
@@ -750,80 +757,80 @@ body {
 /* __________ FOOTER ___________ */
 
 @media (min-width: 768px) {
-  .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
-      border-left: solid 1px rgb(57, 59, 68, 0.1);
+  .footer-bs .footer-nav,
+  .footer-bs .footer-social,
+  .footer-bs .footer-ns {
+    border-left: solid 1px rgb(57, 59, 68, 0.1);
   }
-  
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .footer-image img {
-      width: 100px;
-      height: 100px;
+    width: 100px;
+    height: 100px;
   }
   .footer-name h5 {
-      font-size: 18px;
-      margin-top: 27px;
+    font-size: 18px;
+    margin-top: 27px;
   }
   .footer-name h6 {
-      font-size: 14px;
+    font-size: 14px;
   }
   .address-footer p {
-      font-size: 13px !important;
+    font-size: 13px !important;
   }
   .footer-bs {
-      padding-top: 20px !important;
-      padding-bottom: 20px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
-  .footer-social h4, .footer-ns h4 {
-      padding-bottom: 10px !important;
-      font-size: 13px !important;
+  .footer-social h4,
+  .footer-ns h4 {
+    padding-bottom: 10px !important;
+    font-size: 13px !important;
   }
   .logo-footer {
-      padding-bottom: 15px !important;
+    padding-bottom: 15px !important;
   }
 }
 @media (max-width: 576px) {
   .footer-image img {
-      width: 60px;
-      height: 60px;
+    width: 60px;
+    height: 60px;
   }
   .footer-name h5 {
-      font-size: 14px;
-      margin-top: 13px;
+    font-size: 14px;
+    margin-top: 13px;
   }
   .footer-name h6 {
-      font-size: 10px;
-      
+    font-size: 10px;
   }
   .address-footer p {
-      font-size: 10px !important;
+    font-size: 10px !important;
   }
   .footer-bs {
-      padding-top: 20px !important;
-      padding-bottom: 20px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
-  .footer-social h4, .footer-ns h4 {
-      padding-bottom: 10px !important;
-      font-size: 13px !important;
+  .footer-social h4,
+  .footer-ns h4 {
+    padding-bottom: 10px !important;
+    font-size: 13px !important;
   }
   .logo-footer {
-      padding-bottom: 15px !important;
-     
-
+    padding-bottom: 15px !important;
   }
-  
 }
 
 /* _____________ DESIGN AND DEVELOPMENT ______________ */
 
 @media (max-width: 576px) {
-  .ved-ujj p, .ved-ujj a{
-      font-size: 10px;
+  .ved-ujj p,
+  .ved-ujj a {
+    font-size: 10px;
   }
 }
 
-.form-control{
+.form-control {
   padding-top: 0px;
   padding-bottom: 0px;
   height: 37px;

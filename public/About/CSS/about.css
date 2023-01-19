@@ -78,6 +78,7 @@ body {
 }
 
 .ved-ujj p, .ved-ujj a{
+  display: none
   font-size: 14px;
 }
 .ved-ujj a {
