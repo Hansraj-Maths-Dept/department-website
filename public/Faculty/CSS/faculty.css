@@ -408,12 +408,12 @@ body {
   padding-bottom: 100px;
 }
 
-.ved-ujj p,
-.ved-ujj a {
+.shiv p,
+.shiv a {
   display: none;
   font-size: 14px;
 }
-.ved-ujj a {
+.shiv a {
   color: rgb(53, 53, 165);
 }
 
@@ -542,8 +542,8 @@ body {
 /* _____________ DESIGN AND DEVELOPMENT ______________ */
 
 @media (max-width: 576px) {
-  .ved-ujj p,
-  .ved-ujj a {
+  .shiv p,
+  .shiv a {
     font-size: 10px;
   }
 }
