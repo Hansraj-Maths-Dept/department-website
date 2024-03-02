@@ -77,12 +77,12 @@ body {
 .dropdown-divider {
   border-top: 1px solid #888a8c !important;
 }
-.ved-ujj p,
-.ved-ujj a {
+.shiv p,
+.shiv a {
   font-size: 14px;
   display: none;
 }
-.ved-ujj a {
+.shiv a {
   color: rgb(53, 53, 165);
 }
 
@@ -618,8 +618,8 @@ body {
 /* _____________ DESIGN AND DEVELOPMENT ______________ */
 
 @media (max-width: 576px) {
-  .ved-ujj p,
-  .ved-ujj a {
+  .shiv p,
+  .shiv a {
     font-size: 10px;
   }
 }
