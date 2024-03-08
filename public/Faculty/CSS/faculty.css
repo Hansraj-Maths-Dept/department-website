@@ -35,7 +35,7 @@ body {
 .department-logo img {
     height: 60px;
     width: 65px;
-    /* filter: invert(98%); */
+    filter: invert(98%);
 }
 
 /********** MAIN NAVIGATION PANEL *********/
@@ -51,23 +51,24 @@ body {
 }
 
 .nav-link-edits a {
-    color: var(--darkest-grey) !important;
+    color: white !important;
     font-size: 18px !important;
     font-weight: 400;
 }
 
 .nav-link-edits a:hover {
-    color: var(--dark-grey) !important;
+    color: rgb(217, 209, 149) !important;
+    text-decoration: underline;
 }
 
 .dropdown-menu {
-    background-color: rgb(241, 243, 248, 1) !important;
+    background-color: rgb(57, 59, 68, 0.82) !important;
     /* box-shadow: 5px 5px 15px rgb(241, 243, 248); */
     border: none;
 }
 
 .dropdown-item:hover {
-    background-color: rgb(241, 243, 248, 0.92) !important;
+    background-color: rgb(57, 59, 68, 0.82) !important;
 }
 .dropdown-divider {
     border-top: 1px solid #888a8c !important;
@@ -84,7 +85,7 @@ body {
     right: 5px;
     top: 11px;
     font-size: 35px;
-    color: var(--darkest-grey) !important;
+    color: white !important;
 }
 
 /*************** SEARCH BUTTON **************/
@@ -179,7 +180,7 @@ body {
     text-align: center;
     padding-top: 70px;
     padding-bottom: 70px;
-    background-color: var(--darkest-grey);
+    background-color: #373747 !important;
     margin-bottom: 20px;
 }
 
@@ -198,7 +199,7 @@ body {
 }
 
 .teacher {
-    background-color: rgb(158 158 158 / 2%);
+    background-color: #f4fcff;
     border: 1px solid rgb(0, 0, 0, 0.125);
     width: 25%;
     box-shadow: 0px 3px 10px rgb(112 112 112 / 40%);
@@ -239,9 +240,9 @@ body {
 /* _______________ FOOTER ________________ */
 
 .footer-bs {
-    background-color: var(--darkest-grey);
+    background-color: #202124 !important;
     padding: 60px 40px;
-    color: var(--lightest-grey);
+    color: white;
     margin-bottom: 20px;
     border-bottom-right-radius: 6px;
     border-top-left-radius: 0px;

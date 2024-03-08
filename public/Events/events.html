@@ -29,23 +29,46 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Our Events</title>
-    <link rel="shortcut icon" type="image/jpg" href="images/pifavicon.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/pifavicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- boot link -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body style="font-family: Ubuntu, sans-serif;
+font-weight: 500;
+font-style: normal;">
 
     <div class="header">
 
         <!-- ---------NAVIGATION--------- -->
 
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-edits">
+        <nav class="navbar navbar-expand-lg navbar-light nav-edits fixed-top"
+            style="background-color: #0e5332 !important; margin: 0%; border-radius: 0%;">
 
             <!-- ---------NAV LOGO---------  -->
-
-            <a class="navbar-brand mr-auto department-logo" href="/index.html"><img src="images\PIII.png"
-                    alt="department logo"></a>
+            <a class="navbar-brand mr-auto department-logo" href="#" style="    position: relative;
+                bottom: 1rem;
+            "><img src="images/PIII.png"></a>
 
             <!-- ---------RESPONSIVE TOGGLER---------  -->
 
@@ -66,12 +89,12 @@
                             About
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/About/about.html#the-department">The Department</a>
-                            <a class="dropdown-item" href="/About/about.html#our-alumni">Our Alumni</a>
+                            <a class="dropdown-item" href="About/about.html#the-department">The Department</a>
+                            <a class="dropdown-item" href="About/about.html#our-alumni">Our Alumni</a>
                         </div>
                     </li>
                     <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="/Seminars/seminars.html">Seminars</a>
+                        <a class="nav-link" href="Seminars/seminars.html">Seminars</a>
                     </li>
                     <li class="nav-item dropdown nav-link-edits">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -79,10 +102,10 @@
                             Journal
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/Journal/journal-a.html">Aankalan</a>
+                            <a class="dropdown-item" href="Journal/journal-a.html">Aankalan</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/Journal/journal-a.html#download-journal">Download</a>
-                            <a class="dropdown-item" href="/Journal/journal-a.html#article-journal">Articles</a>
+                            <a class="dropdown-item" href="Journal/journal-a.html#download-journal">Download</a>
+                            <a class="dropdown-item" href="Journal/journal-a.html#article-journal">Articles</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown nav-link-edits">
@@ -91,88 +114,167 @@
                             Events
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="events.html">Our events</a>
+                            <a class="dropdown-item" href="Events/events.html">Our events</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="events.html#fresher-19">Freshers '19</a>
-                            <a class="dropdown-item" href="events.html#farewell-20">Farewell '20</a>
-                            <a class="dropdown-item" href="events.html#teacher-20">Teachers' Day '20</a>
+                            <a class="dropdown-item" href="Events/events.html#fresher-19">Freshers '19</a>
+                            <a class="dropdown-item" href="Events/events.html#farewell-19">Farewell '20</a>
+                            <a class="dropdown-item" href="Events/events.html#teacher-19">Teachers' Day '20</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="events.html#identity-20">Identity '20</a>
+                            <a class="dropdown-item" href="Events/events.html#identity-20">Identity '20</a>
                         </div>
                     </li>
                     <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="/Faculty/faculty.html">Faculty</a>
+                        <a class="nav-link" href="Faculty/faculty.html">Faculty</a>
                     </li>
                     <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="/conference">Conference</a>
+                        <a class="nav-link" href="./Council/council.html">Council</a>
                     </li>
+
                 </ul>
             </div>
 
-            <!-- ---------SEARCH--------- -->
-            <!-- ---------SEARCH--------- 
-            <div id="myOverlay" class="overlay">
-                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-                <div class="overlay-content">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Explore" name="search">
-                        <button type="submit">
-                            <ion-icon name="search"></ion-icon>
-                            </ion-icon></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <button class="openBtn" onclick="openSearch()">
-                <ion-icon name="search"></ion-icon>
-                </ion-icon>
-            </button>
-            -->
 
 
         </nav>
     </div>
 
+    <!-- ---------NAVIGATION--------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-edits fixed-top"
+        style="background-color: #0e5332 !important; margin: 0%; border-radius: 0%;">
+
+        <!-- ---------NAV LOGO---------  -->
+
+        <a class="navbar-brand mr-auto department-logo" href="index.html"><img src="images/PIII.png"
+                alt="department logo"></a>
+
+        <!-- ---------RESPONSIVE TOGGLER---------  -->
+
+        <button class="navbar-toggler responsive-nav" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler-edit">
+
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+        </button>
+
+        <!-- ---------COLLAPSE NAVBAR---------  -->
+
+        <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
+
+            <ul class="navbar-nav mx-auto main-nav-edits">
+                <li class="nav-item nav-link-edits">
+                    <a class="nav-link" href="/public/index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown nav-link-edits">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                        style="background-color: rgb(57, 59, 68, 0.82) !important;">
+                        <a class="dropdown-item" href="../About/about.html#the-department">The Department</a>
+                        <a class="dropdown-item" href="../About/about.html#our-alumni">Our Alumni</a>
+                    </div>
+                </li>
+                <li class="nav-item nav-link-edits">
+                    <a class="nav-link" href="../Seminars/seminars.html">Seminars</a>
+                </li>
+                <li class="nav-item dropdown nav-link-edits">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Journal
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                        style="background-color: rgb(57, 59, 68, 0.82) !important;">
+                        <a class="dropdown-item" href="../Journal/journal-a.html">Aankalan</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../Journal/journal-a.html#download-journal">Download</a>
+                        <a class="dropdown-item" href="../Journal/journal-a.html#article-journal">Articles</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown nav-link-edits">
+                    <a class="nav-link" href="../Events/events.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Events
+                    </a>
+                </li>
+                <li class="nav-item nav-link-edits">
+                    <a class="nav-link" href="../Faculty/faculty.html">Faculty</a>
+                </li>
+                <li class="nav-item dropdown nav-link-edits">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Council
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                        style="background-color: rgb(57, 59, 68, 0.82) !important;">
+                        <a class="dropdown-item" href="/public/Council/core.html">Core</a>
+                        <a class="dropdown-item" href="/public/Council/head.html">Head</a>
+                        <a class="dropdown-item" href="/public/Council/member.html">Member</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </nav>
+    </div>
 
     <!------------------- CAROUSEL -------------------->
-    <div class="section-carousel">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-edits" data-ride="carousel"
-            data-interval="5500">
-            <div class="carousel-inner">
-                <div class="carousel-item active carousel-item-edits">
-                    <img src="images/12345.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block">
-                        <h2>Identity '20</h2>
-                        <h5>Department of Mathematics</h5>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-edits">
-                    <img src="images/Freshers-c.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block">
-                        <h2>Freshers '19</h2>
-                        <h5>Department of Mathematics</h5>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-edits">
-                    <img src="images/Farewell-c.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block">
-                        <h2>Farewell '20</h2>
-                        <h5>Department of Mathematics</h5>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-edits">
-                    <img src="images/Teachers-c.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block">
-                        <h2>Teacher's Day '20</h2>
-                        <h5>Department of Mathematics</h5>
-                    </div>
-                </div>
 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+        </ol>
 
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="./images/freshers 2022.jpeg" alt="Los Angeles"
+                    style="width:100%; height: 60rem; opacity: 0.9;">
             </div>
 
+            <div class="item">
+                <img src="./images/garba2022.jpg" alt="Chicago" style="width:100%; height: 60rem; opacity: 0.9;">
+            </div>
+
+            <div class="item">
+                <img src="./images/teachers day 22.jpeg" alt="New york"
+                    style="width:100%; height: 60rem; opacity: 0.9;">
+            </div>
+            <div class="item">
+                <img src="./images/Farewell-c.jpg" alt="New york" style="width:100%; height: 60rem; opacity: 0.9;">
+            </div>
+            <div class="item">
+                <img src="./images/freshers23.jpg" alt="New york" style="width:100%; height: 60rem; opacity: 0.9;">
+            </div>
+            <div class="item">
+                <img src="./images/freshers23-2.jpg" alt="New york" style="width:100%; height: 60rem; opacity: 0.9;">
+            </div>
+            <div class="item">
+                <img src="./images/freshers23-3.jpg" alt="New york" style="width:100%; height: 60rem; opacity: 0.9;">
+            </div>
         </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+
 
     <!------------------ EVENTS ------------->
 
@@ -220,27 +322,21 @@
                 </div>
 
                 <div class="card-b">
-                    <a href="#farewell-20">
-                        <div class="card card-3" style="width: 20rem;">
-                            <img src="images/xass.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Farewell '20</h5>
-                            </div>
-                        </div>
-                    </a>
                     <a href="#teacher-20">
-                        <div class="card card-4" style="width: 20rem;">
-                            <img src="images/Teachers-c.jpg" class="card-img-top" alt="...">
+                        <div class="card card-4" style="width: 20rem; height: 20rem;">
+                            <img src="./images/teachers day 22.jpeg" class="card-img-top" alt="..."
+                                style="height: 16rem;">
                             <div class="card-body">
-                                <h5 class="card-title">Teacher's Day '20</h5>
+                                <h5 class="card-title">Teacher's Day '22</h5>
                             </div>
                         </div>
                     </a>
                     <!-- new pages we will add -->
 
                     <a href="#lakashya">
-                        <div class="card card-5" style="width: 20rem;">
-                            <img src="images/Lakshay.jpeg" class="card-img-top" alt="...">
+                        <div class="card card-5" style="width: 20rem; height: 20rem;">
+                            <img src="./images/lakshya-acturial.jpg" class="card-img-top" alt="..."
+                                style="height: 16rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Lakashya </h5>
                             </div>
@@ -248,53 +344,31 @@
                     </a>
 
                     <a href="#Rang_e _anit">
-                        <div class="card card-5" style="width: 20rem;">
-                            <img src="images/xass.png" class="card-img-top" alt="...">
+                        <div class="card card-5" style="width: 20rem; height: 20rem;">
+                            <img src="./images/vedic-math.jpeg" class="card-img-top" alt="..." style="height: 15rem;">
                             <div class="card-body">
-                                <h5 class="card-title">Rang e ganit </h5>
+                                <h5 class="card-title">Relevance Of Vedic Mathematics</h5>
                             </div>
                         </div>
                     </a>
                     <a href="#Webinar_with_prof_husen">
-                        <div class="card card-5" style="width: 20rem;">
-                            <img src="images/xass.png" class="card-img-top" alt="...">
+                        <div class="card card-5" style="width: 20rem; height: 20rem;">
+                            <img src="./images/pi-logue22.jpg" class="card-img-top" alt="..." style="height: 16rem;">
                             <div class="card-body">
-                                <h5 class="card-title">Webinar with prof husen </h5>
+                                <h5 class="card-title">PI Logue</h5>
                             </div>
                         </div>
                     </a>
                     <a href="#Meet_and_greet">
-                        <div class="card card-5" style="width: 20rem;">
-                            <img src="images/xass.png" class="card-img-top" alt="...">
+                        <div class="card card-5" style="width: 20rem; height: 20rem;">
+                            <img src="./images/shanti-narayan.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Meet and greet </h5>
+                                <h5 class="card-title">Shri Shanti Narayan</h5>
                             </div>
                         </div>
                     </a>
-                    <a href="#Pi_Logue">
-                        <div class="card card-5" style="width: 20rem;">
-                            <img src="images/xass.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pi Logue </h5>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#Conclave">
-                        <div class="card card-5" style="width: 20rem;">
-                            <img src="images/xass.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Conclave </h5>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#Farewell_aankalan_launch">
-                        <div class="card card-5" style="width: 20rem;">
-                            <img src="images/xass.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Farewell+ aankalan launch </h5>
-                            </div>
-                        </div>
-                    </a>
+
+
                     <!-- end of cart pages -->
 
                 </div>
@@ -316,9 +390,11 @@
             <p class="content-1">
                 The Annual Fest of the Department of Mathematics, Identity, keeps achieving impossible heights and
                 setting higher benchmarks every passing year. This edition of Identity was no exception. Organized on
-                February 29th, Identity 2020 turned out to be one of the largest annual fest ever organized by the Mathematics Department of Hansraj since its inception. It saw a whole new level of
+                February 29th, Identity 2020 turned out to be one of the largest annual fest ever organized by the
+                Mathematics Department of Hansraj since its inception. It saw a whole new level of
                 enthusiasm and dedication from each and every member of the mathematics family of Hansraj College. The
-                fest attracted more than 4000 students from various colleges all over the capital territory, with no less than 2000 students participating in
+                fest attracted more than 4000 students from various colleges all over the capital territory, with no
+                less than 2000 students participating in
                 different games and another activities organised by the department.
             </p>
             <img src="images/identity-2.jpg" alt="main-photo">
@@ -345,57 +421,136 @@
                 throughout the University. The department looks forward to expanding
                 its fest even more in the coming sessions.
             </p>
-            <h2 id="fresher-19">Freshers '19</h2>
-            <img src="images/1233333.jpg" alt="main-photo">
-            <p class="content-1">The department, year after year, welcomes some of the best and brightest minds of the country and provides them a platform to showcase their talents, ideas and skills before the world. And before making
-                                    this aim a reality, we have a beautiful tradition of making the first years feel loved and wanted. Organized on September 25th, the official freshers’ party marked a new chapter of memories for all of us. As always, the event began with lighting a lamp and cutting a cake, followed by a
-                                    welcome speech by Dr. Preeti Dharmarha. Moving forward with certain entertaining tasks and performances to promote a more friendly interaction between the seniors and the freshers, the event was equally enjoyed by one and all. Much to attendees’ pleasant surprise, the first years also participated with equal fervor and enthusiasm in all the activities, tasks and performances.
+            <h2 id="fresher-19">Freshers '21</h2>
+            <img src="./images/freshers21.jpeg" alt="main-photo">
+            <p class="content-1">The department, year after year, welcomes some of the best and brightest minds of the
+                country and provides them a platform to showcase their talents, ideas and skills before the world. And
+                before making
+                this aim a reality, we have a beautiful tradition of making the first years feel loved and wanted.
+                Organized on September 25th, the official freshers’ party marked a new chapter of memories for all of
+                us. As always, the event began with lighting a lamp and cutting a cake, followed by a
+                welcome speech by Dr. Preeti Dharmarha. Moving forward with certain entertaining tasks and performances
+                to promote a more friendly interaction between the seniors and the freshers, the event was equally
+                enjoyed by one and all. Much to attendees’ pleasant surprise, the first years also participated with
+                equal fervor and enthusiasm in all the activities, tasks and performances.
             </p>
             <h2 id="farewell-20">Farewell '20</h2>
             <img src="images/Farewell-20.jpg" alt="main-photo">
-            <p class="content-1">From the first day of our orientation to showing us around the college to helping us grow as individuals, our seniors have been a symbol of inspiration as well as our guiding light for a major part of our college.
-                                 This year to thank our seniors for helping and guiding us and to make them feel special and make their last memories of the college memorable PI: The Department of Mathematics organized an online farewell.
-                                 With the efforts of the first and second year students, the dept. was able to give the seniors a very interactive and memorable farewell. The farewell consisted of multiple activities and surprises from making an Instagram account to providing each and every senior with a loving paragraph explaining their college journeys. The event also consisted of making an Instagram filter for the farewell as well as a Q&A session with the seniors. Lastly, we made a farewell video to give the seniors a glimpse of the past three years in 2 minutes.
-                                 Farewell are supposed to one of the most important moments of one’s college life. Even though we were not able to celebrate it offline, the juniors made sure that each and every senior left the college with a smile and loving memories. 
-                
+            <p class="content-1">From the first day of our orientation to showing us around the college to helping us
+                grow as individuals, our seniors have been a symbol of inspiration as well as our guiding light for a
+                major part of our college.
+                This year to thank our seniors for helping and guiding us and to make them feel special and make their
+                last memories of the college memorable PI: The Department of Mathematics organized an online farewell.
+                With the efforts of the first and second year students, the dept. was able to give the seniors a very
+                interactive and memorable farewell. The farewell consisted of multiple activities and surprises from
+                making an Instagram account to providing each and every senior with a loving paragraph explaining their
+                college journeys. The event also consisted of making an Instagram filter for the farewell as well as a
+                Q&A session with the seniors. Lastly, we made a farewell video to give the seniors a glimpse of the past
+                three years in 2 minutes.
+                Farewell are supposed to one of the most important moments of one’s college life. Even though we were
+                not able to celebrate it offline, the juniors made sure that each and every senior left the college with
+                a smile and loving memories.
+
             </p>
-            <h2 id="teacher-20">Teacher's Day '20</h2>
-            <img src="images/Teachers123.png" alt="main-photo">
-            <p class="content-1">Who says heroes are found flying against gravity towards the sky, dressed in flowing capes and mysterious masks? Heroes of this world are found in classrooms. Yes, they are none other than our teachers.
-                This year, students of PI: The Department of Mathematics organized an Online Teacher’s Day program to thank some of the most important people of our lives, the ones who impart knowledge and instruct us. Teachers are the doctors without stethoscope that every child in our country must have access to, to be able to cross his/her set of crevasses and walls.
-                Second and third-year students participated in this event very heartily to honour our hardworking and loving teachers. The program commenced by welcoming all the teachers, followed by listening to the teacher’s experience of their teaching life which was the cherry on the cake. The students planned a very amazing event, outstanding dance performances, melodious songs, musical instruments, funny and emotional poems to thank our teachers. Our teachers enjoyed this program very much and appreciated us for our efforts to make this Online Teacher’s Day memorable for them.
-                At last, we all thanked our teachers from the bottom of our hearts for their selfless passion and hard work towards educating the future of this nation.
-                
-                
+            <h2 id="teacher-20">Teacher's Day '22</h2>
+            <img src="./images/teachers.jpeg" alt="main-photo">
+            <p class="content-1">Who says heroes are found flying against gravity towards the sky, dressed in flowing
+                capes and mysterious masks? Heroes of this world are found in classrooms. Yes, they are none other than
+                our teachers.
+                This year, students of PI: The Department of Mathematics organized an Online Teacher’s Day program to
+                thank some of the most important people of our lives, the ones who impart knowledge and instruct us.
+                Teachers are the doctors without stethoscope that every child in our country must have access to, to be
+                able to cross his/her set of crevasses and walls.
+                Second and third-year students participated in this event very heartily to honour our hardworking and
+                loving teachers. The program commenced by welcoming all the teachers, followed by listening to the
+                teacher’s experience of their teaching life which was the cherry on the cake. The students planned a
+                very amazing event, outstanding dance performances, melodious songs, musical instruments, funny and
+                emotional poems to thank our teachers. Our teachers enjoyed this program very much and appreciated us
+                for our efforts to make this Online Teacher’s Day memorable for them.
+                At last, we all thanked our teachers from the bottom of our hearts for their selfless passion and hard
+                work towards educating the future of this nation.
+
+
             </p>
 
             <!-- Paragraph we have to write... -->
             <h2 id="teacher-20">Lakashya</h2>
-            <img src="images/Teachers123.png" alt="main-photo">
-            <p class="content-1">AYUSH TYAGI 
+            <img src="./images/lakshya.jpeg" alt="main-photo">
+            <p class="content-1">AYUSH TYAGI
                 13 October 2021
-                
-                John Von Neumann, the significant contributor of the minimax theorem of 1928, duly said, “If people do not believe that Mathematics is simple, it’s only because they do not realise how complicated life is.” 
-                An example of such sophisticated mathematics and one of the most sought-after exams is believed to be IIT-JAM. It is a national-level examination conducted to shortlist students for admission into Master of Science and Integrated Master of Science courses and is jointly conducted by the IITs and the Indian Institute of Science (IISC). 
-                This term’s first episode of Lakshya: The Career Talks 2021-22 was titled Unwinding the correct approach to IIT-JAM with Ayush Tyagi. 
-                Ayush Tyagi, our alumnus, has proven that nothing is impossible if you put in sincere hard work and commitment. He is an inspiration to all those who come after him and wish to follow in his footsteps. Currently pursuing a Master of Science in Mathematics and Computing at IIT Guwahati, the speaker talked about his academic and holistic journey at Hansraj and also shared insights about his experiences at the illustrated Guwahati campus. Far and wide, high and low, it was reputed as one of the most informative sessions that helped attendees solve their queries about IIT-JAM. He also discussed the differences between various Master's degrees in the field of mathematics and his course and how he ended up choosing his respective one rather than any other program in any other college. The AIR 51 achiever shared his strategy and the study plan to crack the exam and highly stressed upon the value of consistency for around 105 attendees. By the end of it, everyone seemed to have clarity of thought and was motivated to do something extraordinary and we call that a success.
-                
-                
+
+                John Von Neumann, the significant contributor of the minimax theorem of 1928, duly said, “If people do
+                not believe that Mathematics is simple, it’s only because they do not realise how complicated life is.”
+                An example of such sophisticated mathematics and one of the most sought-after exams is believed to be
+                IIT-JAM. It is a national-level examination conducted to shortlist students for admission into Master of
+                Science and Integrated Master of Science courses and is jointly conducted by the IITs and the Indian
+                Institute of Science (IISC).
+                This term’s first episode of Lakshya: The Career Talks 2021-22 was titled Unwinding the correct approach
+                to IIT-JAM with Ayush Tyagi.
+                Ayush Tyagi, our alumnus, has proven that nothing is impossible if you put in sincere hard work and
+                commitment. He is an inspiration to all those who come after him and wish to follow in his footsteps.
+                Currently pursuing a Master of Science in Mathematics and Computing at IIT Guwahati, the speaker talked
+                about his academic and holistic journey at Hansraj and also shared insights about his experiences at the
+                illustrated Guwahati campus. Far and wide, high and low, it was reputed as one of the most informative
+                sessions that helped attendees solve their queries about IIT-JAM. He also discussed the differences
+                between various Master's degrees in the field of mathematics and his course and how he ended up choosing
+                his respective one rather than any other program in any other college. The AIR 51 achiever shared his
+                strategy and the study plan to crack the exam and highly stressed upon the value of consistency for
+                around 105 attendees. By the end of it, everyone seemed to have clarity of thought and was motivated to
+                do something extraordinary and we call that a success.
+
+
                 UTKARSH KUMAR
                 1 November 2021
-                
-                The second episode, “Mathemagic: Acing UPSC CSE with Maths Optional” of Lakshya: The Career Talks 2021-22, was successfully organized with Mr.Utkarsh Kumar, AIR 55 (highest scorer in Maths Optional), UPSC CSE 2020, AIR-5 holder in JEE Advanced 2013 and an IIT-Bombay Alumnus. The session not only illuminated the beauty of mathematics but also enlightened the real-life challenges faced by aspirants. Our speaker, Mr. Utkarsh Kumar shared insights of his preparation with the audience. According to him, mathematics is a scoring optional, provided the candidate works hard. His marks (356/500) speak for themselves and are testimonials of the same. He also highlighted the importance of time management and trying to solve the problem without directly jumping to the solution. He also mentioned how his involvement in co-curricular activities and sports helped him in enhancing his personality which is essential in the long run. According to him, short breaks and refreshments while studying enhance one's efficiency and productivity. When done with the substantial level of preparation, he suggested everyone to practice as many papers and mocks as possible, as it not only helps in assessing yourself but also increases speed which is vital, when writing an exam as huge as UPSC. The session was followed by a query session where he resolved all the doubts related to this prestigious examination. Felicitated by one-too-many great responses, the session proved to be of massive help to the aspirants and it came to an end with appealing motivational words from our speaker and added up to the mathematical relevance of the Lakshya Series of the department.
-                
-                
+
+                The second episode, “Mathemagic: Acing UPSC CSE with Maths Optional” of Lakshya: The Career Talks
+                2021-22, was successfully organized with Mr.Utkarsh Kumar, AIR 55 (highest scorer in Maths Optional),
+                UPSC CSE 2020, AIR-5 holder in JEE Advanced 2013 and an IIT-Bombay Alumnus. The session not only
+                illuminated the beauty of mathematics but also enlightened the real-life challenges faced by aspirants.
+                Our speaker, Mr. Utkarsh Kumar shared insights of his preparation with the audience. According to him,
+                mathematics is a scoring optional, provided the candidate works hard. His marks (356/500) speak for
+                themselves and are testimonials of the same. He also highlighted the importance of time management and
+                trying to solve the problem without directly jumping to the solution. He also mentioned how his
+                involvement in co-curricular activities and sports helped him in enhancing his personality which is
+                essential in the long run. According to him, short breaks and refreshments while studying enhance one's
+                efficiency and productivity. When done with the substantial level of preparation, he suggested everyone
+                to practice as many papers and mocks as possible, as it not only helps in assessing yourself but also
+                increases speed which is vital, when writing an exam as huge as UPSC. The session was followed by a
+                query session where he resolved all the doubts related to this prestigious examination. Felicitated by
+                one-too-many great responses, the session proved to be of massive help to the aspirants and it came to
+                an end with appealing motivational words from our speaker and added up to the mathematical relevance of
+                the Lakshya Series of the department.
+
+
                 Capt. Dr. Sunaina Singh
                 6th February 2022
                 Career in Indian Army: A Primer
-                
-                The Department of Mathematics, Hansraj College, successfully conducted the third episode of "Lakshya: The Career Talks" with Captain (Dr.) Sunaina Singh on 6th February 2022. She is an ex-army officer, ex-University of Delhi professor, motivational speaker, and national-level handball player with a doctorate in psychology and MBA in HR. It was an interactive session where Sunaina ma'am cleared the doubts of our audience on the topic with really comprehensive and detailed answers.
-                The session commenced with diving into Dr. Sunaina's personal life experiences and she told us what initially motivated her was the ideology of living for others and quoted, "Apne liye toh sabhi jeete hain, insaan wahi hai jo desh ke liye kuch kare, dusron ke liye kuch kare". She also explained how success can have distinct significance for everyone and it is a journey to be celebrated. She then told students to decide what success means to them and stated “When the why is clear, life’s purpose is clear”.  Further, our audience asked various questions concerning joining the army, such as the perfect time to join the army, and the different channels through which one can join it. While answering those questions, ma'am provided a deep insight into how the interviews are conducted, giving students an in-depth understanding of how the psychological aspects are reflected in the interview, which is unknown to most of the candidates applying for the same.
-                She put forward five crucial points which are selflessness, adaptability, integrity, communication skills, and attitude along with mental stamina to be very important for everyone in life, especially those wanting to have a career in the Indian Army. “Always work on your basics”, “Hard work always pays off”, and “Just keep moving” were a few of the many powerful and inspiring statements quoted by her. Her ultimate message to the students was to always believe in themselves, be real, and be a keen learner. Lastly, she told everyone to realize that “Log different hote hai, sahi ya galat nahi” and things will become easier for them.
-                The energy of the whole session was unmatched by the participation and enthusiasm displayed by the audience in the session. Overall, it was a brainstorming and inspiring session.
-                
+
+                The Department of Mathematics, Hansraj College, successfully conducted the third episode of "Lakshya:
+                The Career Talks" with Captain (Dr.) Sunaina Singh on 6th February 2022. She is an ex-army officer,
+                ex-University of Delhi professor, motivational speaker, and national-level handball player with a
+                doctorate in psychology and MBA in HR. It was an interactive session where Sunaina ma'am cleared the
+                doubts of our audience on the topic with really comprehensive and detailed answers.
+                The session commenced with diving into Dr. Sunaina's personal life experiences and she told us what
+                initially motivated her was the ideology of living for others and quoted, "Apne liye toh sabhi jeete
+                hain, insaan wahi hai jo desh ke liye kuch kare, dusron ke liye kuch kare". She also explained how
+                success can have distinct significance for everyone and it is a journey to be celebrated. She then told
+                students to decide what success means to them and stated “When the why is clear, life’s purpose is
+                clear”. Further, our audience asked various questions concerning joining the army, such as the perfect
+                time to join the army, and the different channels through which one can join it. While answering those
+                questions, ma'am provided a deep insight into how the interviews are conducted, giving students an
+                in-depth understanding of how the psychological aspects are reflected in the interview, which is unknown
+                to most of the candidates applying for the same.
+                She put forward five crucial points which are selflessness, adaptability, integrity, communication
+                skills, and attitude along with mental stamina to be very important for everyone in life, especially
+                those wanting to have a career in the Indian Army. “Always work on your basics”, “Hard work always pays
+                off”, and “Just keep moving” were a few of the many powerful and inspiring statements quoted by her. Her
+                ultimate message to the students was to always believe in themselves, be real, and be a keen learner.
+                Lastly, she told everyone to realize that “Log different hote hai, sahi ya galat nahi” and things will
+                become easier for them.
+                The energy of the whole session was unmatched by the participation and enthusiasm displayed by the
+                audience in the session. Overall, it was a brainstorming and inspiring session.
+
             </p>
 
 
@@ -405,89 +560,96 @@
 
     <!---------------------- FOOTER -------------------->
 
-<footer class="footer-bs">
-    <div class="row">
-        <div class="col-md-4 footer-brand animated fadeInLeft">
+    <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-4 footer-brand animated fadeInLeft">
 
-            <div class="logo-footer">
-                <div class="footer-image">
-                    <img src="images/PIII.png">
+                <div class="logo-footer">
+                    <div class="footer-image">
+                        <img src="images/PIII.png">
+                    </div>
+                    <div class="footer-name">
+                        <h5>Department of Mathematics</h5>
+                        <h6>Hansraj College</h6>
+                    </div>
                 </div>
-                <div class="footer-name">
-                    <h5>Department of Mathematics</h5>
-                    <h6>Hansraj College</h6>
-                </div>
-            </div>
-            <div class="address-footer">
-                <p>Address: <br><span style="display: inline-block; 
-                    margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj, Delhi,
-                        110007</em></span></p>
-                        <p>Contact: <br><span style="display: inline-block; 
+                <div class="address-footer">
+                    <p>Address: <br><span style="display: inline-block; 
+                    margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj,
+                                Delhi,
+                                110007</em></span></p>
+                    <p>Contact: <br><span style="display: inline-block; 
                             margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span style="display: inline-block; 
                     margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span></p>
-                <p>© 2020 Department of Mathematics, Hansraj College</p>
+                    <p>© 2020 Department of Mathematics, Hansraj College</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 footer-ns animated fadeInRight">
+                <h4>Unite</h4>
+                <p>Please put in your emails to stay connected.</p>
+                <p>
+                <div class="input-group">
+
+                    <input type="email" class="form-control" placeholder="Email" required>
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
+                            data-placement="top" data-content="Your email has been recorded, thanks."
+                            data-trigger="focus">
+                            <i class="unite-icon">
+                                <ion-icon name="mail-open"></ion-icon>
+                            </i>
+                        </button>
+
+                    </span>
+                </div><!-- /input-group -->
+                </p>
+            </div>
+            <div class="col-md-4 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></i><a href="https://www.facebook.com/pi.hansrajcollege"
+                            class="social-name">Facebook</a></li>
+                    <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a></i><a href="https://www.instagram.com/mathsdept_hansraj/"
+                            class="social-name">Instagram</a></li>
+                    <li><i class="social-icon"><a
+                                href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college"
+                            class="social-name">LinkedIn</a></li>
+                </ul>
             </div>
 
         </div>
-
-        <div class="col-md-4 footer-ns animated fadeInRight">
-            <h4>Unite</h4>
-            <p>Please put in your emails to stay connected.</p>
-            <p>
-            <div class="input-group">
-
-                <input type="email" class="form-control" placeholder="Email" required >
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
-                        data-placement="top" data-content="Your email has been recorded, thanks."
-                        data-trigger="focus">
-                        <i class="unite-icon">
-                            <ion-icon name="mail-open"></ion-icon>
-                        </i>
-                    </button>
-
-                </span>
-            </div><!-- /input-group -->
-            </p>
-        </div>
-        <div class="col-md-4 footer-social animated fadeInDown">
-            <h4>Follow Us</h4>
-            <ul>
-                <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a></i><a href="https://www.facebook.com/pi.hansrajcollege" class="social-name">Facebook</a></li>
-                <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a></i><a href="https://www.instagram.com/mathsdept_hansraj/" class="social-name">Instagram</a></li>
-                <li><i class="social-icon"><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college" class="social-name">LinkedIn</a></li>
-            </ul>
+    </footer>
+    <section style="text-align:center; margin:10px auto;">
+        <div class="ved-ujj">
+            <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
+                    target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
+                    href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
+                    Agarwal</a></p>
+            <p>Modified by: &nbsp; <a href="https://www.linkedin.com/in/anshu-yadav-contact/" target="blank">Anshu
+                    Yadav</a></p>
         </div>
 
-    </div>
-</footer>
-<section style="text-align:center; margin:10px auto;">
-    <div class="ved-ujj">
-        <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
-                target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
-                href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
-                Agarwal</a></p>
+
+    </section>
+
     </div>
 
-
-</section>
-
-</div>
-
-<script>
-    $(document).ready(function () {
-        $('[data-toggle="popover"]').popover();
-    });
-    $('.popover-dismiss').popover({
-        trigger: 'focus'
-    });
-</script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        });
+    </script>
 
     <!-- ////////////////// BOOTSTRAP JS ///////////////////// -->
 

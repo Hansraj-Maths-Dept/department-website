@@ -19,13 +19,12 @@
   padding: 0px;
 }
 
-button:focus, input:focus {
+button:focus,
+input:focus {
   outline: none;
 }
 
-body {
-  font-family: "Lato", "sans-serrif";
-}
+
 
 /* _____________________ NAVIGATION BAR _____________________________
 
@@ -35,7 +34,7 @@ body {
 .department-logo img {
   height: 60px;
   width: 60px;
-  /* filter: invert(98%); */
+  filter: invert(98%);
 }
 
 /********** MAIN NAVIGATION PANEL *********/
@@ -51,23 +50,24 @@ body {
 }
 
 .nav-link-edits a {
-  color: var(--darkest-grey) !important;
+  color: white !important;
   font-size: 18px !important;
   font-weight: 400;
 }
 
 .nav-link-edits a:hover {
-  color: var(--dark-grey) !important;
+  color: rgb(217, 209, 149) !important;
+  text-decoration: underline;
 }
 
 .dropdown-menu {
-  background-color:  white !important;
+  background-color: white !important;
   /* box-shadow: 5px 5px 15px rgb(241, 243, 248); */
   border: none;
 }
 
 .dropdown-item:hover {
-  background-color: rgb(241, 243, 248, 0.92) !important;
+  background-color: rgb(57, 59, 68, 0.82) !important;
 }
 
 .collapse-edits {
@@ -77,7 +77,8 @@ body {
   border-top: 1px solid #888a8c;
 }
 
-.ved-ujj p, .ved-ujj a{
+.ved-ujj p,
+.ved-ujj a {
   font-size: 14px;
 }
 .ved-ujj a {
@@ -91,10 +92,10 @@ body {
   position: absolute;
   /*****TEMP EDIT********/
   right: 5px;
-   /*****TEMP EDIT********/
+  /*****TEMP EDIT********/
   top: 11px;
   font-size: 35px;
-  color: var(--darkest-grey) !important;
+  color: white !important;
 }
 
 /*************** SEARCH BUTTON **************/
@@ -187,7 +188,7 @@ body {
 
 .about-heading {
   text-align: center;
-  padding-top: 130px;
+  padding-top: 64px;
   padding-bottom: 250px;
   background-color: var(--darkest-grey);
 }
@@ -207,7 +208,7 @@ body {
 .content-1 {
   width: 750px;
   margin: auto;
-  padding: 120px 0px;
+  padding: 94px 0px;
   text-align: justify;
   font-size: 18px;
   line-height: 1.5;
@@ -225,7 +226,7 @@ body {
   width: 750px;
   margin: auto;
   font-weight: lighter;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .about-content blockquote {
@@ -249,11 +250,16 @@ body {
   border-bottom-left-radius: 6px;
 }
 
-.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+.footer-bs .footer-brand,
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
   padding: 10px 25px;
 }
 
-.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
   border-color: transparent;
 }
 
@@ -276,7 +282,7 @@ body {
 }
 
 .footer-bs .footer-nav ul.pages a {
-  color:rgb(241, 243, 248, 0.7);
+  color: rgb(241, 243, 248, 0.7);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -390,7 +396,8 @@ body {
   vertical-align: text-top;
 }
 
-.footer-social h4, .footer-ns h4 {
+.footer-social h4,
+.footer-ns h4 {
   font-size: 15px !important;
 }
 
@@ -398,7 +405,7 @@ body {
   filter: invert(98%);
 }
 
-.form-control{
+.form-control {
   padding-top: 0px;
   padding-bottom: 0px;
   height: 37px;
@@ -408,13 +415,13 @@ body {
   font-size: 17px;
 }
 
-.input-group input{
+.input-group input {
   box-shadow: none !important;
-  }
-  
-  .input-group-btn .btn{
+}
+
+.input-group-btn .btn {
   box-shadow: none !important;
-  }
+}
 /* ________________ MEDIA QUERIES _______________*/
 
 /************ NAV-COMPONENTS ***************/
@@ -456,7 +463,8 @@ body {
   .content-2 {
     width: 600px;
   }
-  .about-content h2, .about-content blockquote {
+  .about-content h2,
+  .about-content blockquote {
     width: 600px;
   }
 }
@@ -482,7 +490,8 @@ body {
   .content-2 {
     width: 490px;
   }
-  .about-content h2, .about-content blockquote {
+  .about-content h2,
+  .about-content blockquote {
     width: 490px;
   }
 }
@@ -528,7 +537,9 @@ body {
 /* __________ FOOTER ___________ */
 
 @media (min-width: 768px) {
-  .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+  .footer-bs .footer-nav,
+  .footer-bs .footer-social,
+  .footer-bs .footer-ns {
     border-left: solid 1px rgb(241, 243, 248, 0.2);
   }
 }
@@ -552,7 +563,8 @@ body {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
   }
-  .footer-social h4, .footer-ns h4 {
+  .footer-social h4,
+  .footer-ns h4 {
     padding-bottom: 10px !important;
     font-size: 13px !important;
   }
@@ -580,7 +592,8 @@ body {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
   }
-  .footer-social h4, .footer-ns h4 {
+  .footer-social h4,
+  .footer-ns h4 {
     padding-bottom: 10px !important;
     font-size: 13px !important;
   }
@@ -592,7 +605,8 @@ body {
 /* _____________ DESIGN AND DEVELOPMENT ______________ */
 
 @media (max-width: 576px) {
-  .ved-ujj p, .ved-ujj a{
-      font-size: 10px;
+  .ved-ujj p,
+  .ved-ujj a {
+    font-size: 10px;
   }
 }
