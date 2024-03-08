@@ -23,10 +23,10 @@
 
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
-        
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Animations -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -35,23 +35,47 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>Department of Mathematics, Hansraj College</title>
-    
-    <link rel="shortcut icon" type="image/jpg" href="pifavicon.ico"/>
+
+    <link rel="shortcut icon" type="image/jpg" href="pifavicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- boot link -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body style="font-family: Ubuntu, sans-serif;
+font-weight: 500;
+font-style: normal;">
     <div class="header">
 
         <!-- ---------NAVIGATION--------- -->
 
-        <nav class="navbar navbar-expand-lg navbar-light nav-edits fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light nav-edits fixed-top"
+            style="background-color: #0e5332 !important; margin: 0%; border-radius: 0%;">
 
             <!-- ---------NAV LOGO---------  -->
 
-            <a class="navbar-brand mr-auto department-logo" href="index.html"><img src="images/PIII.png"
-                    alt="department logo"></a>
+            <a class="navbar-brand mr-auto department-logo" href="#"><img src="images/PIII.png"
+                    alt="department logo" style="right: 0px; bottom: 0;"></a>
 
             <!-- ---------RESPONSIVE TOGGLER---------  -->
 
@@ -66,6 +90,9 @@
             <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
 
                 <ul class="navbar-nav mx-auto main-nav-edits">
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/public/index.html">Home</a>
+                    </li>
                     <li class="nav-item dropdown nav-link-edits">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
@@ -91,94 +118,73 @@
                             <a class="dropdown-item" href="Journal/journal-a.html#article-journal">Articles</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown nav-link-edits">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="/public/Events/events.html" id="navbarDropdown" >
                             Events
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="Events/events.html">Our events</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="Events/events.html#fresher-19">Freshers '19</a>
-                            <a class="dropdown-item" href="Events/events.html#farewell-19">Farewell '20</a>
-                            <a class="dropdown-item" href="Events/events.html#teacher-19">Teachers' Day '20</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="Events/events.html#identity-20">Identity '20</a>
-                        </div>
+               
                     </li>
                     <li class="nav-item nav-link-edits">
                         <a class="nav-link" href="Faculty/faculty.html">Faculty</a>
                     </li>
-                    <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="/conference">Conference</a>
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Council
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(57, 59, 68, 0.82) !important;">
+                            <a class="dropdown-item" href="/public/Council/core.html">Core</a>
+                            <a class="dropdown-item" href="/public/Council/head.html">Head</a>
+                            <a class="dropdown-item" href="/public/Council/member.html">Member</a>
+                        </div>
                     </li>
+
                 </ul>
             </div>
 
-         <!-- ---------SEARCH--------- -->
-            <!-- ---------SEARCH--------- 
-            <div id="myOverlay" class="overlay">
-                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-                <div class="overlay-content">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Explore" name="search">
-                        <button type="submit">
-                            <ion-icon name="search"></ion-icon>
-                            </ion-icon></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <button class="openBtn" onclick="openSearch()">
-                <ion-icon name="search"></ion-icon>
-                </ion-icon>
-            </button>
-            -->
+
 
         </nav>
     </div>
 
 
+    <!-- carousel -->
 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-    <!------------------- CAROUSEL -------------------->
-    <div class="section-carousel">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-edits" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active carousel-item-edits">
-                    <img src="images/carousel-1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block">
-                        <h2>Department of Mathematics</h2>
-                        <h5>Hansraj College</h5>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-edits">
-                    <img src="images/carousel-2.JPG" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block">
-                        <h2>Department of Mathematics</h2>
-                        <h5>Hansraj College</h5>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-edits">
-                    <img src="images/carousel-3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block">
-                        <h2>Department of Mathematics</h2>
-                        <h5>Hansraj College</h5>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-edits">
-                    <img src="images/carousel-4.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block">
-                        <h2>Department of Mathematics</h2>
-                        <h5>Hansraj College</h5>
-                    </div>
-                </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="/public/images/hrc.jpg" alt="Los Angeles" style="width:100%; height: 60rem; opacity: 0.9;">
+            </div>
 
+            <div class="item">
+                <img src="/public/images/teach.png" alt="Chicago" style="width:100%; height: 60rem; opacity: 0.9;">
+            </div>
+
+            <div class="item">
+                <img src="/public/images/carousel-3.jpg" alt="New york"
+                    style="width:100%; height: 60rem; opacity: 0.9;">
             </div>
 
         </div>
-    </div>
 
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
 
 
@@ -219,7 +225,7 @@
 
     <!------------------- JOURNAL --------------------------->
 
-    <div class="section-edits journal">
+    <div class="section-edits journal" style="background-color: #373747 !important;">
         <div class="container-fluid">
             <div class="heading-edits journal-heading">
                 <h1>
@@ -268,7 +274,7 @@
     </div>
 
     <!---------------- SEMINARS ---------------->
-    <div class="section-seminars">
+    <div class="section-seminars" style="background-color: #373747 !important;">
         <div class="container">
 
             <div class="heading-edits seminars-heading">
@@ -290,7 +296,7 @@
                     </p>
                 </div>
                 <div class="seminar-image img-hover-zoom--brightness">
-                    <figure><a href="Seminars/seminars.html"><img src="images/seminar-1.jpg"></a></figure>
+                    <figure><a href="Seminars/seminars.html"><img src="./images/seminar1.jpeg"></a></figure>
                 </div>
             </div>
 
@@ -298,7 +304,7 @@
 
             <div class="seminar-2">
                 <div class="seminar-image img-hover-zoom--brightness">
-                    <figure><a href="Seminars/seminars.html"><img src="images/seminar-2.jpg"></a></figure>
+                    <figure><a href="Seminars/seminars.html"><img src="./images/seminar2.jpeg"></a></figure>
 
                 </div>
                 <div class="seminar-content">
@@ -323,7 +329,7 @@
                 </div>
                 <div class="seminar-image img-hover-zoom--brightness">
 
-                    <figure><a href="Seminars/seminars.html"><img src="images/seminar-3.jpg"></a></figure>
+                    <figure><a href="Seminars/seminars.html"><img src="./images/seminar3.jpg"></a></figure>
 
                 </div>
             </div>
@@ -335,7 +341,7 @@
     <footer class="footer-bs">
         <div class="row">
             <div class="col-md-4 footer-brand animated fadeInLeft">
-    
+
                 <div class="logo-footer">
                     <div class="footer-image">
                         <img src="images/PIII.png">
@@ -347,52 +353,59 @@
                 </div>
                 <div class="address-footer">
                     <p>Address: <br><span style="display: inline-block; 
-                        margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj, Delhi,
-                            110007</em></span></p>
-                            <p>Contact: <br><span style="display: inline-block; 
-                                margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span style="display: inline-block; margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span></p>
+                        margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka
+                                Ganj, Delhi,
+                                110007</em></span></p>
+                    <p>Contact: <br><span style="display: inline-block; 
+                                margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span
+                            style="display: inline-block; margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span>
+                    </p>
                     <p>© 2020 Department of Mathematics, Hansraj College</p>
                 </div>
-    
+
             </div>
-    
+
             <div class="col-md-4 footer-ns animated fadeInRight">
                 <h4>Unite</h4>
                 <p>Please put in your emails to stay connected.</p>
-                
-                <div class="input-group">
-                    
-                        <input id="input-email" type="email" name="email1" class="form-control" placeholder="Email">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
-                                data-placement="top" onclick="required()" data-content=""
-                                data-trigger="focus" id="emailfill">
-                                <i class="unite-icon">
-                                    <ion-icon name="mail-open"></ion-icon>
-                                </i>
-                            </button>
 
-                        </span>
-                    
+                <div class="input-group">
+
+                    <input id="input-email" type="email" name="email1" class="form-control" placeholder="Email">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
+                            data-placement="top" onclick="required()" data-content="" data-trigger="focus"
+                            id="emailfill">
+                            <i class="unite-icon">
+                                <ion-icon name="mail-open"></ion-icon>
+                            </i>
+                        </button>
+
+                    </span>
+
 
                 </div><!-- /input-group -->
-                
+
             </div>
             <div class="col-md-4 footer-social animated fadeInDown">
                 <h4>Follow Us</h4>
                 <ul>
                     <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
                                 <ion-icon name="logo-facebook"></ion-icon>
-                            </a></i><a href="https://www.facebook.com/pi.hansrajcollege" class="social-name">Facebook</a></li>
+                            </a></i><a href="https://www.facebook.com/pi.hansrajcollege"
+                            class="social-name">Facebook</a></li>
                     <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
                                 <ion-icon name="logo-instagram"></ion-icon>
-                            </a></i><a href="https://www.instagram.com/mathsdept_hansraj/" class="social-name">Instagram</a></li>
-                    <li><i class="social-icon"><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
+                            </a></i><a href="https://www.instagram.com/mathsdept_hansraj/"
+                            class="social-name">Instagram</a></li>
+                    <li><i class="social-icon"><a
+                                href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
                                 <ion-icon name="logo-linkedin"></ion-icon>
-                            </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college" class="social-name">LinkedIn</a></li>
+                            </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college"
+                            class="social-name">LinkedIn</a></li>
                 </ul>
             </div>
-    
+
         </div>
     </footer>
     <section style="text-align:center; margin:10px auto;">
@@ -401,13 +414,17 @@
                     target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
                     href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
                     Agarwal</a></p>
+            <p>Modified by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
+                    target="blank">Anshu Yadav</a> &nbsp;and&nbsp; <a
+                    href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
+                    Agarwal</a></p>
         </div>
-    
-    
+
+
     </section>
-    
+
     </div>
-    
+
     <script>
         function required() {
             var emp = document.getElementById("input-email").value;

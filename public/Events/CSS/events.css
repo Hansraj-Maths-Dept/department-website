@@ -35,7 +35,7 @@ body {
 .department-logo img {
   height: 60px;
   width: 65px;
-  /* filter: invert(98%); */
+  filter: invert(98%);
 }
 
 /********** MAIN NAVIGATION PANEL *********/
@@ -51,23 +51,24 @@ body {
 }
 
 .nav-link-edits a {
-  color: var(--darkest-grey) !important;
+  color: white !important;
   font-size: 18px !important;
   font-weight: 400;
 }
 
 .nav-link-edits a:hover {
-  color: rgb(72, 74, 82) !important;
+  color: rgb(217, 209, 149) !important;
+  text-decoration: underline;
 }
 
 .dropdown-menu {
-  background-color: rgba(241, 243, 248, 0.9) !important;
+  background-color: rgb(57, 59, 68, 0.82) !important;
   /* box-shadow: 5px 5px 15px rgb(241, 243, 248); */
   border: none;
 }
 
 .dropdown-item:hover {
-  background-color: rgb(241, 243, 248, 0.92) !important;
+  background-color: rgb(57, 59, 68, 0.82) !important;
 }
 .dropdown-divider {
   border-top: 1px solid #888a8c !important;
@@ -91,7 +92,7 @@ body {
   right: 5px;
   top: 11px;
   font-size: 35px;
-  color: var(--darkest-grey) !important;
+  color: white !important;
 }
 
 /*************** SEARCH BUTTON **************/
@@ -173,6 +174,7 @@ body {
 .overlay button:hover {
   background: var(--light-grey);
 }
+
 
 /*___________________ CAROUSEL ______________________*/
 
@@ -303,7 +305,7 @@ body {
 
 .about-content {
   padding-bottom: 200px;
-  background-color: var(--darkest-grey);
+  background-color: #373747 !important;
   color: var(--lightest-grey);
 }
 
@@ -311,7 +313,7 @@ body {
   display: block;
   margin: auto;
   width: 700px;
-  height: 600px;
+  height: 720px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -336,9 +338,9 @@ body {
 /* _______________ FOOTER ________________ */
 
 .footer-bs {
-  background-color: var(--lightest-grey);
+  background-color: #202124 !important;
   padding: 60px 40px;
-  color: var(--darkest-grey);
+  color: white;
   margin-bottom: 20px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 0px;
@@ -359,7 +361,7 @@ body {
 
 .footer-bs .footer-brand p {
   font-size: 12px;
-  color: rgb(57, 59, 68, 0.7);
+  color: rgb(241, 243, 248, 0.7);
 }
 
 .footer-bs .footer-nav ul.pages {
@@ -423,7 +425,7 @@ body {
 }
 
 .footer-bs .footer-social a {
-  color: rgb(57, 59, 68, 0.6);
+  color: rgb(241, 243, 248, 0.7);
 }
 
 .footer-bs .footer-social a:hover {
@@ -440,7 +442,7 @@ body {
 
 .footer-bs .footer-ns p {
   font-size: 12px;
-  color: rgb(57, 59, 68, 0.7);
+  color: rgb(241, 243, 248, 0.7);
 }
 
 .logo-footer {
@@ -451,6 +453,7 @@ body {
 .footer-image img {
   width: 80px;
   height: 80px;
+  filter: invert(98%);
  
 }
 
@@ -472,7 +475,7 @@ body {
 
 .unite-icon {
   font-size: 30px;
-  color: var(--darkest-grey);
+  color: white;
 }
 
 .input-group-btn {

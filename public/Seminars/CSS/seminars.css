@@ -23,9 +23,6 @@ button:focus, input:focus {
     outline: none;
 }
 
-body {
-    font-family: "Lato", "sans-serrif";
-}
 
 /* _____________________ NAVIGATION BAR _____________________________
     
@@ -35,7 +32,7 @@ body {
 .department-logo img {
     height: 60px;
     width: 65px;
-    /* filter: invert(98%); */
+    filter: invert(98%);
 }
 
 /********** MAIN NAVIGATION PANEL *********/
@@ -43,7 +40,6 @@ body {
 .nav-edits {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-    background-color: rgba(241, 243, 248, 0.7) !important;
 }
 
 .nav-link-edits {
@@ -51,13 +47,14 @@ body {
 }
 
 .nav-link-edits a {
-    color: var(--darkest-grey) !important;
+    color: white !important;
     font-size: 18px !important;
     font-weight: 400;
 }
 
 .nav-link-edits a:hover {
-    color: rgb(72, 74, 82) !important;
+  color: rgb(217, 209, 149) !important;
+  text-decoration: underline;
 }
 
 .dropdown-menu {
@@ -67,7 +64,7 @@ body {
 }
 
 .dropdown-item:hover {
-    background-color: rgb(241, 243, 248, 0.92) !important;
+    background-color:rgb(57, 59, 68, 0.82) !important;
 }
 
 .collapse-edits {
@@ -91,7 +88,7 @@ body {
     right: 5px;
     top: 11px;
     font-size: 35px;
-    color: var(--darkest-grey) !important;
+    color: white!important;
 }
 
 /*************** SEARCH BUTTON **************/
@@ -269,9 +266,9 @@ body {
   /* _____ FOOTER ______ */
 
 .footer-bs {
-  background-color: var(--darkest-grey);
+  background-color: #202124 !important;
   padding: 60px 40px;
-  color: var(--lightest-grey);
+  color: white;
   margin-bottom: 20px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 0px;

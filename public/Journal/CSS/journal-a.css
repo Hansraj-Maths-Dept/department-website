@@ -24,7 +24,6 @@
   padding-top: 40px;
   font-size: 35px;
   font-weight: 400;
-  color: var(--darkest-grey);
 }
 
 .aankalan-head h2 {
@@ -45,7 +44,8 @@
   padding: 50px;
 }
 .ankalan-card-try{
-  background-color: rgb(238 ,247 ,251,1);
+  background-color: #373747;
+  color: white;
 }
 @media (min-width: 987.98px) and (max-width: 1204.98px){
   .cards{
@@ -216,14 +216,14 @@ body {
 
 .nav-link-edits a {
   /* color: rgb(208, 232, 240) !important; */
-  color: rgb(231, 266, 266) !important;
+  color: white !important;
   font-size: 18px !important;
   font-weight: 400;
 }
 
 .nav-link-edits a:hover {
-  color: rgb(169, 193, 209) !important;
-  transition: .2s all ease-in-out;
+  color: rgb(217, 209, 149) !important;
+  text-decoration: underline;
 }
 
 .dropdown-menu {
@@ -233,7 +233,7 @@ body {
 }
 
 .dropdown-item:hover {
-  background-color: rgb(1, 42, 74) !important;
+  background-color: rgb(57, 59, 68, 0.82) !important;;
 }
 
 .dropdown-item a:hover {
@@ -262,7 +262,7 @@ body {
   right: 50px;
   top: 11px;
   font-size: 35px;
-  color: var(--darkest-grey) !important;
+  color: white !important;
 }
 
 /*************** SEARCH BUTTON **************/
@@ -553,9 +553,9 @@ body {
 /* _______________ FOOTER ________________ */
 
 .footer-bs {
-  background-color: var(--lightest-grey);
+  background-color: #202124 !important;
   padding: 60px 40px;
-  color: var(--darkest-grey);
+  color: white;
   margin-bottom: 20px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 0px;
@@ -581,7 +581,7 @@ body {
 
 .footer-bs .footer-brand p {
   font-size: 12px;
-  color: rgb(57, 59, 68, 0.7);
+  color: rgb(241, 243, 248, 0.7);
 }
 
 .footer-bs .footer-nav ul.pages {
@@ -645,7 +645,7 @@ body {
 }
 
 .footer-bs .footer-social a {
-  color: rgb(57, 59, 68, 0.6);
+  color: rgb(241, 243, 248, 0.7);
 }
 
 .footer-bs .footer-social a:hover {
@@ -662,7 +662,7 @@ body {
 
 .footer-bs .footer-ns p {
   font-size: 12px;
-  color: rgb(57, 59, 68, 0.7);
+  color: rgb(241, 243, 248, 0.7);
 }
 
 .logo-footer {
@@ -673,6 +673,8 @@ body {
 .footer-image img {
   width: 80px;
   height: 80px;
+  filter: invert(98%);
+
 }
 
 .logo-footer {
@@ -691,7 +693,7 @@ body {
 
 .unite-icon {
   font-size: 30px;
-  color: var(--darkest-grey);
+  color: white;
 }
 
 .input-group-btn {
