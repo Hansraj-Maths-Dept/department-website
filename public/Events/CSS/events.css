@@ -213,7 +213,7 @@ body {
 
 .section-edits {
   background-color: var(--lightest-grey);
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
 }
 
 /**************** HEADING *****************/
@@ -258,15 +258,19 @@ body {
 .card-a {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
-
+.fresher-19{
+  margin-bottom: 5rem;
+}
 .card-b {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 100px;
 }
-
+.card-b a{
+  margin-bottom: 5rem;
+}
 .card-1, .card-2, .card-3, .card-4 {
   border: none;
   outline: none;
