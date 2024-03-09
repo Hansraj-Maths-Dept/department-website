@@ -261,7 +261,7 @@ body {
   margin-bottom: 70px;
 }
 .fresher-19{
-  margin-bottom: 5rem;
+  margin-bottom: 5rem !important;
 }
 .card-b {
   display: flex;
@@ -269,7 +269,7 @@ body {
   margin-bottom: 100px;
 }
 .card-b a{
-  margin-bottom: 5rem;
+  margin-bottom: 5rem !important;
 }
 .card-1, .card-2, .card-3, .card-4 {
   border: none;
