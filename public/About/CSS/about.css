@@ -25,6 +25,7 @@ button:focus, input:focus {
 
 body {
   font-family: "Lato", "sans-serrif";
+  font-family:"Exo 2", sans-serif;
 }
 
 /* _____________________ NAVIGATION BAR _____________________________
@@ -75,14 +76,6 @@ body {
 }
 .dropdown-divider {
   border-top: 1px solid #888a8c;
-}
-
-.ved-ujj p, .ved-ujj a{
-  display: none
-  font-size: 14px;
-}
-.ved-ujj a {
-  color: rgb(53, 53, 165);
 }
 
 /********** RESPONSIVE TOGGLER ***********/
