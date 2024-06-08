@@ -24,8 +24,11 @@ input:focus {
   outline: none;
 }
 
-body {
-  font-family: "Lato", "sans-serrif";
+/* body {
+  font-family:"Exo 2", sans-serif;
+} */
+*{
+  font-family:"Exo 2", sans-serif;
 }
 
 /* _____________________ NAVIGATION BAR _____________________________

@@ -14,20 +14,18 @@
     <!-- CSS link -->
 
     <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="/public/CSS/homePage.css">
 
-    <!-- Font Family Lato -->
+     <!-- Font Family -->
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Family Acme -->
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
     <!-- Animations -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="shortcut icon" type="image/jpg" href="images/pifavicon.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/pifavicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
@@ -39,11 +37,11 @@
 
         <!-- ---------NAVIGATION--------- -->
 
-        <nav class="navbar navbar-expand-lg navbar-light nav-edits">
+        <nav class="navbar navbar-expand-lg navbar-light nav-edits fixed-top">
 
             <!-- ---------NAV LOGO---------  -->
 
-            <a class="navbar-brand mr-auto department-logo" href="public/index.html"><img src="images\PIII.png"
+            <a class="navbar-brand mr-auto department-logo" href="/public/index.html"><img src="/public/images/PIII.png"
                     alt="department logo"></a>
 
             <!-- ---------RESPONSIVE TOGGLER---------  -->
@@ -58,6 +56,7 @@
 
             <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
 
+
                 <ul class="navbar-nav mx-auto main-nav-edits">
                     <li class="nav-item dropdown nav-link-edits">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -65,8 +64,8 @@
                             About
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/About/about.html#the-department">The Department</a>
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/About/about.html#our-alumni">Our Alumni</a>
+                            <a class="dropdown-item" href="/public/About/about.html#the-department">The Department</a>
+                            <!-- <a class="dropdown-item" href="/public/About/about.html#our-alumni">Our Alumni</a> -->
                         </div>
                     </li>
                     <li class="nav-item dropdown nav-link-edits">
@@ -75,9 +74,15 @@
                             Seminars
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="public/Seminars/seminars.html">2020</a>
+                            <a class="dropdown-item" href="/public/Seminars/seminars.html">2020</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="public/Seminars/2021.html">2021</a>
+                            <a class="dropdown-item" href="/public/Seminars/2021.html">2021</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Seminars/2022.html">2022</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Seminars/2023.html">2023</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Seminars/2024.html">2024</a>
                             <!--<div class="dropdown-divider"></div>-->
                         </div>
                     </li>
@@ -87,10 +92,10 @@
                             Journal
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="public/Journal/journal-a.html">Aankalan</a>
+                            <a class="dropdown-item" href="/public/Journal/journal-a.html">Aankalan</a>
                             <!-- <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="public/Journal/journal-a.html#download-journal">Download</a>
-                            <a class="dropdown-item" href="public/Journal/journal-a.html#article-journal">Articles</a> -->
+                            <a class="dropdown-item" href="Journal/journal-a.html#download-journal">Download</a>
+                            <a class="dropdown-item" href="Journal/journal-a.html#article-journal">Articles</a> -->
                         </div>
                     </li>
                     <li class="nav-item dropdown nav-link-edits">
@@ -99,20 +104,36 @@
                             Events
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="public/Events/events.html">2020</a>
+                            <a class="dropdown-item" href="/public/Events/2020.html">2020</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="public/Events/2021.html">2021</a>
+                            <a class="dropdown-item" href="/public/Events/2021.html">2021</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Events/2022.html">2022</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Events/2023.html">2023</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Events/2024.html">2024</a>
                             <!--<div class="dropdown-divider"></div>-->
                         </div>
                     </li>
                     <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="public/Faculty/faculty.html">Faculty</a>
+                        <a class="nav-link" href="/public/Faculty/faculty.html">Faculty</a>
+                    </li>
+                    <!--                     <li class="nav-item nav-link-edits">
+                        <a class="nav-link" href="Newsletter/newsletter.html">Newsletter</a>
                     </li>
                     <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="public/Newsletter/newsletter.html">Newsletter</a>
-                    </li>
-                    <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="public/conference">Conference</a>
+                        <a class="nav-link" href="conference">Conference</a>
+                    </li> -->
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Council
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/public/Council/council23-24.html">2023-24</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -140,7 +161,7 @@
         </nav>
     </div>
 
-    <div class="about-heading" id="the-department">
+    <div class="about-heading" id="the-department" style="background-color:rgb(117, 11, 66);">
         <h1>About Us</h1>
     </div>
     <div class="about-content">
@@ -167,10 +188,11 @@
             <h2 id="our-alumni">Our Alumni</h2>
             <blockquote>“Opportunities don’t happen, you create them.”</blockquote>
             <p class="content-2">The Department has a strong alumni background with a number of students
-                making us proud every year. From placements to competitive exams, 
-                our students have been making great accomplishments. <br><br><b>Some of those are mentioned below.</b><br><br>
+                making us proud every year. From placements to competitive exams,
+                our students have been making great accomplishments. <br><br><b>Some of those are mentioned
+                    below.</b><br><br>
 
-               
+
                 • <b>BATCH 2017-20 : &nbsp;</b> There were 5 students under <b>AIR 100</b> in JAM<br><br>
                 – Shubham Kumar Yadav<br>
                 – Deepak Kumar: IIT Delhi<br>
@@ -197,7 +219,7 @@
     <footer class="footer-bs">
         <div class="row">
             <div class="col-md-4 footer-brand animated fadeInLeft">
-    
+
                 <div class="logo-footer">
                     <div class="footer-image">
                         <img src="images/PIII.png">
@@ -209,90 +231,93 @@
                 </div>
                 <div class="address-footer">
                     <p>Address: <br><span style="display: inline-block; 
-                        margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj, Delhi,
-                            110007</em></span></p>
-                            <p>Contact: <br><span style="display: inline-block; 
+                        margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka
+                                Ganj, Delhi,
+                                110007</em></span></p>
+                    <p>Contact: <br><span style="display: inline-block; 
                                 margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span style="display: inline-block; 
                         margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span></p>
                     <p>© 2020 Department of Mathematics, Hansraj College</p>
                 </div>
-    
+
             </div>
-    
+
             <div class="col-md-4 footer-ns animated fadeInRight">
                 <h4>Unite</h4>
                 <p>Please put in your emails to stay connected.</p>
                 <form id="contact-form">
-                <div class="input-group">
-                  
-                    <input type="text" name="email" id="email" class="form-control" placeholder="Email">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="submit" data-container="body" data-toggle="popover"
-                            data-placement="top" data-content="Your email has been recorded, thanks."
-                            data-trigger="focus">
-                            <i class="unite-icon">
-                                <ion-icon name="mail-open"></ion-icon>
-                            </i>
-                        </button>
-                    
-                    </span>
-                </div><!-- /input-group -->
+                    <div class="input-group">
+
+                        <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit" data-container="body" data-toggle="popover"
+                                data-placement="top" data-content="Your email has been recorded, thanks."
+                                data-trigger="focus">
+                                <i class="unite-icon">
+                                    <ion-icon name="mail-open"></ion-icon>
+                                </i>
+                            </button>
+
+                        </span>
+                    </div><!-- /input-group -->
                 </form>
-                
+
             </div>
             <div class="col-md-4 footer-social animated fadeInDown">
                 <h4>Follow Us</h4>
                 <ul>
                     <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
                                 <ion-icon name="logo-facebook"></ion-icon>
-                            </a></i><a href="https://www.facebook.com/pi.hansrajcollege" class="social-name">Facebook</a></li>
+                            </a></i><a href="https://www.facebook.com/pi.hansrajcollege"
+                            class="social-name">Facebook</a></li>
                     <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
                                 <ion-icon name="logo-instagram"></ion-icon>
-                            </a></i><a href="https://www.instagram.com/mathsdept_hansraj/" class="social-name">Instagram</a></li>
-                    <li><i class="social-icon"><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
+                            </a></i><a href="https://www.instagram.com/mathsdept_hansraj/"
+                            class="social-name">Instagram</a></li>
+                    <li><i class="social-icon"><a
+                                href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
                                 <ion-icon name="logo-linkedin"></ion-icon>
-                            </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college" class="social-name">LinkedIn</a></li>
+                            </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college"
+                            class="social-name">LinkedIn</a></li>
                 </ul>
             </div>
-    
+
         </div>
     </footer>
     <section style="text-align:center; margin:10px auto;">
         <div class="ved-ujj">
-            <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
-                    target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
-                    href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
-                    Agarwal</a></p>
+            <p>Designed & Developed by: &nbsp; Web Development Team @ Pi<br>Modified by: <a
+                    href="https://www.linkedin.com/in/shiv-shankar-saran-09ba37258">Shiv Shankar Saran</a></p>
         </div>
-    
-    
+
+
     </section>
-    
+
     </div>
 
-    
-  <!-- Firebase Code for Database Connection --- Start -->
-  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
-  <!-- Add Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+    <!-- Firebase Code for Database Connection --- Start -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
     <!-- Changes By Us -->
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
 
     <!----------///////// INTERNAL JS -------------//////////-->
 
-      <script src="JS/about.js"></script> 
-      <!-- <script src="check.js"></script> -->
+    <script src="JS/about.js"></script>
+    <!-- <script src="check.js"></script> -->
 
-       
+
 
     <!-- Firebase Code for Database Connection --- Over -->
-        
-        <!-- <script>
+
+    <!-- <script>
         $(document).ready(function () {
             $('[data-toggle="popover"]').popover();
         });
@@ -332,9 +357,9 @@
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
 
 
-    
 
-  
+
+
 
 </body>
 

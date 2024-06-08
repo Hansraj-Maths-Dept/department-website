@@ -8,10 +8,11 @@
 */
 
 :root {
-  --lightest-grey: rgb(241, 243, 248);
-  --light-grey: rgb(214, 224, 240);
-  --dark-grey: rgb(141, 147, 171);
-  --darkest-grey: rgb(57, 59, 68);
+  --lightest-red:rgb(246, 239, 243);
+  --light-red: rgb(246, 239, 243);
+  --dark-red: rgb(170, 46, 112);
+  --darkest-red:rgb(170, 46, 112) ;
+  /* rgb(240, 221, 219) */
 }
 
 /*_______________________ FULL BODY EDITS ____________________________*/
@@ -26,8 +27,10 @@ input:focus {
   outline: none;
 }
 
-body {
-  font-family: "Lato", "sans-serif";
+*{
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
 }
 
 /*_____________________ NAVIGATION BAR _____________________________*/
@@ -45,7 +48,7 @@ body {
 .nav-edits {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  background-color: rgb(57, 59, 68, 0.82) !important;
+  background-color:rgb(170, 46, 112) !important;
 }
 
 .nav-link-edits {
@@ -53,23 +56,24 @@ body {
 }
 
 .nav-link-edits a {
-  color: var(--light-grey) !important;
+  color: var(--light-red) !important;
   font-size: 18px !important;
   font-weight: 400;
+  font-family:"Exo 2", sans-serif;
 }
 
 .nav-link-edits a:hover {
-  color: var(--lightest-grey) !important;
+  color: var(--lightest-red) !important;
 }
 
 .dropdown-menu {
-  background-color: rgb(57, 59, 68, 0.82) !important;
+  background-color: rgb(170, 46, 112)!important;
   box-shadow: 5px 5px 15px rgb(57, 59, 68);
   border: none;
 }
 
 .dropdown-item:hover {
-  background-color: rgb(141, 147, 171, 0.82) !important;
+  background-color: rgb(129, 53, 93) !important;
 }
 
 .collapse-edits {
@@ -84,7 +88,9 @@ body {
   right: 5px;
   top: 11px;
   font-size: 35px;
-  color: var(--light-grey) !important;
+  color: var(--light-red) !important;
+
+  font-family:"Exo 2", sans-serif;
 }
 
 /*************** SEARCH BUTTON **************/
@@ -98,7 +104,8 @@ body {
   position: absolute;
   right: 0px;
   top: 6px;
-  color: var(--light-grey) !important;
+  font-family:"Exo 2", sans-serif;
+  color: var(--light-red) !important;
 }
 
 .overlay {
@@ -109,7 +116,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: var(--dark-grey);
+  background-color: var(--dark-red);
   background-color: rgba(141, 147, 171, 0.877);
 }
 
@@ -128,27 +135,29 @@ body {
   right: 45px;
   font-size: 60px;
   cursor: pointer;
-  color: var(--light-grey);
+  color: var(--light-red);
+  font-family:"Exo 2", sans-serif;
 }
 
 .overlay .closebtn:hover {
-  color: var(--darkest-grey);
+  color: var(--darkest-red);
 }
 
 .overlay input[type="text"] {
   padding: 15px;
+  font-family:"Exo 2", sans-serif;
   font-size: 17px;
   border: none;
   float: left;
   width: 80%;
-  background: var(--darkest-grey);
+  background: var(--darkest-red);
   border-radius: 20px;
   margin-right: 15px;
-  color: var(--lightest-grey);
+  color: var(--lightest-red);
 }
 
 .overlay input[type="text"]:hover {
-  background: var(--darkest-grey);
+  background: var(--darkest-red);
   background: rgb(57, 59, 68, 0.88);
 }
 
@@ -156,15 +165,16 @@ body {
   float: left;
   width: 13%;
   padding: 11px;
-  background: var(--lightest-grey);
+  background: var(--lightest-red);
   font-size: 22px;
+  font-family:"Exo 2", sans-serif;
   border: none;
   cursor: pointer;
   border-radius: 20px;
 }
 
 .overlay button:hover {
-  background: var(--light-grey);
+  background: var(--light-red);
 }
 
 /*___________________ CAROUSEL ______________________*/
@@ -180,21 +190,22 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2d3436;
-  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  background-color: #468495;
+  background-image: linear-gradient(rgb(148, 110, 170),#6a4444 10%,rgb(58, 131, 181) 15%, rgb(245, 169, 134));
   opacity: 0.7;
 }
 
 .carousel-caption {
   bottom: 180px !important;
-  font-weight: lighter !important;
-  font-family: "Great Vibes", cursive !important;
+  font-weight:900 !important;
+  font-family:'Courier New', Courier, monospace !important;
+  color:black
 }
 
 /*__________________ ABOUT US _______________________*/
 
 .section-edits {
-  background-color: var(--lightest-grey);
+  background-color: var(--lightest-red);
   padding-bottom: 80px;
 }
 
@@ -208,11 +219,12 @@ body {
 .heading-edits h1 a {
   font-size: 35px;
   font-weight: 400;
-  color: var(--darkest-grey);
+  color: var(--darkest-red);
+  font-family: "Exo 2", sans-serif;
 }
 
 .heading-edits h1 a:hover {
-  text-shadow: 5px 5px 10px var(--light-grey);
+  text-shadow: 5px 5px 10px var(--light-red);
   text-decoration: none !important;
 }
 
@@ -248,7 +260,7 @@ body {
 
 .content-about {
   text-align: center;
-  background-color: var(--lightest-grey) !important;
+  background-color: var(--lightest-red) !important;
   padding-top: 40px;
   padding-left: 15%;
   padding-right: 15%;
@@ -256,6 +268,7 @@ body {
   font-weight: 300;
   padding-bottom: 40px;
   line-height: 2.5;
+  font-family: "Exo 2", sans-serif;
 }
 
 /* __________________ JOURNAL ___________________ */
@@ -266,18 +279,19 @@ body {
 
 .journal-heading h2 {
   font-weight: lighter;
+  font-family:"Exo 2", sans-serif;
   font-size: 30px;
 }
 
 /* Same as about us heading */
 
 .journal {
-  background-color: var(--darkest-grey) !important;
-  color: var(--lightest-grey) !important;
+  background-color:rgb(122, 56, 90) !important;
+  color: var(--lightest-red) !important;
 }
 
 .journal-heading a {
-  color: var(--lightest-grey) !important;
+  color: var(--lightest-red) !important;
   text-shadow: none !important;
 }
 
@@ -306,25 +320,27 @@ body {
   word-spacing: 5px;
   text-align: center;
   font-size: 18px;
+  font-family:"Exo 2", sans-serif;
 }
 
 .btn-edit {
+  font-family:"Exo 2", sans-serif;
   border: none;
   display: block;
   margin: auto;
   padding: 6px 5px 6px 5px;
-  background-color: var(--lightest-grey);
+  background-color: var(--lightest-red);
   font-size: 16px;
-  color: var(--darkest-grey);
+  color: var(--darkest-red);
   text-decoration: none;
   width: 125px;
   text-align: center;
 }
 
 .btn-edit:hover {
-  color: var(--lightest-grey);
-  background-color: var(--darkest-grey);
-  border: 1px solid var(--lightest-grey);
+  color: var(--lightest-red);
+  background-color: var(--darkest-red);
+  border: 1px solid var(--lightest-red);
   text-decoration: none;
   padding: 5px 4px 5px 4px;
 }
@@ -332,7 +348,7 @@ body {
 /* _____________ EVENTS ________________*/
 
 .section-events {
-  background-color: var(--lightest-grey);
+  background-color: var(--lightest-red);
 }
 
 .event-image img {
@@ -392,6 +408,7 @@ body {
 .event-btn a {
   color: white;
   font-size: 23px;
+  font-family:"Exo 2", sans-serif;
 }
 
 .event-btn a:hover {
@@ -402,11 +419,11 @@ body {
 /* _____________ SEMINARS AND SESSIONS ______________ */
 
 .section-seminars {
-  background-color: var(--darkest-grey);
+  background-color: var(--lightest-red);
 }
 
 .seminars-heading h1 a {
-  color: var(--lightest-grey) !important;
+  color: var(--darkest-red) !important;
   text-shadow: none !important;
 }
 
@@ -421,11 +438,12 @@ body {
 }
 
 .section-seminars p {
-  color: var(--lightest-grey);
+  color: var(--darkest-red);
   padding: 20px;
   text-align: left;
   font-weight: 300;
   font-size: 1.1rem;
+  font-family:"Exo 2", sans-serif;
 }
 
 .seminar-content {
@@ -468,14 +486,15 @@ body {
   width: 95%;
   display: block;
   margin: auto;
+  background-color: rgb(231, 216, 216);
 }
 
 /* _______________ FOOTER ________________ */
 
 .footer-bs {
-  background-color: var(--lightest-grey);
+  background-color: var(--darkest-red);
   padding: 60px 40px;
-  color: var(--darkest-grey);
+  color: var(--lightest-red);
   margin-bottom: 20px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 0px;
@@ -501,7 +520,8 @@ body {
 
 .footer-bs .footer-brand p {
   font-size: 12px;
-  color: rgb(57, 59, 68, 0.7);
+  color: var(--lightest-red);
+  font-family:"Exo 2", sans-serif;
 }
 
 .footer-bs .footer-nav ul.pages {
@@ -514,17 +534,19 @@ body {
 }
 
 .footer-bs .footer-nav ul.pages a {
-  color: rgb(57, 59, 68);
+  color: var(--lightest-red);
   font-weight: bold;
   text-transform: uppercase;
+  font-family:"Exo 2", sans-serif;
 }
 
 .footer-bs .footer-nav ul.pages a:hover {
-  color: rgb(57, 59, 68, 0.7);
+  color: var(--lightest-red);
   text-decoration: none;
 }
 
 .footer-bs .footer-nav h4 {
+  font-family:"Exo 2", sans-serif;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -545,7 +567,7 @@ body {
 }
 
 .footer-bs .footer-nav ul.list a:hover {
-  color: rgb(57, 59, 68, 0.6);
+  color: var(--lightest-red);
   text-decoration: none;
 }
 
@@ -558,6 +580,7 @@ body {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-family:"Exo 2", sans-serif;
 }
 
 .footer-bs .footer-social li {
@@ -565,11 +588,11 @@ body {
 }
 
 .footer-bs .footer-social a {
-  color: rgb(57, 59, 68, 0.6);
+  color: var(--lightest-red);
 }
 
 .footer-bs .footer-social a:hover {
-  color: rgb(57, 59, 68, 0.8);
+  color: var(--lightest-red);
   text-decoration: none;
 }
 
@@ -582,7 +605,7 @@ body {
 
 .footer-bs .footer-ns p {
   font-size: 12px;
-  color: rgb(57, 59, 68, 0.7);
+  color: rgba(244, 245, 250, 0.7);
 }
 
 .logo-footer {
@@ -611,7 +634,7 @@ body {
 
 .unite-icon {
   font-size: 30px;
-  color: var(--darkest-grey);
+  color: var(--lightest-red);
 }
 
 .input-group-btn {
@@ -619,7 +642,7 @@ body {
 }
 
 .social-icon {
-  color: var(--darkest-grey);
+  color: var(--lightest-red);
   padding-right: 10px;
 }
 
@@ -633,14 +656,6 @@ body {
   font-size: 15px !important;
 }
 
-.shiv p,
-.shiv a {
-  font-size: 14px;
-  display: none;
-}
-.shiv a {
-  color: rgb(53, 53, 165);
-}
 /* _____________ MEDIA QUERIES ____________ */
 
 /******** CAROUSEL *******/
@@ -736,6 +751,8 @@ body {
     line-height: 1.6;
     font-size: 16px;
     font-weight: 300;
+    
+  font-family:"Exo 2", sans-serif;
   }
 }
 
@@ -1021,21 +1038,79 @@ body {
   }
 }
 
-/* _____________ DESIGN AND DEVELOPMENT ______________ */
+/* popup */
+.popup-trigger {
+  display: inline-block;
+  position: relative;
+}
 
-@media (max-width: 576px) {
-  .shiv p,
-  .shiv a {
-    font-size: 10px;
+.circle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.circle:hover {
+  background: linear-gradient(to bottom, #455a64, #6495ed);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.help-text {
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+ .circle {
+    width: 50px;
+    height: 50px;
+  }
+ .help-text {
+    font-size: 14px;
   }
 }
 
-.form-control {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  height: 37px;
+@media (max-width: 480px) {
+ .circle {
+    width: 40px;
+    height: 40px;
+  }
+ .help-text {
+    font-size: 12px;
+  }
+}
+.circle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative; /* added this to make the close button absolute positioning work */
 }
 
-::placeholder {
-  font-size: 17px;
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: #ccc;
 }
