@@ -6,10 +6,40 @@
 */
 
 :root {
-  --lightest-grey: rgb(241, 243, 248);
-  --light-grey: rgb(214, 224, 240);
-  --dark-grey: rgb(141, 147, 171);
-  --darkest-grey: rgb(57, 59, 68);
+  --lightest-red:rgb(246, 239, 243);
+  --light-red: rgb(246, 239, 243);
+  --dark-red: rgb(170, 46, 112);
+  --darkest-red:rgb(170, 46, 112) ;
+  /* rgb(240, 221, 219) */
+}
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(234, 206, 221) 25%,rgb(244, 202, 224) 50%, rgb(246, 239, 243) 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+@keyframes slide {
+  0% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(25%);
+  }
 }
 
 /*_______________________ FULL BODY EDITS ____________________________*/
@@ -52,13 +82,13 @@ body {
 }
 
 .nav-link-edits a {
-  color: var(--darkest-grey) !important;
+  color: var(--darkest-red) !important;
   font-size: 18px !important;
   font-weight: 400;
 }
 
 .nav-link-edits a:hover {
-  color: var(--dark-grey) !important;
+  color: var(--dark-red) !important;
 }
 
 .dropdown-menu {
@@ -85,7 +115,7 @@ body {
   right: 5px;
   top: 11px;
   font-size: 35px;
-  color: var(--darkest-grey) !important;
+  color: var(--darkest-red) !important;
 }
 
 /*************** SEARCH BUTTON **************/
@@ -99,7 +129,7 @@ body {
   position: absolute;
   right: 0px;
   top: 6px;
-  color: var(--darkest-grey) !important;
+  color: var(--darkest-red) !important;
 }
 
 .overlay {
@@ -110,7 +140,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: var(--dark-grey);
+  background-color: var(--dark-red);
   background-color: rgba(141, 147, 171, 0.877);
 }
 
@@ -129,11 +159,11 @@ body {
   right: 45px;
   font-size: 60px;
   cursor: pointer;
-  color: var(--light-grey);
+  color: var(--light-red);
 }
 
 .overlay .closebtn:hover {
-  color: var(--darkest-grey);
+  color: var(--darkest-red);
 }
 
 .overlay input[type="text"] {
@@ -142,14 +172,14 @@ body {
   border: none;
   float: left;
   width: 80%;
-  background: var(--darkest-grey);
+  background: var(--darkest-red);
   border-radius: 20px;
   margin-right: 15px;
-  color: var(--lightest-grey);
+  color: var(--lightest-red);
 }
 
 .overlay input[type="text"]:hover {
-  background: var(--darkest-grey);
+  background: var(--darkest-red);
   background: rgb(57, 59, 68, 0.88);
 }
 
@@ -157,7 +187,7 @@ body {
   float: left;
   width: 13%;
   padding: 11px;
-  background: var(--lightest-grey);
+  background: var(--lightest-red);
   font-size: 22px;
   border: none;
   cursor: pointer;
@@ -165,14 +195,14 @@ body {
 }
 
 .overlay button:hover {
-  background: var(--light-grey);
+  background: var(--light-red);
 }
 
 /* ________________ HEADING____________________ */
 
 .about-heading h1 {
   font-size: 45px;
-  color: var(--lightest-grey);
+  color: var(--lightest-red);
   padding-bottom: 20px;
 }
 
@@ -180,12 +210,12 @@ body {
   text-align: center;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: var(--darkest-grey);
+  background-color: var(--darkest-red);
   margin-bottom: 20px;
 }
 
 .about-heading h3 {
-  color: var(--lightest-grey);
+  color: var(--lightest-red);
   font-weight: 300;
 }
 
@@ -196,6 +226,7 @@ body {
   justify-content: space-evenly;
   padding-top: 50px;
   width: 100%;
+  z-index:1;
 }
 
 .teacher {
@@ -240,9 +271,9 @@ body {
 /* _______________ FOOTER ________________ */
 
 .footer-bs {
-  background-color: var(--darkest-grey);
+  background-color: var(--darkest-red);
   padding: 60px 40px;
-  color: var(--lightest-grey);
+  color: var(--lightest-red);
   margin-bottom: 20px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 0px;
@@ -378,7 +409,7 @@ body {
 
 .unite-icon {
   font-size: 30px;
-  color: var(--lightest-grey);
+  color: var(--lightest-red);
 }
 
 .input-group-btn {
@@ -386,7 +417,7 @@ body {
 }
 
 .social-icon {
-  color: var(--lightest-grey);
+  color: var(--lightest-red);
   padding-right: 10px;
 }
 
@@ -406,15 +437,6 @@ body {
 
 .faculty-cards {
   padding-bottom: 100px;
-}
-
-.shiv p,
-.shiv a {
-  display: none;
-  font-size: 14px;
-}
-.shiv a {
-  color: rgb(53, 53, 165);
 }
 
 /* ________________ MEDIA QUERIES _______________*/
@@ -539,21 +561,12 @@ body {
     padding-bottom: 15px !important;
   }
 }
-/* _____________ DESIGN AND DEVELOPMENT ______________ */
 
-@media (max-width: 576px) {
-  .shiv p,
-  .shiv a {
-    font-size: 10px;
-  }
-}
 
-.form-control {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  height: 37px;
-}
 
-::placeholder {
-  font-size: 17px;
+*{
+  font-family:"Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
 }

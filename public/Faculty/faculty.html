@@ -16,12 +16,12 @@
 
     <link rel="stylesheet" href="CSS/faculty.css">
 
-    <!-- Font Family Lato -->
+    <!-- Font Family -->
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <!-- Animations -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -33,127 +33,136 @@
 </head>
 
 <body>
-
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
 
     <div class="header">
+<!-- ---------NAVIGATION--------- -->
 
-        <!-- ---------NAVIGATION--------- -->
+<nav class="navbar navbar-expand-lg navbar-light nav-edits fixed-top">
 
-        <nav class="navbar navbar-expand-lg navbar-light nav-edits fixed-top">
+    <!-- ---------NAV LOGO---------  -->
 
-            <!-- ---------NAV LOGO---------  -->
+    <a class="navbar-brand mr-auto department-logo" href="/public/index.html"><img src="/public/images/PIII.png"
+            alt="department logo"></a>
 
-            <a class="navbar-brand mr-auto department-logo" href="/"><img src="images/PIII.png"
-                    alt="department logo"></a>
+    <!-- ---------RESPONSIVE TOGGLER---------  -->
 
-            <!-- ---------RESPONSIVE TOGGLER---------  -->
+    <button class="navbar-toggler responsive-nav" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler-edit">
 
-            <button class="navbar-toggler responsive-nav" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler-edit">
+        <ion-icon name="ellipsis-horizontal"></ion-icon>
+    </button>
 
-                <ion-icon name="ellipsis-horizontal"></ion-icon>
-            </button>
+    <!-- ---------COLLAPSE NAVBAR---------  -->
 
-            <!-- ---------COLLAPSE NAVBAR---------  -->
-
-            <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
+    <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
 
 
-                <ul class="navbar-nav mx-auto main-nav-edits">
-                    <li class="nav-item dropdown nav-link-edits">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            About
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/About/about.html#the-department">The Department</a>
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/About/about.html#our-alumni">Our Alumni</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown nav-link-edits">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Seminars
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Seminars/seminars.html">2020</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Seminars/2021.html">2021</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Seminars/2022.html">2022</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Seminars/2023.html">2023</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Seminars/2024.html">2024</a>
-                            <!--<div class="dropdown-divider"></div>-->
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown nav-link-edits">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Journal
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Journal/journal-a.html">Aankalan</a>
-                            <!-- <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="Journal/journal-a.html#download-journal">Download</a>
-                            <a class="dropdown-item" href="Journal/journal-a.html#article-journal">Articles</a> -->
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown nav-link-edits">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Events
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Events/events.html">2020</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Events/2021.html">2021</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Events/2022.html">2022</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Events/2023.html">2023</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://hansraj-maths-dept.github.io/department-website/public/Events/2024.html">2024</a>
-                            <!--<div class="dropdown-divider"></div>-->
-                        </div>
-                    </li>
-                    <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="https://hansraj-maths-dept.github.io/department-website/public/Faculty/faculty.html">Faculty</a>
-                    </li>
-                    <!-- <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="Newsletter/newsletter.html">Newsletter</a>
-                    </li> -->
-                    <!-- <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="conference">Conference</a>
-                    </li> -->
-                    <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="https://hansraj-maths-dept.github.io/department-website/public/council.html">Council</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- ---------SEARCH--------- -->
-            <!-- ---------SEARCH--------- 
-            <div id="myOverlay" class="overlay">
-                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-                <div class="overlay-content">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Explore" name="search">
-                        <button type="submit">
-                            <ion-icon name="search"></ion-icon>
-                            </ion-icon></i>
-                        </button>
-                    </form>
+        <ul class="navbar-nav mx-auto main-nav-edits">
+            <li class="nav-item dropdown nav-link-edits">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/public/About/about.html#the-department">The Department</a>
+                    <!-- <a class="dropdown-item" href="/public/About/about.html#our-alumni">Our Alumni</a> -->
                 </div>
-            </div>
-            <button class="openBtn" onclick="openSearch()">
-                <ion-icon name="search"></ion-icon>
-                </ion-icon>
-            </button>
-            -->
+            </li>
+            <li class="nav-item dropdown nav-link-edits">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Seminars
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/public/Seminars/seminars.html">2020</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/public/Seminars/2021.html">2021</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/public/Seminars/2022.html">2022</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/public/Seminars/2023.html">2023</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/public/Seminars/2024.html">2024</a>
+                    <!--<div class="dropdown-divider"></div>-->
+                </div>
+            </li>
+            <li class="nav-item dropdown nav-link-edits">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Journal
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/public/Journal/journal-a.html">Aankalan</a>
+                    <!-- <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Journal/journal-a.html#download-journal">Download</a>
+                    <a class="dropdown-item" href="Journal/journal-a.html#article-journal">Articles</a> -->
+                </div>
+            </li>
+            <li class="nav-item dropdown nav-link-edits">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Events
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/public/Events/2020.html">2020</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/public/Events/2021.html">2021</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/public/Events/2022.html">2022</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/public/Events/2023.html">2023</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/public/Events/2024.html">2024</a>
+                    <!--<div class="dropdown-divider"></div>-->
+                </div>
+            </li>
+            <li class="nav-item nav-link-edits">
+                <a class="nav-link" href="/public/Faculty/faculty.html">Faculty</a>
+            </li>
+            <!--                     <li class="nav-item nav-link-edits">
+                <a class="nav-link" href="Newsletter/newsletter.html">Newsletter</a>
+            </li>
+            <li class="nav-item nav-link-edits">
+                <a class="nav-link" href="conference">Conference</a>
+            </li> -->
+            <li class="nav-item dropdown nav-link-edits">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Council
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/public/Council/council23-24.html">2023-24</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-        </nav>
+    <!-- ---------SEARCH--------- -->
+    <!-- ---------SEARCH--------- 
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Explore" name="search">
+                <button type="submit">
+                    <ion-icon name="search"></ion-icon>
+                    </ion-icon></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <button class="openBtn" onclick="openSearch()">
+        <ion-icon name="search"></ion-icon>
+        </ion-icon>
+    </button>
+    -->
+
+</nav>
+        
     </div>
 
 
@@ -183,7 +192,7 @@
                 </div>
                 <div class="teacher-content">
                     <h2>Dr Preeti Dharmarha</h2>
-                    <p>Associate Professor</p>
+                    <p>Professor</p>
                 </div>
             </div>
         </div>
@@ -203,7 +212,7 @@
                 </div>
                 <div class="teacher-content">
                     <h2>Dr Jyoti Bhola</h2>
-                    <p>Associate Professor</p>
+                    <p>Professor</p>
                 </div>
             </div>
         </div>
@@ -214,7 +223,7 @@
                 </div>
                 <div class="teacher-content">
                     <h2>Dr Rakesh Batra</h2>
-                    <p>Associate Professor</p>
+                    <p>Professor</p>
                 </div>
             </div>
             <div class="teacher">
@@ -223,7 +232,7 @@
                 </div>
                 <div class="teacher-content">
                     <h2>Dr Mukund Madhav Mishra</h2>
-                    <p>Assistant Professor</p>
+                    <p>Associate Professor</p>
                 </div>
             </div>
         </div>
@@ -244,7 +253,7 @@
                 </div>
                 <div class="teacher-content">
                     <h2>Dr Arvind</h2>
-                    <p>Associate Professor</p>
+                    <p>Professor</p>
                 </div>
             </div>
         </div>
@@ -446,17 +455,15 @@
 
         </div>
     </footer>
+
     <section style="text-align:center; margin:10px auto;">
-        <div class="shiv">
-            <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/shiv-shankar-saran-09ba37258"
-                    target="blank">Shiv Shankar Saran</a> &nbsp;
-            </p>
+        <div class="ved-ujj">
+            <p>Designed & Developed by: &nbsp; Web Development Team @ Pi<br>Modified by: <a
+                    href="https://www.linkedin.com/in/shiv-shankar-saran-09ba37258">Shiv Shankar Saran</a></p>
         </div>
 
 
     </section>
-
-    </div>
 
     <script>
         $(document).ready(function () {
