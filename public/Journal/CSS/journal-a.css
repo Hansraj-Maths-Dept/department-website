@@ -16,6 +16,7 @@
 
 * {
   box-sizing: border-box;
+  font-family:"Exo 2", sans-serif;
 }
 
 .aankalan-head h1 {
@@ -245,14 +246,7 @@ body {
 .collapse-edits {
   margin-right: 110px !important;
 }
-.ved-ujj p,
-.ved-ujj a {
-  font-size: 14px;
-  display: none;
-}
-.ved-ujj a {
-  color: rgb(53, 53, 165);
-}
+/*  */
 
 /********** RESPONSIVE TOGGLER ***********/
 

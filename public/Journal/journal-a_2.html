@@ -21,11 +21,12 @@
     <!-- CSS link -->
 
     <link rel="stylesheet" href="CSS/journal-a.css">
+    <link rel="stylesheet" href="/public/CSS/homePage.css">
+    <!-- Font Family -->
 
-    <!-- Font Family Lato -->
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
     <!-- Animations -->
@@ -43,11 +44,11 @@
 
         <!-- ---------NAVIGATION--------- -->
 
-        <nav class="navbar navbar-expand-lg navbar-light nav-edits">
+        <nav class="navbar navbar-expand-lg navbar-light nav-edits fixed-top">
 
             <!-- ---------NAV LOGO---------  -->
 
-            <a class="navbar-brand mr-auto department-logo" href="/index.html"><img src="images\PIII.png"
+            <a class="navbar-brand mr-auto department-logo" href="/public/index.html"><img src="/public/images/PIII.png"
                     alt="department logo"></a>
 
             <!-- ---------RESPONSIVE TOGGLER---------  -->
@@ -62,6 +63,7 @@
 
             <div class="collapse navbar-collapse collapse-edits" id="navbarNav">
 
+
                 <ul class="navbar-nav mx-auto main-nav-edits">
                     <li class="nav-item dropdown nav-link-edits">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -69,8 +71,8 @@
                             About
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/About/about.html#the-department">The Department</a>
-                            <a class="dropdown-item" href="/About/about.html#our-alumni">Our Alumni</a>
+                            <a class="dropdown-item" href="/public/About/about.html#the-department">The Department</a>
+                            <!-- <a class="dropdown-item" href="/public/About/about.html#our-alumni">Our Alumni</a> -->
                         </div>
                     </li>
                     <li class="nav-item dropdown nav-link-edits">
@@ -79,9 +81,15 @@
                             Seminars
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/Seminars/seminars.html">2020</a>
+                            <a class="dropdown-item" href="/public/Seminars/seminars.html">2020</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/Seminars/2021.html">2021</a>
+                            <a class="dropdown-item" href="/public/Seminars/2021.html">2021</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Seminars/2022.html">2022</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Seminars/2023.html">2023</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Seminars/2024.html">2024</a>
                             <!--<div class="dropdown-divider"></div>-->
                         </div>
                     </li>
@@ -91,10 +99,10 @@
                             Journal
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/Journal/journal-a.html">Aankalan</a>
+                            <a class="dropdown-item" href="/public/Journal/journal-a.html">Aankalan</a>
                             <!-- <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/Journal/journal-a.html#download-journal">Download</a>
-                            <a class="dropdown-item" href="/Journal/journal-a.html#article-journal">Articles</a> -->
+                    <a class="dropdown-item" href="Journal/journal-a.html#download-journal">Download</a>
+                    <a class="dropdown-item" href="Journal/journal-a.html#article-journal">Articles</a> -->
                         </div>
                     </li>
                     <li class="nav-item dropdown nav-link-edits">
@@ -103,44 +111,62 @@
                             Events
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/Events/events.html">2020</a>
+                            <a class="dropdown-item" href="/public/Events/2020.html">2020</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/Events/2021.html">2021</a>
+                            <a class="dropdown-item" href="/public/Events/2021.html">2021</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Events/2022.html">2022</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Events/2023.html">2023</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/public/Events/2024.html">2024</a>
                             <!--<div class="dropdown-divider"></div>-->
                         </div>
                     </li>
                     <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="/Faculty/faculty.html">Faculty</a>
+                        <a class="nav-link" href="/public/Faculty/faculty.html">Faculty</a>
                     </li>
-                    <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="/Newsletter/newsletter.html">Newsletter</a>
-                    </li>
-                    <li class="nav-item nav-link-edits">
-                        <a class="nav-link" href="/conference">Conference</a>
+                    <!--                     <li class="nav-item nav-link-edits">
+                <a class="nav-link" href="Newsletter/newsletter.html">Newsletter</a>
+            </li>
+            <li class="nav-item nav-link-edits">
+                <a class="nav-link" href="conference">Conference</a>
+            </li> -->
+                    <li class="nav-item dropdown nav-link-edits">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Council
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/public/Council/council23-24.html">2023-24</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
                     </li>
                 </ul>
             </div>
 
             <!-- ---------SEARCH--------- -->
-            <!-- <div id="myOverlay" class="overlay">
-                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-                <div class="overlay-content">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Explore" name="search">
-                        <button type="submit">
-                            <ion-icon name="search"></ion-icon>
-                            </ion-icon></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <button class="openBtn" onclick="openSearch()">
-                <ion-icon name="search"></ion-icon>
-                </ion-icon>
-            </button> -->
-
+            <!-- ---------SEARCH--------- 
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Explore" name="search">
+                <button type="submit">
+                    <ion-icon name="search"></ion-icon>
+                    </ion-icon></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <button class="openBtn" onclick="openSearch()">
+        <ion-icon name="search"></ion-icon>
+        </ion-icon>
+    </button>
+    -->
 
         </nav>
+
     </div>
 
     <div class="heading">
@@ -218,7 +244,7 @@
             <footer class="footer-bs">
                 <div class="row">
                     <div class="col-md-4 footer-brand animated fadeInLeft">
-
+        
                         <div class="logo-footer">
                             <div class="footer-image">
                                 <img src="images/PIII.png">
@@ -229,26 +255,35 @@
                             </div>
                         </div>
                         <div class="address-footer">
-                            <p>Address: <em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka Ganj,
-                                    Delhi,
-                                    110007</em></p>
-                            <p>© 2020 Department of Mathematics, Hansraj College</p>
+                            <p>Address: <br><span style="display: inline-block; 
+                                    margin-left: 10px;"><em>Mahatma Hans Raj Marg, Hansraj College, University of Delhi, Malka
+                                        Ganj,
+                                        Delhi,
+                                        110007</em></span></p>
+                            <p>Contact: <br><span style="display: inline-block; 
+                                            margin-left: 10px;"><em>identityhrc@gmail.com</em></span><br /><span style="display: inline-block; 
+                                    margin-left: 10px;"><em>aankalanhansraj@gmail.com</em></span></p>
+                            <p>© 2024 Department of Mathematics, Hansraj College</p>
                         </div>
-
+        
                     </div>
-
+        
                     <div class="col-md-4 footer-ns animated fadeInRight">
                         <h4>Unite</h4>
                         <p>Please put in your emails to stay connected.</p>
                         <p>
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Email">
+        
+                            <input type="email" class="form-control" placeholder="Email" required>
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
+                                <button class="btn btn-default" type="button" data-container="body" data-toggle="popover"
+                                    data-placement="top" data-content="Your email has been recorded, thanks."
+                                    data-trigger="focus">
                                     <i class="unite-icon">
                                         <ion-icon name="mail-open"></ion-icon>
                                     </i>
                                 </button>
+        
                             </span>
                         </div><!-- /input-group -->
                         </p>
@@ -256,34 +291,34 @@
                     <div class="col-md-4 footer-social animated fadeInDown">
                         <h4>Follow Us</h4>
                         <ul>
-                            <li><i class="social-icon"><a href="#">
+                            <li><i class="social-icon"><a href="https://www.facebook.com/pi.hansrajcollege">
                                         <ion-icon name="logo-facebook"></ion-icon>
-                                    </a></i><a href="#" class="social-name">Facebook</a></li>
-                            <li><i class="social-icon"><a href="#">
+                                    </a></i><a href="https://www.facebook.com/pi.hansrajcollege"
+                                    class="social-name">Facebook</a></li>
+                            <li><i class="social-icon"><a href="https://www.instagram.com/mathsdept_hansraj/">
                                         <ion-icon name="logo-instagram"></ion-icon>
-                                    </a></i><a href="#" class="social-name">Instagram</a></li>
-                            <li><i class="social-icon"><a href="#">
+                                    </a></i><a href="https://www.instagram.com/mathsdept_hansraj/"
+                                    class="social-name">Instagram</a></li>
+                            <li><i class="social-icon"><a
+                                        href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college">
                                         <ion-icon name="logo-linkedin"></ion-icon>
-                                    </a></i><a href="#" class="social-name">LinkedIn</a></li>
+                                    </a></i><a href="https://www.linkedin.com/company/department-of-mathematics-hansraj-college"
+                                    class="social-name">LinkedIn</a></li>
                         </ul>
                     </div>
-
+        
                 </div>
             </footer>
+        
             <section style="text-align:center; margin:10px auto;">
                 <div class="ved-ujj">
-                    <p>Designed & Developed by: &nbsp; <a href="https://www.linkedin.com/in/vedant-goyal-2000/"
-                            target="blank">Vedant Goyal</a> &nbsp;and&nbsp; <a
-                            href="https://www.linkedin.com/in/ujjawal-agarwal-435553200" target="blank">Ujjawal
-                            Agarwal</a></p>
+                    <p>Designed & Developed by: &nbsp; Web Development Team @ Pi<br>Modified by: <a
+                            href="https://www.linkedin.com/in/shiv-shankar-saran-09ba37258">Shiv Shankar Saran</a></p>
                 </div>
-
-
+        
+        
             </section>
-        </div>
-
-
-
+        
 
 
 
