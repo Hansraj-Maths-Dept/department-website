@@ -6,10 +6,10 @@
 }
 
 :root {
-    --lightest-red:rgb(246, 239, 243);
-    --light-red: rgb(246, 239, 243);
-    --dark-red: rgb(170, 46, 112);
-    --darkest-red:rgb(170, 46, 112) ;
+    --lightest-blue:#e0fbfc;
+    --light-blue: #e0fbfc;
+    --dark-blue: rgb(23, 46, 112);
+    --darkest-blue:rgb(23, 46, 112) ;
     /* rgb(240, 221, 219) */
   }
   
@@ -53,13 +53,13 @@
   }
   
   .nav-link-edits a {
-    color: var(--darkest-red) !important;
+    color: var(--darkest-blue) !important;
     font-size: 18px !important;
     font-weight: 400;
   }
   
   .nav-link-edits a:hover {
-    color: var(--dark-red) !important;
+    color: var(--dark-blue) !important;
   }
   
   .dropdown-menu {
@@ -86,7 +86,7 @@
     right: 5px;
     top: 11px;
     font-size: 35px;
-    color: var(--darkest-red) !important;
+    color: var(--darkest-blue) !important;
   }
   
   /*************** SEARCH BUTTON **************/
@@ -100,7 +100,7 @@
     position: absolute;
     right: 0px;
     top: 6px;
-    color: var(--darkest-red) !important;
+    color: var(--darkest-blue) !important;
   }
   
   .overlay {
@@ -111,7 +111,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: var(--dark-red);
+    background-color: var(--dark-blue);
     background-color: rgba(141, 147, 171, 0.877);
   }
   
@@ -130,11 +130,11 @@
     right: 45px;
     font-size: 60px;
     cursor: pointer;
-    color: var(--light-red);
+    color: var(--light-blue);
   }
   
   .overlay .closebtn:hover {
-    color: var(--darkest-red);
+    color: var(--darkest-blue);
   }
   
   .overlay input[type="text"] {
@@ -143,14 +143,14 @@
     border: none;
     float: left;
     width: 80%;
-    background: var(--darkest-red);
+    background: var(--darkest-blue);
     border-radius: 20px;
     margin-right: 15px;
-    color: var(--lightest-red);
+    color: var(--lightest-blue);
   }
   
   .overlay input[type="text"]:hover {
-    background: var(--darkest-red);
+    background: var(--darkest-blue);
     background: rgb(57, 59, 68, 0.88);
   }
   
@@ -158,7 +158,7 @@
     float: left;
     width: 13%;
     padding: 11px;
-    background: var(--lightest-red);
+    background: var(--lightest-blue);
     font-size: 22px;
     border: none;
     cursor: pointer;
@@ -166,15 +166,15 @@
   }
   
   .overlay button:hover {
-    background: var(--light-red);
+    background: var(--light-blue);
   }
 
 /* _______________ FOOTER ________________ */
 
 .footer-bs {
-    background-color: var(--darkest-red);
+    background-color: var(--darkest-blue);
     padding: 60px 40px;
-    color: var(--lightest-red);
+    color: var(--lightest-blue);
     margin-bottom: 20px;
     border-bottom-right-radius: 6px;
     border-top-left-radius: 0px;
@@ -310,7 +310,7 @@
   
   .unite-icon {
     font-size: 30px;
-    color: var(--lightest-red);
+    color: var(--lightest-blue);
   }
   
   .input-group-btn {
@@ -318,7 +318,7 @@
   }
   
   .social-icon {
-    color: var(--lightest-red);
+    color: var(--lightest-blue);
     padding-right: 10px;
   }
   
@@ -630,7 +630,7 @@ body {
 
 .bg {
     animation: slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, rgb(170, 46, 112) 50%, rgb(246, 239, 243) 50%);
+    background-image: linear-gradient(-60deg, rgb(23, 46, 112) 50%, #e0fbfc 50%);
     bottom: 0;
     left: -50%;
     opacity: .5;
