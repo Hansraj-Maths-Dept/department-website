@@ -290,7 +290,7 @@ input:focus {
 /* Same as about us heading */
 
 .journal {
-  background-color:rgb(23, 113, 231) !important;
+  background-color:#687fa4 !important;
   color: var(--lightest-blue) !important;
 }
 
