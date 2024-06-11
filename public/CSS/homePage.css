@@ -8,12 +8,15 @@
 */
 
 :root {
-  --lightest-red:rgb(246, 239, 243);
-  --light-red: rgb(246, 239, 243);
-  --dark-red: rgb(170, 46, 112);
-  --darkest-red:rgb(170, 46, 112) ;
+  --lightest-blue:#e0fbfc;
+  --light-blue: #e0fbfc;
+  --dark-blue: rgb(23, 113, 231);
+  --darkest-blue:rgb(23, 46, 112);
   /* rgb(240, 221, 219) */
 }
+
+/* rgb(23, 46, 112)
+rgb(23, 113, 231) */
 
 /*_______________________ FULL BODY EDITS ____________________________*/
 
@@ -48,7 +51,7 @@ input:focus {
 .nav-edits {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  background-color:rgb(170, 46, 112) !important;
+  background-color:rgb(23, 46, 112) !important;
 }
 
 .nav-link-edits {
@@ -56,24 +59,24 @@ input:focus {
 }
 
 .nav-link-edits a {
-  color: var(--light-red) !important;
+  color: var(--light-blue) !important;
   font-size: 18px !important;
   font-weight: 400;
   font-family:"Exo 2", sans-serif;
 }
 
 .nav-link-edits a:hover {
-  color: var(--lightest-red) !important;
+  color: var(--lightest-blue) !important;
 }
 
 .dropdown-menu {
-  background-color: rgb(170, 46, 112)!important;
+  background-color: rgb(23, 113, 231)!important;
   box-shadow: 5px 5px 15px rgb(57, 59, 68);
   border: none;
 }
 
 .dropdown-item:hover {
-  background-color: rgb(129, 53, 93) !important;
+  background-color: rgb(23, 46, 112) !important;
 }
 
 .collapse-edits {
@@ -88,7 +91,7 @@ input:focus {
   right: 5px;
   top: 11px;
   font-size: 35px;
-  color: var(--light-red) !important;
+  color: var(--light-blue) !important;
 
   font-family:"Exo 2", sans-serif;
 }
@@ -105,7 +108,7 @@ input:focus {
   right: 0px;
   top: 6px;
   font-family:"Exo 2", sans-serif;
-  color: var(--light-red) !important;
+  color: var(--light-blue) !important;
 }
 
 .overlay {
@@ -116,7 +119,7 @@ input:focus {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: var(--dark-red);
+  background-color: var(--dark-blue);
   background-color: rgba(141, 147, 171, 0.877);
 }
 
@@ -135,12 +138,12 @@ input:focus {
   right: 45px;
   font-size: 60px;
   cursor: pointer;
-  color: var(--light-red);
+  color: var(--light-blue);
   font-family:"Exo 2", sans-serif;
 }
 
 .overlay .closebtn:hover {
-  color: var(--darkest-red);
+  color: var(--darkest-blue);
 }
 
 .overlay input[type="text"] {
@@ -150,14 +153,14 @@ input:focus {
   border: none;
   float: left;
   width: 80%;
-  background: var(--darkest-red);
+  background: var(--darkest-blue);
   border-radius: 20px;
   margin-right: 15px;
-  color: var(--lightest-red);
+  color: var(--lightest-blue);
 }
 
 .overlay input[type="text"]:hover {
-  background: var(--darkest-red);
+  background: var(--darkest-blue);
   background: rgb(57, 59, 68, 0.88);
 }
 
@@ -165,7 +168,7 @@ input:focus {
   float: left;
   width: 13%;
   padding: 11px;
-  background: var(--lightest-red);
+  background: var(--lightest-blue);
   font-size: 22px;
   font-family:"Exo 2", sans-serif;
   border: none;
@@ -174,7 +177,7 @@ input:focus {
 }
 
 .overlay button:hover {
-  background: var(--light-red);
+  background: var(--light-blue);
 }
 
 /*___________________ CAROUSEL ______________________*/
@@ -191,21 +194,22 @@ input:focus {
   width: 100%;
   height: 100%;
   background-color: #468495;
-  background-image: linear-gradient(rgb(148, 110, 170),#6a4444 10%,rgb(58, 131, 181) 15%, rgb(245, 169, 134));
+  background-image: linear-gradient(rgb(201, 216, 228),#aebbd1 10%,rgb(58, 131, 181) 15%, rgb(245, 169, 134));
   opacity: 0.7;
 }
 
 .carousel-caption {
   bottom: 180px !important;
-  font-weight:900 !important;
+  font-weight:2000 !important;
   font-family:'Courier New', Courier, monospace !important;
-  color:black
+  color:black;
+  padding:0.1vh 0.1vw;
 }
 
 /*__________________ ABOUT US _______________________*/
 
 .section-edits {
-  background-color: var(--lightest-red);
+  background-color: var(--lightest-blue);
   padding-bottom: 80px;
 }
 
@@ -219,12 +223,12 @@ input:focus {
 .heading-edits h1 a {
   font-size: 35px;
   font-weight: 400;
-  color: var(--darkest-red);
+  color: var(--darkest-blue);
   font-family: "Exo 2", sans-serif;
 }
 
 .heading-edits h1 a:hover {
-  text-shadow: 5px 5px 10px var(--light-red);
+  text-shadow: 5px 5px 10px var(--light-blue);
   text-decoration: none !important;
 }
 
@@ -251,7 +255,7 @@ input:focus {
   background-image: linear-gradient(
     to right,
     transparent,
-    rgb(48, 49, 51),
+    #8edde0,
     transparent
   );
 }
@@ -260,7 +264,7 @@ input:focus {
 
 .content-about {
   text-align: center;
-  background-color: var(--lightest-red) !important;
+  background-color: var(--lightest-blue) !important;
   padding-top: 40px;
   padding-left: 15%;
   padding-right: 15%;
@@ -286,12 +290,12 @@ input:focus {
 /* Same as about us heading */
 
 .journal {
-  background-color:rgb(122, 56, 90) !important;
-  color: var(--lightest-red) !important;
+  background-color:rgb(23, 113, 231) !important;
+  color: var(--lightest-blue) !important;
 }
 
 .journal-heading a {
-  color: var(--lightest-red) !important;
+  color: var(--lightest-blue) !important;
   text-shadow: none !important;
 }
 
@@ -329,18 +333,18 @@ input:focus {
   display: block;
   margin: auto;
   padding: 6px 5px 6px 5px;
-  background-color: var(--lightest-red);
+  background-color: var(--lightest-blue);
   font-size: 16px;
-  color: var(--darkest-red);
+  color: var(--darkest-blue);
   text-decoration: none;
   width: 125px;
   text-align: center;
 }
 
 .btn-edit:hover {
-  color: var(--lightest-red);
-  background-color: var(--darkest-red);
-  border: 1px solid var(--lightest-red);
+  color: var(--lightest-blue);
+  background-color: var(--darkest-blue);
+  border: 1px solid var(--lightest-blue);
   text-decoration: none;
   padding: 5px 4px 5px 4px;
 }
@@ -348,7 +352,7 @@ input:focus {
 /* _____________ EVENTS ________________*/
 
 .section-events {
-  background-color: var(--lightest-red);
+  background-color: var(--lightest-blue);
 }
 
 .event-image img {
@@ -419,11 +423,11 @@ input:focus {
 /* _____________ SEMINARS AND SESSIONS ______________ */
 
 .section-seminars {
-  background-color: var(--lightest-red);
+  background-color: var(--lightest-blue);
 }
 
 .seminars-heading h1 a {
-  color: var(--darkest-red) !important;
+  color: var(--darkest-blue) !important;
   text-shadow: none !important;
 }
 
@@ -438,7 +442,7 @@ input:focus {
 }
 
 .section-seminars p {
-  color: var(--darkest-red);
+  color: var(--darkest-blue);
   padding: 20px;
   text-align: left;
   font-weight: 300;
@@ -492,9 +496,9 @@ input:focus {
 /* _______________ FOOTER ________________ */
 
 .footer-bs {
-  background-color: var(--darkest-red);
+  background-color: var(--darkest-blue);
   padding: 60px 40px;
-  color: var(--lightest-red);
+  color: var(--lightest-blue);
   margin-bottom: 20px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 0px;
@@ -520,7 +524,7 @@ input:focus {
 
 .footer-bs .footer-brand p {
   font-size: 12px;
-  color: var(--lightest-red);
+  color: var(--lightest-blue);
   font-family:"Exo 2", sans-serif;
 }
 
@@ -534,14 +538,14 @@ input:focus {
 }
 
 .footer-bs .footer-nav ul.pages a {
-  color: var(--lightest-red);
+  color: var(--lightest-blue);
   font-weight: bold;
   text-transform: uppercase;
   font-family:"Exo 2", sans-serif;
 }
 
 .footer-bs .footer-nav ul.pages a:hover {
-  color: var(--lightest-red);
+  color: var(--lightest-blue);
   text-decoration: none;
 }
 
@@ -567,7 +571,7 @@ input:focus {
 }
 
 .footer-bs .footer-nav ul.list a:hover {
-  color: var(--lightest-red);
+  color: var(--lightest-blue);
   text-decoration: none;
 }
 
@@ -588,11 +592,11 @@ input:focus {
 }
 
 .footer-bs .footer-social a {
-  color: var(--lightest-red);
+  color: var(--lightest-blue);
 }
 
 .footer-bs .footer-social a:hover {
-  color: var(--lightest-red);
+  color: var(--lightest-blue);
   text-decoration: none;
 }
 
@@ -634,7 +638,7 @@ input:focus {
 
 .unite-icon {
   font-size: 30px;
-  color: var(--lightest-red);
+  color: var(--lightest-blue);
 }
 
 .input-group-btn {
@@ -642,7 +646,7 @@ input:focus {
 }
 
 .social-icon {
-  color: var(--lightest-red);
+  color: var(--lightest-blue);
   padding-right: 10px;
 }
 
