@@ -1,23 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="acad.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semester Subject Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f0f2f5;
+    }
 
-  <title>Shiv</title>
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .tab:hover {
+      background-color: #0056b3;
+    }
+
+    .dropdown, .table-container {
+      margin-top: 10px;
+    }
+
+    select {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ccc;
+    }
+
+    @media (max-width: 600px) {
+      .tab {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-Enjoy vacation....
+  <h2>Semester Wise Subject Links</h2>
+  <div class="tabs" id="tabs"></div>
+  <div class="dropdown" id="dropdown"></div>
+  <div class="table-container" id="table-container"></div>
+
+  <script>
+    const subjectLinks = {
+      "Semester 1": {
+        "Subject 1": [
+          { name: "Lecture 1", url: "#" },
+          { name: "Notes", url: "#" }
+        ],
+        "Subject 2": [
+          { name: "Assignment", url: "#" }
+        ],
+        "Subject 3": [
+          { name: "Lecture 3", url: "#" }
+        ]
+      },
+      "Semester 2": {
+        "Subject 1": [
+          { name: "Practical file", url: "#" },
+          { name: "Worksheet", url: "#" }
+        ],
+        "Subject 2": [
+          { name: "Quiz", url: "#" }
+        ],
+        "Subject 3": [
+          { name: "Lecture 5", url: "#" }
+        ]
+      },
+      "Semester 3": {
+        "Subject 1": [],
+        "Subject 2": [],
+        "Subject 3": []
+      },
+      "Semester 4": {
+        "Subject 1": [],
+        "Subject 2": [],
+        "Subject 3": []
+      },
+      "Semester 5": {
+        "Subject 1": [],
+        "Subject 2": [],
+        "Subject 3": []
+      },
+      "Semester 6": {
+        "Subject 1": [],
+        "Subject 2": [],
+        "Complex Analysis": [
+          { name: "Practical file", url: "https://drive.google.com/file/d/1y2z7LcHzs7bvDH5jhN9REK2ai26ISuiL/view?usp=drivesdk" },
+          { name: "Lecture Notes", url: "#" },
+          { name: "Assignment", url: "#" }
+        ]
+      }
+    };
+
+    const tabsDiv = document.getElementById('tabs');
+    const dropdownDiv = document.getElementById('dropdown');
+    const tableContainer = document.getElementById('table-container');
+
+    Object.keys(subjectLinks).forEach(sem => {
+      const tab = document.createElement('div');
+      tab.className = 'tab';
+      tab.textContent = sem;
+      tab.onclick = () => showSubjects(sem);
+      tabsDiv.appendChild(tab);
+    });
+
+    function showSubjects(semester) {
+      dropdownDiv.innerHTML = '';
+      tableContainer.innerHTML = '';
+
+      const select = document.createElement('select');
+      select.innerHTML = `<option value="">Select Subject</option>`;
+
+      Object.keys(subjectLinks[semester]).forEach(sub => {
+        const option = document.createElement('option');
+        option.value = sub;
+        option.textContent = sub;
+        select.appendChild(option);
+      });
+
+      select.onchange = () => {
+        if (select.value) showLinks(semester, select.value);
+        else tableContainer.innerHTML = '';
+      };
+
+      dropdownDiv.appendChild(select);
+    }
+
+    function showLinks(semester, subject) {
+      tableContainer.innerHTML = `<h3>${subject} - Resources</h3>`;
+      const links = subjectLinks[semester][subject];
+      
+      if (!links || links.length === 0) {
+        tableContainer.innerHTML += "<p>No content available.</p>";
+        return;
+      }
+
+      const table = document.createElement('table');
+      const header = table.insertRow();
+      header.innerHTML = "<th>Title</th><th>Link</th>";
+
+      links.forEach(link => {
+        const row = table.insertRow();
+        row.innerHTML = `<td>${link.name}</td><td><a href="${link.url}" target="_blank">Open</a></td>`;
+      });
+
+      tableContainer.appendChild(table);
+    }
+  </script>
 
 </body>
-
 </html>
